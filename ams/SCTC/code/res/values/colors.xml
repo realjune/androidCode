@@ -1,0 +1,8 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="product_info_price_color">#ff3093EB</color>
+    
+    <color name="table_bolder_color">#ffff0000</color>
+
+</resources>

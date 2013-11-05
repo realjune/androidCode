@@ -1,0 +1,3700 @@
+﻿body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../PhoneList_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1450px;
+    height:977px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1450px;
+    height:977px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:480px;
+    width:1446px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2 {
+    position:absolute;
+    left:1314px;
+    top:448px;
+    width:52px;
+    height:214px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u3_normal {
+    background-image: url('../PhoneList_files/u3_normal.png');
+}
+
+.u3_container {
+    position:absolute;
+    left:86px;
+    top:144px;
+    width:1276px;
+    height:80px;
+}
+
+#u3_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1282px;
+    height:86px;
+}
+
+.u4 {
+    position:absolute;
+    left:2px;
+    top:32px;
+    width:1272px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u5 {
+    position:absolute;
+    left:308px;
+    top:164px;
+    width:100px;
+    height:44px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u6 {
+    position:absolute;
+    left:424px;
+    top:164px;
+    width:100px;
+    height:44px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u7 {
+    position:absolute;
+    left:542px;
+    top:164px;
+    width:100px;
+    height:44px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u8 {
+    position:absolute;
+    left:702px;
+    top:164px;
+    width:81px;
+    height:44px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u9 {
+    position:absolute;
+    left:796px;
+    top:164px;
+    width:81px;
+    height:44px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u10 {
+    position:absolute;
+    left:889px;
+    top:164px;
+    width:81px;
+    height:44px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u11 {
+    position:absolute;
+    left:982px;
+    top:164px;
+    width:81px;
+    height:44px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u12 {
+    position:absolute;
+    left:1076px;
+    top:164px;
+    width:81px;
+    height:44px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u13 {
+    position:absolute;
+    left:1173px;
+    top:164px;
+    width:81px;
+    height:44px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u14 {
+    position:absolute;
+    left:1266px;
+    top:164px;
+    width:81px;
+    height:44px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u15_normal {
+    background-image: url('../PhoneList_files/u15_normal.png');
+}
+
+.u15_container {
+    position:absolute;
+    left:96px;
+    top:232px;
+    width:295px;
+    height:301px;
+}
+
+#u15_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:301px;
+    height:307px;
+}
+
+.u16 {
+    position:absolute;
+    left:2px;
+    top:142px;
+    width:291px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u17_normal {
+    background-image: url('../PhoneList_files/u15_normal.png');
+}
+
+.u17_container {
+    position:absolute;
+    left:398px;
+    top:232px;
+    width:295px;
+    height:301px;
+}
+
+#u17_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:301px;
+    height:307px;
+}
+
+.u18 {
+    position:absolute;
+    left:2px;
+    top:142px;
+    width:291px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u19_normal {
+    background-image: url('../PhoneList_files/u15_normal.png');
+}
+
+.u19_container {
+    position:absolute;
+    left:699px;
+    top:232px;
+    width:295px;
+    height:301px;
+}
+
+#u19_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:301px;
+    height:307px;
+}
+
+.u20 {
+    position:absolute;
+    left:2px;
+    top:142px;
+    width:291px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u21_normal {
+    background-image: url('../PhoneList_files/u15_normal.png');
+}
+
+.u21_container {
+    position:absolute;
+    left:1001px;
+    top:232px;
+    width:295px;
+    height:301px;
+}
+
+#u21_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:301px;
+    height:307px;
+}
+
+.u22 {
+    position:absolute;
+    left:2px;
+    top:142px;
+    width:291px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u23_normal {
+    background-image: url('../PhoneList_files/u15_normal.png');
+}
+
+.u23_container {
+    position:absolute;
+    left:96px;
+    top:554px;
+    width:295px;
+    height:301px;
+}
+
+#u23_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:301px;
+    height:307px;
+}
+
+.u24 {
+    position:absolute;
+    left:2px;
+    top:142px;
+    width:291px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u25_normal {
+    background-image: url('../PhoneList_files/u15_normal.png');
+}
+
+.u25_container {
+    position:absolute;
+    left:398px;
+    top:554px;
+    width:295px;
+    height:301px;
+}
+
+#u25_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:301px;
+    height:307px;
+}
+
+.u26 {
+    position:absolute;
+    left:2px;
+    top:142px;
+    width:291px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u27_normal {
+    background-image: url('../PhoneList_files/u15_normal.png');
+}
+
+.u27_container {
+    position:absolute;
+    left:699px;
+    top:554px;
+    width:295px;
+    height:301px;
+}
+
+#u27_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:301px;
+    height:307px;
+}
+
+.u28 {
+    position:absolute;
+    left:2px;
+    top:142px;
+    width:291px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u29_normal {
+    background-image: url('../PhoneList_files/u15_normal.png');
+}
+
+.u29_container {
+    position:absolute;
+    left:1001px;
+    top:554px;
+    width:295px;
+    height:301px;
+}
+
+#u29_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:301px;
+    height:307px;
+}
+
+.u30 {
+    position:absolute;
+    left:2px;
+    top:142px;
+    width:291px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u31_normal {
+    background-image: url('../PhoneList_files/u31_normal.png');
+}
+
+.u31_container {
+    position:absolute;
+    left:1308px;
+    top:459px;
+    width:64px;
+    height:64px;
+}
+
+#u31_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:64px;
+    height:64px;
+}
+
+.u32 {
+    position:absolute;
+    left:2px;
+    top:24px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u33_container {
+    position:absolute;
+    left:462px;
+    top:246px;
+    width:168px;
+    height:168px;
+}
+
+#u33_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:168px;
+    height:168px;
+}
+
+.u34 {
+    position:absolute;
+    left:2px;
+    top:76px;
+    width:164px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u35_normal {
+    background-image: url('../PhoneList_files/u35_normal.png');
+}
+
+.u35_container {
+    position:absolute;
+    left:414px;
+    top:414px;
+    width:263px;
+    height:72px;
+}
+
+#u35_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:269px;
+    height:78px;
+}
+
+.u36 {
+    position:absolute;
+    left:2px;
+    top:18px;
+    width:259px;
+    height:36px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u37 {
+    position:absolute;
+    left:414px;
+    top:506px;
+    width:150px;
+    height:13px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u38_normal {
+    background-image: url('../PhoneList_files/u35_normal.png');
+}
+
+.u38_container {
+    position:absolute;
+    left:714px;
+    top:414px;
+    width:263px;
+    height:72px;
+}
+
+#u38_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:269px;
+    height:78px;
+}
+
+.u39 {
+    position:absolute;
+    left:2px;
+    top:18px;
+    width:259px;
+    height:36px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u40 {
+    position:absolute;
+    left:714px;
+    top:506px;
+    width:150px;
+    height:13px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u41_normal {
+    background-image: url('../PhoneList_files/u35_normal.png');
+}
+
+.u41_container {
+    position:absolute;
+    left:1016px;
+    top:414px;
+    width:263px;
+    height:72px;
+}
+
+#u41_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:269px;
+    height:78px;
+}
+
+.u42 {
+    position:absolute;
+    left:2px;
+    top:18px;
+    width:259px;
+    height:36px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u43 {
+    position:absolute;
+    left:1016px;
+    top:506px;
+    width:150px;
+    height:13px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u44_container {
+    position:absolute;
+    left:164px;
+    top:246px;
+    width:168px;
+    height:168px;
+}
+
+#u44_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:168px;
+    height:168px;
+}
+
+.u45 {
+    position:absolute;
+    left:2px;
+    top:76px;
+    width:164px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u46_normal {
+    background-image: url('../PhoneList_files/u35_normal.png');
+}
+
+.u46_container {
+    position:absolute;
+    left:112px;
+    top:414px;
+    width:263px;
+    height:72px;
+}
+
+#u46_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:269px;
+    height:78px;
+}
+
+.u47 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:259px;
+    height:54px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u48 {
+    position:absolute;
+    left:112px;
+    top:506px;
+    width:150px;
+    height:13px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u49_normal {
+    background-image: url('../PhoneList_files/u35_normal.png');
+}
+
+.u49_container {
+    position:absolute;
+    left:112px;
+    top:736px;
+    width:263px;
+    height:72px;
+}
+
+#u49_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:269px;
+    height:78px;
+}
+
+.u50 {
+    position:absolute;
+    left:2px;
+    top:18px;
+    width:259px;
+    height:36px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u51 {
+    position:absolute;
+    left:112px;
+    top:828px;
+    width:150px;
+    height:13px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u52_normal {
+    background-image: url('../PhoneList_files/u35_normal.png');
+}
+
+.u52_container {
+    position:absolute;
+    left:414px;
+    top:736px;
+    width:263px;
+    height:72px;
+}
+
+#u52_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:269px;
+    height:78px;
+}
+
+.u53 {
+    position:absolute;
+    left:2px;
+    top:18px;
+    width:259px;
+    height:36px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u54 {
+    position:absolute;
+    left:414px;
+    top:828px;
+    width:150px;
+    height:13px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u55_normal {
+    background-image: url('../PhoneList_files/u35_normal.png');
+}
+
+.u55_container {
+    position:absolute;
+    left:714px;
+    top:736px;
+    width:263px;
+    height:72px;
+}
+
+#u55_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:269px;
+    height:78px;
+}
+
+.u56 {
+    position:absolute;
+    left:2px;
+    top:18px;
+    width:259px;
+    height:36px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u57 {
+    position:absolute;
+    left:714px;
+    top:828px;
+    width:150px;
+    height:13px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u58_normal {
+    background-image: url('../PhoneList_files/u35_normal.png');
+}
+
+.u58_container {
+    position:absolute;
+    left:1016px;
+    top:736px;
+    width:263px;
+    height:72px;
+}
+
+#u58_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:269px;
+    height:78px;
+}
+
+.u59 {
+    position:absolute;
+    left:2px;
+    top:18px;
+    width:259px;
+    height:36px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u60 {
+    position:absolute;
+    left:1016px;
+    top:828px;
+    width:150px;
+    height:13px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u61_normal {
+    background-image: url('../PhoneList_files/u61_normal.png');
+}
+
+.u61_container {
+    position:absolute;
+    left:317px;
+    top:486px;
+    width:54px;
+    height:45px;
+}
+
+#u61_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:54px;
+    height:45px;
+}
+
+.u62 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:50px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u63_normal {
+    background-image: url('../PhoneList_files/u61_normal.png');
+}
+
+.u63_container {
+    position:absolute;
+    left:623px;
+    top:486px;
+    width:54px;
+    height:45px;
+}
+
+#u63_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:54px;
+    height:45px;
+}
+
+.u64 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:50px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u65_normal {
+    background-image: url('../PhoneList_files/u61_normal.png');
+}
+
+.u65_container {
+    position:absolute;
+    left:923px;
+    top:488px;
+    width:54px;
+    height:45px;
+}
+
+#u65_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:54px;
+    height:45px;
+}
+
+.u66 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:50px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u67_normal {
+    background-image: url('../PhoneList_files/u61_normal.png');
+}
+
+.u67_container {
+    position:absolute;
+    left:1225px;
+    top:488px;
+    width:54px;
+    height:45px;
+}
+
+#u67_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:54px;
+    height:45px;
+}
+
+.u68 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:50px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u69_normal {
+    background-image: url('../PhoneList_files/u61_normal.png');
+}
+
+.u69_container {
+    position:absolute;
+    left:321px;
+    top:810px;
+    width:54px;
+    height:45px;
+}
+
+#u69_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:54px;
+    height:45px;
+}
+
+.u70 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:50px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u71_normal {
+    background-image: url('../PhoneList_files/u61_normal.png');
+}
+
+.u71_container {
+    position:absolute;
+    left:623px;
+    top:810px;
+    width:54px;
+    height:45px;
+}
+
+#u71_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:54px;
+    height:45px;
+}
+
+.u72 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:50px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u73_normal {
+    background-image: url('../PhoneList_files/u61_normal.png');
+}
+
+.u73_container {
+    position:absolute;
+    left:923px;
+    top:810px;
+    width:54px;
+    height:45px;
+}
+
+#u73_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:54px;
+    height:45px;
+}
+
+.u74 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:50px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u75_normal {
+    background-image: url('../PhoneList_files/u61_normal.png');
+}
+
+.u75_container {
+    position:absolute;
+    left:1225px;
+    top:810px;
+    width:54px;
+    height:45px;
+}
+
+#u75_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:54px;
+    height:45px;
+}
+
+.u76 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:50px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u77 {
+    position:absolute;
+    left:630px;
+    top:857px;
+    width:150px;
+    height:23px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u78_normal {
+    background-image: url('../PhoneList_files/u78_normal.png');
+}
+
+.u78_container {
+    position:absolute;
+    left:1301px;
+    top:332px;
+    width:64px;
+    height:64px;
+}
+
+#u78_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:64px;
+    height:64px;
+}
+
+.u79 {
+    position:absolute;
+    left:2px;
+    top:24px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u80_container {
+    position:absolute;
+    left:762px;
+    top:246px;
+    width:168px;
+    height:168px;
+}
+
+#u80_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:168px;
+    height:168px;
+}
+
+.u81 {
+    position:absolute;
+    left:2px;
+    top:76px;
+    width:164px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u82_container {
+    position:absolute;
+    left:1072px;
+    top:246px;
+    width:168px;
+    height:168px;
+}
+
+#u82_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:168px;
+    height:168px;
+}
+
+.u83 {
+    position:absolute;
+    left:2px;
+    top:76px;
+    width:164px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u84_container {
+    position:absolute;
+    left:762px;
+    top:568px;
+    width:168px;
+    height:168px;
+}
+
+#u84_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:168px;
+    height:168px;
+}
+
+.u85 {
+    position:absolute;
+    left:2px;
+    top:76px;
+    width:164px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u86_container {
+    position:absolute;
+    left:1068px;
+    top:568px;
+    width:168px;
+    height:168px;
+}
+
+#u86_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:168px;
+    height:168px;
+}
+
+.u87 {
+    position:absolute;
+    left:2px;
+    top:76px;
+    width:164px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u88_container {
+    position:absolute;
+    left:164px;
+    top:568px;
+    width:168px;
+    height:168px;
+}
+
+#u88_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:168px;
+    height:168px;
+}
+
+.u89 {
+    position:absolute;
+    left:2px;
+    top:76px;
+    width:164px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u90_container {
+    position:absolute;
+    left:470px;
+    top:568px;
+    width:168px;
+    height:168px;
+}
+
+#u90_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:168px;
+    height:168px;
+}
+
+.u91 {
+    position:absolute;
+    left:2px;
+    top:76px;
+    width:164px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u92_normal {
+    background-image: url('../PhoneList_files/u92_normal.png');
+}
+
+.u92_container {
+    position:absolute;
+    left:90px;
+    top:92px;
+    width:1278px;
+    height:64px;
+}
+
+#u92_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1284px;
+    height:70px;
+}
+
+.u93 {
+    position:absolute;
+    left:2px;
+    top:24px;
+    width:1274px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u94_normal {
+    background-image: url('../PhoneList_files/u94_normal.png');
+}
+
+.u94_container {
+    position:absolute;
+    left:1246px;
+    top:92px;
+    width:64px;
+    height:64px;
+}
+
+#u94_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:64px;
+    height:64px;
+}
+
+.u95 {
+    position:absolute;
+    left:2px;
+    top:24px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u96_container {
+    position:absolute;
+    left:1130px;
+    top:94px;
+    width:63px;
+    height:62px;
+}
+
+#u96_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:63px;
+    height:62px;
+}
+
+.u97 {
+    position:absolute;
+    left:2px;
+    top:23px;
+    width:59px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u98_container {
+    position:absolute;
+    left:90px;
+    top:92px;
+    width:161px;
+    height:64px;
+}
+
+#u98_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:161px;
+    height:64px;
+}
+
+.u99 {
+    position:absolute;
+    left:2px;
+    top:24px;
+    width:157px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u100 {
+    position:absolute;
+    left:90px;
+    top:228px;
+    width:1212px;
+    height:626px;
+    overflow:hidden;
+}
+
+#pd0u100 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1212px;
+    height:626px;
+    
+}
+
+.u101_normal {
+    background-image: url('../PhoneList_files/u101_normal.png');
+}
+
+.u101_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1208px;
+    height:624px;
+}
+
+#u101_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1214px;
+    height:630px;
+}
+
+.u102 {
+    position:absolute;
+    left:2px;
+    top:304px;
+    width:1204px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u103 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:1201px;
+    height:403px
+}
+
+.u104_normal {
+    background-image: url('../PhoneList_files/u104_normal.png');
+}
+
+.u104_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:296px;
+    height:34px;
+}
+
+#u104_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:302px;
+    height:40px;
+}
+
+.u105 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:292px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u106_normal {
+    background-image: url('../PhoneList_files/u106_normal.png');
+}
+
+.u106_container {
+    position:absolute;
+    left:296px;
+    top:0px;
+    width:300px;
+    height:34px;
+}
+
+#u106_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:306px;
+    height:40px;
+}
+
+.u107 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:296px;
+    height:23px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u108_normal {
+    background-image: url('../PhoneList_files/u108_normal.png');
+}
+
+.u108_container {
+    position:absolute;
+    left:596px;
+    top:0px;
+    width:304px;
+    height:34px;
+}
+
+#u108_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:310px;
+    height:40px;
+}
+
+.u109 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:300px;
+    height:23px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u110_normal {
+    background-image: url('../PhoneList_files/u104_normal.png');
+}
+
+.u110_container {
+    position:absolute;
+    left:900px;
+    top:0px;
+    width:296px;
+    height:34px;
+}
+
+#u110_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:302px;
+    height:40px;
+}
+
+.u111 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:292px;
+    height:23px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u112_normal {
+    background-image: url('../PhoneList_files/u112_normal.png');
+}
+
+.u112_container {
+    position:absolute;
+    left:0px;
+    top:34px;
+    width:296px;
+    height:26px;
+}
+
+#u112_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:302px;
+    height:32px;
+}
+
+.u113 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:292px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u114_normal {
+    background-image: url('../PhoneList_files/u114_normal.png');
+}
+
+.u114_container {
+    position:absolute;
+    left:296px;
+    top:34px;
+    width:300px;
+    height:26px;
+}
+
+#u114_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:306px;
+    height:32px;
+}
+
+.u115 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:296px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u116_normal {
+    background-image: url('../PhoneList_files/u116_normal.png');
+}
+
+.u116_container {
+    position:absolute;
+    left:596px;
+    top:34px;
+    width:304px;
+    height:26px;
+}
+
+#u116_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:310px;
+    height:32px;
+}
+
+.u117 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:300px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u118_normal {
+    background-image: url('../PhoneList_files/u112_normal.png');
+}
+
+.u118_container {
+    position:absolute;
+    left:900px;
+    top:34px;
+    width:296px;
+    height:26px;
+}
+
+#u118_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:302px;
+    height:32px;
+}
+
+.u119 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:292px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u120_normal {
+    background-image: url('../PhoneList_files/u120_normal.png');
+}
+
+.u120_container {
+    position:absolute;
+    left:0px;
+    top:60px;
+    width:296px;
+    height:32px;
+}
+
+#u120_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:302px;
+    height:38px;
+}
+
+.u121 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:292px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u122_normal {
+    background-image: url('../PhoneList_files/u122_normal.png');
+}
+
+.u122_container {
+    position:absolute;
+    left:296px;
+    top:60px;
+    width:300px;
+    height:32px;
+}
+
+#u122_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:306px;
+    height:38px;
+}
+
+.u123 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:296px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u124_normal {
+    background-image: url('../PhoneList_files/u124_normal.png');
+}
+
+.u124_container {
+    position:absolute;
+    left:596px;
+    top:60px;
+    width:304px;
+    height:32px;
+}
+
+#u124_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:310px;
+    height:38px;
+}
+
+.u125 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:300px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u126_normal {
+    background-image: url('../PhoneList_files/u120_normal.png');
+}
+
+.u126_container {
+    position:absolute;
+    left:900px;
+    top:60px;
+    width:296px;
+    height:32px;
+}
+
+#u126_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:302px;
+    height:38px;
+}
+
+.u127 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:292px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u128_normal {
+    background-image: url('../PhoneList_files/u128_normal.png');
+}
+
+.u128_container {
+    position:absolute;
+    left:0px;
+    top:92px;
+    width:296px;
+    height:30px;
+}
+
+#u128_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:302px;
+    height:36px;
+}
+
+.u129 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:292px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u130_normal {
+    background-image: url('../PhoneList_files/u130_normal.png');
+}
+
+.u130_container {
+    position:absolute;
+    left:296px;
+    top:92px;
+    width:300px;
+    height:30px;
+}
+
+#u130_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:306px;
+    height:36px;
+}
+
+.u131 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:296px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u132_normal {
+    background-image: url('../PhoneList_files/u132_normal.png');
+}
+
+.u132_container {
+    position:absolute;
+    left:596px;
+    top:92px;
+    width:304px;
+    height:30px;
+}
+
+#u132_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:310px;
+    height:36px;
+}
+
+.u133 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:300px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u134_normal {
+    background-image: url('../PhoneList_files/u128_normal.png');
+}
+
+.u134_container {
+    position:absolute;
+    left:900px;
+    top:92px;
+    width:296px;
+    height:30px;
+}
+
+#u134_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:302px;
+    height:36px;
+}
+
+.u135 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:292px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u136_normal {
+    background-image: url('../PhoneList_files/u136_normal.png');
+}
+
+.u136_container {
+    position:absolute;
+    left:0px;
+    top:122px;
+    width:296px;
+    height:28px;
+}
+
+#u136_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:302px;
+    height:34px;
+}
+
+.u137 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:292px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u138_normal {
+    background-image: url('../PhoneList_files/u138_normal.png');
+}
+
+.u138_container {
+    position:absolute;
+    left:296px;
+    top:122px;
+    width:300px;
+    height:28px;
+}
+
+#u138_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:306px;
+    height:34px;
+}
+
+.u139 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:296px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u140_normal {
+    background-image: url('../PhoneList_files/u140_normal.png');
+}
+
+.u140_container {
+    position:absolute;
+    left:596px;
+    top:122px;
+    width:304px;
+    height:28px;
+}
+
+#u140_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:310px;
+    height:34px;
+}
+
+.u141 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:300px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u142_normal {
+    background-image: url('../PhoneList_files/u136_normal.png');
+}
+
+.u142_container {
+    position:absolute;
+    left:900px;
+    top:122px;
+    width:296px;
+    height:28px;
+}
+
+#u142_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:302px;
+    height:34px;
+}
+
+.u143 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:292px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u144_normal {
+    background-image: url('../PhoneList_files/u136_normal.png');
+}
+
+.u144_container {
+    position:absolute;
+    left:0px;
+    top:150px;
+    width:296px;
+    height:28px;
+}
+
+#u144_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:302px;
+    height:34px;
+}
+
+.u145 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:292px;
+    height:23px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u146_normal {
+    background-image: url('../PhoneList_files/u138_normal.png');
+}
+
+.u146_container {
+    position:absolute;
+    left:296px;
+    top:150px;
+    width:300px;
+    height:28px;
+}
+
+#u146_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:306px;
+    height:34px;
+}
+
+.u147 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:296px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u148_normal {
+    background-image: url('../PhoneList_files/u140_normal.png');
+}
+
+.u148_container {
+    position:absolute;
+    left:596px;
+    top:150px;
+    width:304px;
+    height:28px;
+}
+
+#u148_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:310px;
+    height:34px;
+}
+
+.u149 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:300px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u150_normal {
+    background-image: url('../PhoneList_files/u136_normal.png');
+}
+
+.u150_container {
+    position:absolute;
+    left:900px;
+    top:150px;
+    width:296px;
+    height:28px;
+}
+
+#u150_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:302px;
+    height:34px;
+}
+
+.u151 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:292px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u152_normal {
+    background-image: url('../PhoneList_files/u104_normal.png');
+}
+
+.u152_container {
+    position:absolute;
+    left:0px;
+    top:178px;
+    width:296px;
+    height:34px;
+}
+
+#u152_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:302px;
+    height:40px;
+}
+
+.u153 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:292px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u154_normal {
+    background-image: url('../PhoneList_files/u106_normal.png');
+}
+
+.u154_container {
+    position:absolute;
+    left:296px;
+    top:178px;
+    width:300px;
+    height:34px;
+}
+
+#u154_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:306px;
+    height:40px;
+}
+
+.u155 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:296px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u156_normal {
+    background-image: url('../PhoneList_files/u108_normal.png');
+}
+
+.u156_container {
+    position:absolute;
+    left:596px;
+    top:178px;
+    width:304px;
+    height:34px;
+}
+
+#u156_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:310px;
+    height:40px;
+}
+
+.u157 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:300px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u158_normal {
+    background-image: url('../PhoneList_files/u104_normal.png');
+}
+
+.u158_container {
+    position:absolute;
+    left:900px;
+    top:178px;
+    width:296px;
+    height:34px;
+}
+
+#u158_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:302px;
+    height:40px;
+}
+
+.u159 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:292px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u160_normal {
+    background-image: url('../PhoneList_files/u160_normal.png');
+}
+
+.u160_container {
+    position:absolute;
+    left:0px;
+    top:212px;
+    width:296px;
+    height:36px;
+}
+
+#u160_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:302px;
+    height:42px;
+}
+
+.u161 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:292px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u162_normal {
+    background-image: url('../PhoneList_files/u162_normal.png');
+}
+
+.u162_container {
+    position:absolute;
+    left:296px;
+    top:212px;
+    width:300px;
+    height:36px;
+}
+
+#u162_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:306px;
+    height:42px;
+}
+
+.u163 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:296px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u164_normal {
+    background-image: url('../PhoneList_files/u164_normal.png');
+}
+
+.u164_container {
+    position:absolute;
+    left:596px;
+    top:212px;
+    width:304px;
+    height:36px;
+}
+
+#u164_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:310px;
+    height:42px;
+}
+
+.u165 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:300px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u166_normal {
+    background-image: url('../PhoneList_files/u160_normal.png');
+}
+
+.u166_container {
+    position:absolute;
+    left:900px;
+    top:212px;
+    width:296px;
+    height:36px;
+}
+
+#u166_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:302px;
+    height:42px;
+}
+
+.u167 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:292px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u168_normal {
+    background-image: url('../PhoneList_files/u128_normal.png');
+}
+
+.u168_container {
+    position:absolute;
+    left:0px;
+    top:248px;
+    width:296px;
+    height:30px;
+}
+
+#u168_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:302px;
+    height:36px;
+}
+
+.u169 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:292px;
+    height:23px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u170_normal {
+    background-image: url('../PhoneList_files/u130_normal.png');
+}
+
+.u170_container {
+    position:absolute;
+    left:296px;
+    top:248px;
+    width:300px;
+    height:30px;
+}
+
+#u170_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:306px;
+    height:36px;
+}
+
+.u171 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:296px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u172_normal {
+    background-image: url('../PhoneList_files/u132_normal.png');
+}
+
+.u172_container {
+    position:absolute;
+    left:596px;
+    top:248px;
+    width:304px;
+    height:30px;
+}
+
+#u172_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:310px;
+    height:36px;
+}
+
+.u173 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:300px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u174_normal {
+    background-image: url('../PhoneList_files/u128_normal.png');
+}
+
+.u174_container {
+    position:absolute;
+    left:900px;
+    top:248px;
+    width:296px;
+    height:30px;
+}
+
+#u174_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:302px;
+    height:36px;
+}
+
+.u175 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:292px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u176_normal {
+    background-image: url('../PhoneList_files/u128_normal.png');
+}
+
+.u176_container {
+    position:absolute;
+    left:0px;
+    top:278px;
+    width:296px;
+    height:30px;
+}
+
+#u176_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:302px;
+    height:36px;
+}
+
+.u177 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:292px;
+    height:23px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u178_normal {
+    background-image: url('../PhoneList_files/u130_normal.png');
+}
+
+.u178_container {
+    position:absolute;
+    left:296px;
+    top:278px;
+    width:300px;
+    height:30px;
+}
+
+#u178_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:306px;
+    height:36px;
+}
+
+.u179 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:296px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u180_normal {
+    background-image: url('../PhoneList_files/u132_normal.png');
+}
+
+.u180_container {
+    position:absolute;
+    left:596px;
+    top:278px;
+    width:304px;
+    height:30px;
+}
+
+#u180_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:310px;
+    height:36px;
+}
+
+.u181 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:300px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u182_normal {
+    background-image: url('../PhoneList_files/u128_normal.png');
+}
+
+.u182_container {
+    position:absolute;
+    left:900px;
+    top:278px;
+    width:296px;
+    height:30px;
+}
+
+#u182_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:302px;
+    height:36px;
+}
+
+.u183 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:292px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u184_normal {
+    background-image: url('../PhoneList_files/u128_normal.png');
+}
+
+.u184_container {
+    position:absolute;
+    left:0px;
+    top:308px;
+    width:296px;
+    height:30px;
+}
+
+#u184_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:302px;
+    height:36px;
+}
+
+.u185 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:292px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u186_normal {
+    background-image: url('../PhoneList_files/u130_normal.png');
+}
+
+.u186_container {
+    position:absolute;
+    left:296px;
+    top:308px;
+    width:300px;
+    height:30px;
+}
+
+#u186_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:306px;
+    height:36px;
+}
+
+.u187 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:296px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u188_normal {
+    background-image: url('../PhoneList_files/u132_normal.png');
+}
+
+.u188_container {
+    position:absolute;
+    left:596px;
+    top:308px;
+    width:304px;
+    height:30px;
+}
+
+#u188_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:310px;
+    height:36px;
+}
+
+.u189 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:300px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u190_normal {
+    background-image: url('../PhoneList_files/u128_normal.png');
+}
+
+.u190_container {
+    position:absolute;
+    left:900px;
+    top:308px;
+    width:296px;
+    height:30px;
+}
+
+#u190_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:302px;
+    height:36px;
+}
+
+.u191 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:292px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u192_normal {
+    background-image: url('../PhoneList_files/u128_normal.png');
+}
+
+.u192_container {
+    position:absolute;
+    left:0px;
+    top:338px;
+    width:296px;
+    height:30px;
+}
+
+#u192_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:302px;
+    height:36px;
+}
+
+.u193 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:292px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u194_normal {
+    background-image: url('../PhoneList_files/u130_normal.png');
+}
+
+.u194_container {
+    position:absolute;
+    left:296px;
+    top:338px;
+    width:300px;
+    height:30px;
+}
+
+#u194_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:306px;
+    height:36px;
+}
+
+.u195 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:296px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u196_normal {
+    background-image: url('../PhoneList_files/u132_normal.png');
+}
+
+.u196_container {
+    position:absolute;
+    left:596px;
+    top:338px;
+    width:304px;
+    height:30px;
+}
+
+#u196_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:310px;
+    height:36px;
+}
+
+.u197 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:300px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u198_normal {
+    background-image: url('../PhoneList_files/u128_normal.png');
+}
+
+.u198_container {
+    position:absolute;
+    left:900px;
+    top:338px;
+    width:296px;
+    height:30px;
+}
+
+#u198_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:302px;
+    height:36px;
+}
+
+.u199 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:292px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u200_normal {
+    background-image: url('../PhoneList_files/u128_normal.png');
+}
+
+.u200_container {
+    position:absolute;
+    left:0px;
+    top:368px;
+    width:296px;
+    height:30px;
+}
+
+#u200_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:302px;
+    height:36px;
+}
+
+.u201 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:292px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u202_normal {
+    background-image: url('../PhoneList_files/u130_normal.png');
+}
+
+.u202_container {
+    position:absolute;
+    left:296px;
+    top:368px;
+    width:300px;
+    height:30px;
+}
+
+#u202_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:306px;
+    height:36px;
+}
+
+.u203 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:296px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u204_normal {
+    background-image: url('../PhoneList_files/u132_normal.png');
+}
+
+.u204_container {
+    position:absolute;
+    left:596px;
+    top:368px;
+    width:304px;
+    height:30px;
+}
+
+#u204_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:310px;
+    height:36px;
+}
+
+.u205 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:300px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u206_normal {
+    background-image: url('../PhoneList_files/u128_normal.png');
+}
+
+.u206_container {
+    position:absolute;
+    left:900px;
+    top:368px;
+    width:296px;
+    height:30px;
+}
+
+#u206_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:302px;
+    height:36px;
+}
+
+.u207 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:292px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u208_normal {
+    background-image: url('../PhoneList_files/u208_normal.png');
+}
+
+.u208_container {
+    position:absolute;
+    left:449px;
+    top:408px;
+    width:150px;
+    height:80px;
+}
+
+#u208_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:156px;
+    height:86px;
+}
+
+.u209 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:146px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u210_normal {
+    background-image: url('../PhoneList_files/u208_normal.png');
+}
+
+.u210_container {
+    position:absolute;
+    left:298px;
+    top:408px;
+    width:150px;
+    height:80px;
+}
+
+#u210_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:156px;
+    height:86px;
+}
+
+.u211 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:146px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u212_normal {
+    background-image: url('../PhoneList_files/u208_normal.png');
+}
+
+.u212_container {
+    position:absolute;
+    left:750px;
+    top:408px;
+    width:150px;
+    height:80px;
+}
+
+#u212_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:156px;
+    height:86px;
+}
+
+.u213 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:146px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u214_normal {
+    background-image: url('../PhoneList_files/u208_normal.png');
+}
+
+.u214_container {
+    position:absolute;
+    left:599px;
+    top:408px;
+    width:150px;
+    height:80px;
+}
+
+#u214_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:156px;
+    height:86px;
+}
+
+.u215 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:146px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u216_normal {
+    background-image: url('../PhoneList_files/u208_normal.png');
+}
+
+.u216_container {
+    position:absolute;
+    left:1051px;
+    top:408px;
+    width:150px;
+    height:80px;
+}
+
+#u216_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:156px;
+    height:86px;
+}
+
+.u217 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:146px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u218_normal {
+    background-image: url('../PhoneList_files/u208_normal.png');
+}
+
+.u218_container {
+    position:absolute;
+    left:900px;
+    top:408px;
+    width:150px;
+    height:80px;
+}
+
+#u218_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:156px;
+    height:86px;
+}
+
+.u219 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:146px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

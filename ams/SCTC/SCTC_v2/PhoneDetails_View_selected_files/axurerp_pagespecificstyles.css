@@ -1,0 +1,1178 @@
+﻿body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../PhoneDetails_View_selected_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1450px;
+    height:977px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1450px;
+    height:977px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:480px;
+    width:1446px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../PhoneDetails_View_selected_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:86px;
+    top:158px;
+    width:1277px;
+    height:80px;
+}
+
+#u2_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1283px;
+    height:86px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:32px;
+    width:1273px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_normal {
+    background-image: url('../PhoneDetails_View_selected_files/u4_normal.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:90px;
+    top:158px;
+    width:612px;
+    height:80px;
+}
+
+#u4_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:618px;
+    height:86px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:32px;
+    width:608px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6_container {
+    position:absolute;
+    left:620px;
+    top:256px;
+    width:244px;
+    height:234px;
+}
+
+#u6_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:244px;
+    height:234px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:109px;
+    width:240px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8_container {
+    position:absolute;
+    left:901px;
+    top:256px;
+    width:244px;
+    height:234px;
+}
+
+#u8_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:244px;
+    height:234px;
+}
+
+.u9 {
+    position:absolute;
+    left:2px;
+    top:109px;
+    width:240px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u10_container {
+    position:absolute;
+    left:620px;
+    top:496px;
+    width:244px;
+    height:234px;
+}
+
+#u10_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:244px;
+    height:234px;
+}
+
+.u11 {
+    position:absolute;
+    left:2px;
+    top:109px;
+    width:240px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u12_container {
+    position:absolute;
+    left:900px;
+    top:496px;
+    width:244px;
+    height:234px;
+}
+
+#u12_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:244px;
+    height:234px;
+}
+
+.u13 {
+    position:absolute;
+    left:2px;
+    top:109px;
+    width:240px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u14 {
+    position:absolute;
+    left:111px;
+    top:176px;
+    width:646px;
+    height:46px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u15_normal {
+    background-image: url('../PhoneDetails_View_selected_files/u15_normal.png');
+}
+
+.u15_container {
+    position:absolute;
+    left:1026px;
+    top:158px;
+    width:84px;
+    height:80px;
+}
+
+#u15_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:90px;
+    height:86px;
+}
+
+.u16 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:80px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u17_normal {
+    background-image: url('../PhoneDetails_View_selected_files/u15_normal.png');
+}
+
+.u17_container {
+    position:absolute;
+    left:1110px;
+    top:158px;
+    width:84px;
+    height:80px;
+}
+
+#u17_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:90px;
+    height:86px;
+}
+
+.u18 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:80px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u19_normal {
+    background-image: url('../PhoneDetails_View_selected_files/u15_normal.png');
+}
+
+.u19_container {
+    position:absolute;
+    left:1193px;
+    top:158px;
+    width:84px;
+    height:80px;
+}
+
+#u19_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:90px;
+    height:86px;
+}
+
+.u20 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:80px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u21_normal {
+    background-image: url('../PhoneDetails_View_selected_files/u15_normal.png');
+}
+
+.u21_container {
+    position:absolute;
+    left:1278px;
+    top:158px;
+    width:84px;
+    height:80px;
+}
+
+#u21_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:90px;
+    height:86px;
+}
+
+.u22 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:80px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u23_normal {
+    background-image: url('../PhoneDetails_View_selected_files/u23_normal.png');
+}
+
+.u23_container {
+    position:absolute;
+    left:1290px;
+    top:839px;
+    width:74px;
+    height:48px;
+}
+
+#u23_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:80px;
+    height:54px;
+}
+
+.u24 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:70px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u25 {
+    position:absolute;
+    left:1083px;
+    top:252px;
+    width:280px;
+    height:590px;
+    overflow:hidden;
+}
+
+#pd0u25 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:280px;
+    height:590px;
+    
+}
+
+.u26_normal {
+    background-image: url('../PhoneDetails_View_selected_files/u26_normal.png');
+}
+
+.u26_container {
+    position:absolute;
+    left:15px;
+    top:0px;
+    width:238px;
+    height:289px;
+}
+
+#u26_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:244px;
+    height:295px;
+}
+
+.u27 {
+    position:absolute;
+    left:2px;
+    top:136px;
+    width:234px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u28_container {
+    position:absolute;
+    left:43px;
+    top:6px;
+    width:177px;
+    height:171px;
+}
+
+#u28_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:177px;
+    height:171px;
+}
+
+.u29 {
+    position:absolute;
+    left:2px;
+    top:78px;
+    width:173px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u30_normal {
+    background-image: url('../PhoneDetails_View_selected_files/u30_normal.png');
+}
+
+.u30_container {
+    position:absolute;
+    left:26px;
+    top:177px;
+    width:210px;
+    height:59px;
+}
+
+#u30_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:216px;
+    height:65px;
+}
+
+.u31 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:206px;
+    height:54px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u32 {
+    position:absolute;
+    left:33px;
+    top:254px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u33_normal {
+    background-image: url('../PhoneDetails_View_selected_files/u26_normal.png');
+}
+
+.u33_container {
+    position:absolute;
+    left:15px;
+    top:298px;
+    width:238px;
+    height:289px;
+}
+
+#u33_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:244px;
+    height:295px;
+}
+
+.u34 {
+    position:absolute;
+    left:2px;
+    top:136px;
+    width:234px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u35_container {
+    position:absolute;
+    left:43px;
+    top:304px;
+    width:181px;
+    height:153px;
+}
+
+#u35_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:181px;
+    height:153px;
+}
+
+.u36 {
+    position:absolute;
+    left:2px;
+    top:68px;
+    width:177px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u37_normal {
+    background-image: url('../PhoneDetails_View_selected_files/u37_normal.png');
+}
+
+.u37_container {
+    position:absolute;
+    left:26px;
+    top:466px;
+    width:210px;
+    height:77px;
+}
+
+#u37_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:216px;
+    height:83px;
+}
+
+.u38 {
+    position:absolute;
+    left:2px;
+    top:-2px;
+    width:206px;
+    height:80px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u39 {
+    position:absolute;
+    left:45px;
+    top:553px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u40_normal {
+    background-image: url('../PhoneDetails_View_selected_files/u40_normal.png');
+}
+
+.u40_container {
+    position:absolute;
+    left:1216px;
+    top:841px;
+    width:64px;
+    height:48px;
+}
+
+#u40_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:64px;
+    height:48px;
+}
+
+.u41 {
+    position:absolute;
+    left:2px;
+    top:16px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u42_normal {
+    background-image: url('../PhoneDetails_View_selected_files/u42_normal.png');
+}
+
+.u42_container {
+    position:absolute;
+    left:90px;
+    top:92px;
+    width:1278px;
+    height:64px;
+}
+
+#u42_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1284px;
+    height:70px;
+}
+
+.u43 {
+    position:absolute;
+    left:2px;
+    top:24px;
+    width:1274px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u44_normal {
+    background-image: url('../PhoneDetails_View_selected_files/u44_normal.png');
+}
+
+.u44_container {
+    position:absolute;
+    left:1246px;
+    top:92px;
+    width:64px;
+    height:64px;
+}
+
+#u44_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:64px;
+    height:64px;
+}
+
+.u45 {
+    position:absolute;
+    left:2px;
+    top:24px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u46_container {
+    position:absolute;
+    left:1130px;
+    top:94px;
+    width:63px;
+    height:62px;
+}
+
+#u46_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:63px;
+    height:62px;
+}
+
+.u47 {
+    position:absolute;
+    left:2px;
+    top:23px;
+    width:59px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u48 {
+    position:absolute;
+    left:174px;
+    top:739px;
+    width:135px;
+    height:44px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#FF9900;
+    font-style:normal;
+    font-weight:bold;
+    text-decoration:none;
+    
+}
+
+.u49 {
+    position:absolute;
+    left:300px;
+    top:385px;
+    width:89px;
+    height:60px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#999999;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u50 {
+    position:absolute;
+    left:300px;
+    top:315px;
+    width:89px;
+    height:60px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#999999;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u51 {
+    position:absolute;
+    left:424px;
+    top:388px;
+    width:89px;
+    height:60px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#999999;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u52 {
+    position:absolute;
+    left:424px;
+    top:315px;
+    width:89px;
+    height:60px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#999999;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u53 {
+    position:absolute;
+    left:300px;
+    top:458px;
+    width:89px;
+    height:60px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#999999;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u54_container {
+    position:absolute;
+    left:90px;
+    top:92px;
+    width:161px;
+    height:64px;
+}
+
+#u54_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:161px;
+    height:64px;
+}
+
+.u55 {
+    position:absolute;
+    left:2px;
+    top:24px;
+    width:157px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u56 {
+    position:absolute;
+    left:424px;
+    top:458px;
+    width:89px;
+    height:60px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#999999;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u57 {
+    position:absolute;
+    left:718px;
+    top:170px;
+    width:298px;
+    height:61px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u58_normal {
+    background-image: url('../PhoneDetails_View_selected_files/u58_normal.png');
+}
+
+.u58_container {
+    position:absolute;
+    left:90px;
+    top:256px;
+    width:173px;
+    height:46px;
+}
+
+#u58_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:179px;
+    height:52px;
+}
+
+.u59 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:169px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u60_normal {
+    background-image: url('../PhoneDetails_View_selected_files/u58_normal.png');
+}
+
+.u60_container {
+    position:absolute;
+    left:90px;
+    top:550px;
+    width:173px;
+    height:46px;
+}
+
+#u60_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:179px;
+    height:52px;
+}
+
+.u61 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:169px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u62_normal {
+    background-image: url('../PhoneDetails_View_selected_files/u62_normal.png');
+}
+
+.u62_container {
+    position:absolute;
+    left:174px;
+    top:618px;
+    width:339px;
+    height:46px;
+}
+
+#u62_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:345px;
+    height:52px;
+}
+
+.u63 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:335px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u64_normal {
+    background-image: url('../PhoneDetails_View_selected_files/u64_normal.png');
+}
+
+.u64_container {
+    position:absolute;
+    left:174px;
+    top:315px;
+    width:89px;
+    height:60px;
+}
+
+#u64_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:95px;
+    height:66px;
+}
+
+.u65 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:85px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u66_normal {
+    background-image: url('../PhoneDetails_View_selected_files/u64_normal.png');
+}
+
+.u66_container {
+    position:absolute;
+    left:174px;
+    top:385px;
+    width:89px;
+    height:60px;
+}
+
+#u66_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:95px;
+    height:66px;
+}
+
+.u67 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:85px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u68_normal {
+    background-image: url('../PhoneDetails_View_selected_files/u64_normal.png');
+}
+
+.u68_container {
+    position:absolute;
+    left:174px;
+    top:459px;
+    width:89px;
+    height:60px;
+}
+
+#u68_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:95px;
+    height:66px;
+}
+
+.u69 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:85px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

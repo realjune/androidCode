@@ -1,0 +1,2234 @@
+﻿body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../PhoneDetails_Course_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1450px;
+    height:977px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1450px;
+    height:977px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:480px;
+    width:1446px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2 {
+    position:absolute;
+    left:306px;
+    top:280px;
+    width:72px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u3 {
+    position:absolute;
+    left:400px;
+    top:280px;
+    width:147px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u4 {
+    position:absolute;
+    left:567px;
+    top:280px;
+    width:147px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u5 {
+    position:absolute;
+    left:735px;
+    top:280px;
+    width:147px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u6 {
+    position:absolute;
+    left:112px;
+    top:283px;
+    width:150px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u7 {
+    position:absolute;
+    left:306px;
+    top:342px;
+    width:72px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u8 {
+    position:absolute;
+    left:400px;
+    top:342px;
+    width:147px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u9 {
+    position:absolute;
+    left:567px;
+    top:342px;
+    width:147px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u10 {
+    position:absolute;
+    left:735px;
+    top:342px;
+    width:147px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u11 {
+    position:absolute;
+    left:112px;
+    top:345px;
+    width:150px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u12 {
+    position:absolute;
+    left:306px;
+    top:397px;
+    width:72px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u13 {
+    position:absolute;
+    left:400px;
+    top:397px;
+    width:147px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u14 {
+    position:absolute;
+    left:567px;
+    top:397px;
+    width:147px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u15 {
+    position:absolute;
+    left:735px;
+    top:397px;
+    width:147px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u16 {
+    position:absolute;
+    left:112px;
+    top:400px;
+    width:168px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u17 {
+    position:absolute;
+    left:905px;
+    top:397px;
+    width:147px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+#u18 {
+    position:absolute;
+    left:212px;
+    top:432px;
+    width:1087px;
+    height:244px
+}
+
+.u19_normal {
+    background-image: url('../PhoneDetails_Course_files/u19_normal.png');
+}
+
+.u19_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100px;
+    height:44px;
+}
+
+#u19_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:50px;
+}
+
+.u20 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:96px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u21_normal {
+    background-image: url('../PhoneDetails_Course_files/u21_normal.png');
+}
+
+.u21_container {
+    position:absolute;
+    left:100px;
+    top:0px;
+    width:60px;
+    height:44px;
+}
+
+#u21_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:66px;
+    height:50px;
+}
+
+.u22 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:56px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u23_normal {
+    background-image: url('../PhoneDetails_Course_files/u23_normal.png');
+}
+
+.u23_container {
+    position:absolute;
+    left:160px;
+    top:0px;
+    width:82px;
+    height:44px;
+}
+
+#u23_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:88px;
+    height:50px;
+}
+
+.u24 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:78px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u25_normal {
+    background-image: url('../PhoneDetails_Course_files/u25_normal.png');
+}
+
+.u25_container {
+    position:absolute;
+    left:242px;
+    top:0px;
+    width:152px;
+    height:44px;
+}
+
+#u25_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:158px;
+    height:50px;
+}
+
+.u26 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:148px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u27_normal {
+    background-image: url('../PhoneDetails_Course_files/u27_normal.png');
+}
+
+.u27_container {
+    position:absolute;
+    left:394px;
+    top:0px;
+    width:58px;
+    height:44px;
+}
+
+#u27_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:64px;
+    height:50px;
+}
+
+.u28 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:54px;
+    height:40px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u29_normal {
+    background-image: url('../PhoneDetails_Course_files/u29_normal.png');
+}
+
+.u29_container {
+    position:absolute;
+    left:452px;
+    top:0px;
+    width:44px;
+    height:44px;
+}
+
+#u29_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:50px;
+    height:50px;
+}
+
+.u30 {
+    position:absolute;
+    left:2px;
+    top:3px;
+    width:40px;
+    height:38px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u31_normal {
+    background-image: url('../PhoneDetails_Course_files/u31_normal.png');
+}
+
+.u31_container {
+    position:absolute;
+    left:496px;
+    top:0px;
+    width:52px;
+    height:44px;
+}
+
+#u31_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:58px;
+    height:50px;
+}
+
+.u32 {
+    position:absolute;
+    left:2px;
+    top:3px;
+    width:48px;
+    height:38px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u33_normal {
+    background-image: url('../PhoneDetails_Course_files/u33_normal.png');
+}
+
+.u33_container {
+    position:absolute;
+    left:548px;
+    top:0px;
+    width:226px;
+    height:44px;
+}
+
+#u33_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:232px;
+    height:50px;
+}
+
+.u34 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:222px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u35_normal {
+    background-image: url('../PhoneDetails_Course_files/u35_normal.png');
+}
+
+.u35_container {
+    position:absolute;
+    left:774px;
+    top:0px;
+    width:126px;
+    height:44px;
+}
+
+#u35_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:132px;
+    height:50px;
+}
+
+.u36 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:122px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u37_normal {
+    background-image: url('../PhoneDetails_Course_files/u37_normal.png');
+}
+
+.u37_container {
+    position:absolute;
+    left:900px;
+    top:0px;
+    width:64px;
+    height:44px;
+}
+
+#u37_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:70px;
+    height:50px;
+}
+
+.u38 {
+    position:absolute;
+    left:2px;
+    top:3px;
+    width:60px;
+    height:38px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u39_normal {
+    background-image: url('../PhoneDetails_Course_files/u39_normal.png');
+}
+
+.u39_container {
+    position:absolute;
+    left:964px;
+    top:0px;
+    width:118px;
+    height:44px;
+}
+
+#u39_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:124px;
+    height:50px;
+}
+
+.u40 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:114px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u41_normal {
+    background-image: url('../PhoneDetails_Course_files/u41_normal.png');
+}
+
+.u41_container {
+    position:absolute;
+    left:0px;
+    top:44px;
+    width:100px;
+    height:65px;
+}
+
+#u41_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:71px;
+}
+
+.u42 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:96px;
+    height:40px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u43_normal {
+    background-image: url('../PhoneDetails_Course_files/u43_normal.png');
+}
+
+.u43_container {
+    position:absolute;
+    left:100px;
+    top:44px;
+    width:60px;
+    height:65px;
+}
+
+#u43_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:66px;
+    height:71px;
+}
+
+.u44 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:56px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u45_normal {
+    background-image: url('../PhoneDetails_Course_files/u45_normal.png');
+}
+
+.u45_container {
+    position:absolute;
+    left:160px;
+    top:44px;
+    width:82px;
+    height:65px;
+}
+
+#u45_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:88px;
+    height:71px;
+}
+
+.u46 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:78px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u47_normal {
+    background-image: url('../PhoneDetails_Course_files/u47_normal.png');
+}
+
+.u47_container {
+    position:absolute;
+    left:242px;
+    top:44px;
+    width:152px;
+    height:65px;
+}
+
+#u47_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:158px;
+    height:71px;
+}
+
+.u48 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:148px;
+    height:61px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u49_normal {
+    background-image: url('../PhoneDetails_Course_files/u49_normal.png');
+}
+
+.u49_container {
+    position:absolute;
+    left:394px;
+    top:44px;
+    width:58px;
+    height:65px;
+}
+
+#u49_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:64px;
+    height:71px;
+}
+
+.u50 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:54px;
+    height:40px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u51_normal {
+    background-image: url('../PhoneDetails_Course_files/u51_normal.png');
+}
+
+.u51_container {
+    position:absolute;
+    left:452px;
+    top:44px;
+    width:44px;
+    height:65px;
+}
+
+#u51_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:50px;
+    height:71px;
+}
+
+.u52 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:40px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u53_normal {
+    background-image: url('../PhoneDetails_Course_files/u53_normal.png');
+}
+
+.u53_container {
+    position:absolute;
+    left:496px;
+    top:44px;
+    width:52px;
+    height:65px;
+}
+
+#u53_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:58px;
+    height:71px;
+}
+
+.u54 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:48px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u55_normal {
+    background-image: url('../PhoneDetails_Course_files/u55_normal.png');
+}
+
+.u55_container {
+    position:absolute;
+    left:548px;
+    top:44px;
+    width:226px;
+    height:65px;
+}
+
+#u55_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:232px;
+    height:71px;
+}
+
+.u56 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:222px;
+    height:61px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u57_normal {
+    background-image: url('../PhoneDetails_Course_files/u57_normal.png');
+}
+
+.u57_container {
+    position:absolute;
+    left:774px;
+    top:44px;
+    width:126px;
+    height:65px;
+}
+
+#u57_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:132px;
+    height:71px;
+}
+
+.u58 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:122px;
+    height:61px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u59_normal {
+    background-image: url('../PhoneDetails_Course_files/u59_normal.png');
+}
+
+.u59_container {
+    position:absolute;
+    left:900px;
+    top:44px;
+    width:64px;
+    height:65px;
+}
+
+#u59_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:70px;
+    height:71px;
+}
+
+.u60 {
+    position:absolute;
+    left:2px;
+    top:23px;
+    width:60px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u61_normal {
+    background-image: url('../PhoneDetails_Course_files/u61_normal.png');
+}
+
+.u61_container {
+    position:absolute;
+    left:964px;
+    top:44px;
+    width:118px;
+    height:65px;
+}
+
+#u61_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:124px;
+    height:71px;
+}
+
+.u62 {
+    position:absolute;
+    left:2px;
+    top:3px;
+    width:114px;
+    height:59px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u63_normal {
+    background-image: url('../PhoneDetails_Course_files/u41_normal.png');
+}
+
+.u63_container {
+    position:absolute;
+    left:0px;
+    top:109px;
+    width:100px;
+    height:65px;
+}
+
+#u63_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:71px;
+}
+
+.u64 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:96px;
+    height:40px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u65_normal {
+    background-image: url('../PhoneDetails_Course_files/u43_normal.png');
+}
+
+.u65_container {
+    position:absolute;
+    left:100px;
+    top:109px;
+    width:60px;
+    height:65px;
+}
+
+#u65_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:66px;
+    height:71px;
+}
+
+.u66 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:56px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u67_normal {
+    background-image: url('../PhoneDetails_Course_files/u45_normal.png');
+}
+
+.u67_container {
+    position:absolute;
+    left:160px;
+    top:109px;
+    width:82px;
+    height:65px;
+}
+
+#u67_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:88px;
+    height:71px;
+}
+
+.u68 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:78px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u69_normal {
+    background-image: url('../PhoneDetails_Course_files/u47_normal.png');
+}
+
+.u69_container {
+    position:absolute;
+    left:242px;
+    top:109px;
+    width:152px;
+    height:65px;
+}
+
+#u69_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:158px;
+    height:71px;
+}
+
+.u70 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:148px;
+    height:61px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u71_normal {
+    background-image: url('../PhoneDetails_Course_files/u49_normal.png');
+}
+
+.u71_container {
+    position:absolute;
+    left:394px;
+    top:109px;
+    width:58px;
+    height:65px;
+}
+
+#u71_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:64px;
+    height:71px;
+}
+
+.u72 {
+    position:absolute;
+    left:2px;
+    top:23px;
+    width:54px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u73_normal {
+    background-image: url('../PhoneDetails_Course_files/u51_normal.png');
+}
+
+.u73_container {
+    position:absolute;
+    left:452px;
+    top:109px;
+    width:44px;
+    height:65px;
+}
+
+#u73_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:50px;
+    height:71px;
+}
+
+.u74 {
+    position:absolute;
+    left:2px;
+    top:23px;
+    width:40px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u75_normal {
+    background-image: url('../PhoneDetails_Course_files/u53_normal.png');
+}
+
+.u75_container {
+    position:absolute;
+    left:496px;
+    top:109px;
+    width:52px;
+    height:65px;
+}
+
+#u75_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:58px;
+    height:71px;
+}
+
+.u76 {
+    position:absolute;
+    left:2px;
+    top:23px;
+    width:48px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u77_normal {
+    background-image: url('../PhoneDetails_Course_files/u55_normal.png');
+}
+
+.u77_container {
+    position:absolute;
+    left:548px;
+    top:109px;
+    width:226px;
+    height:65px;
+}
+
+#u77_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:232px;
+    height:71px;
+}
+
+.u78 {
+    position:absolute;
+    left:2px;
+    top:23px;
+    width:222px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u79_normal {
+    background-image: url('../PhoneDetails_Course_files/u57_normal.png');
+}
+
+.u79_container {
+    position:absolute;
+    left:774px;
+    top:109px;
+    width:126px;
+    height:65px;
+}
+
+#u79_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:132px;
+    height:71px;
+}
+
+.u80 {
+    position:absolute;
+    left:2px;
+    top:23px;
+    width:122px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u81_normal {
+    background-image: url('../PhoneDetails_Course_files/u59_normal.png');
+}
+
+.u81_container {
+    position:absolute;
+    left:900px;
+    top:109px;
+    width:64px;
+    height:65px;
+}
+
+#u81_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:70px;
+    height:71px;
+}
+
+.u82 {
+    position:absolute;
+    left:2px;
+    top:23px;
+    width:60px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u83_normal {
+    background-image: url('../PhoneDetails_Course_files/u61_normal.png');
+}
+
+.u83_container {
+    position:absolute;
+    left:964px;
+    top:109px;
+    width:118px;
+    height:65px;
+}
+
+#u83_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:124px;
+    height:71px;
+}
+
+.u84 {
+    position:absolute;
+    left:2px;
+    top:23px;
+    width:114px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u85_normal {
+    background-image: url('../PhoneDetails_Course_files/u85_normal.png');
+}
+
+.u85_container {
+    position:absolute;
+    left:0px;
+    top:174px;
+    width:100px;
+    height:71px;
+}
+
+#u85_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:77px;
+}
+
+.u86 {
+    position:absolute;
+    left:2px;
+    top:16px;
+    width:96px;
+    height:40px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u87_normal {
+    background-image: url('../PhoneDetails_Course_files/u87_normal.png');
+}
+
+.u87_container {
+    position:absolute;
+    left:100px;
+    top:174px;
+    width:60px;
+    height:71px;
+}
+
+#u87_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:66px;
+    height:77px;
+}
+
+.u88 {
+    position:absolute;
+    left:2px;
+    top:25px;
+    width:56px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u89_normal {
+    background-image: url('../PhoneDetails_Course_files/u89_normal.png');
+}
+
+.u89_container {
+    position:absolute;
+    left:160px;
+    top:174px;
+    width:82px;
+    height:71px;
+}
+
+#u89_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:88px;
+    height:77px;
+}
+
+.u90 {
+    position:absolute;
+    left:2px;
+    top:25px;
+    width:78px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u91_normal {
+    background-image: url('../PhoneDetails_Course_files/u91_normal.png');
+}
+
+.u91_container {
+    position:absolute;
+    left:242px;
+    top:174px;
+    width:152px;
+    height:71px;
+}
+
+#u91_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:158px;
+    height:77px;
+}
+
+.u92 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:148px;
+    height:61px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u93_normal {
+    background-image: url('../PhoneDetails_Course_files/u93_normal.png');
+}
+
+.u93_container {
+    position:absolute;
+    left:394px;
+    top:174px;
+    width:58px;
+    height:71px;
+}
+
+#u93_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:64px;
+    height:77px;
+}
+
+.u94 {
+    position:absolute;
+    left:2px;
+    top:26px;
+    width:54px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u95_normal {
+    background-image: url('../PhoneDetails_Course_files/u95_normal.png');
+}
+
+.u95_container {
+    position:absolute;
+    left:452px;
+    top:174px;
+    width:44px;
+    height:71px;
+}
+
+#u95_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:50px;
+    height:77px;
+}
+
+.u96 {
+    position:absolute;
+    left:2px;
+    top:26px;
+    width:40px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u97_normal {
+    background-image: url('../PhoneDetails_Course_files/u97_normal.png');
+}
+
+.u97_container {
+    position:absolute;
+    left:496px;
+    top:174px;
+    width:52px;
+    height:71px;
+}
+
+#u97_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:58px;
+    height:77px;
+}
+
+.u98 {
+    position:absolute;
+    left:2px;
+    top:26px;
+    width:48px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u99_normal {
+    background-image: url('../PhoneDetails_Course_files/u99_normal.png');
+}
+
+.u99_container {
+    position:absolute;
+    left:548px;
+    top:174px;
+    width:226px;
+    height:71px;
+}
+
+#u99_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:232px;
+    height:77px;
+}
+
+.u100 {
+    position:absolute;
+    left:2px;
+    top:26px;
+    width:222px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u101_normal {
+    background-image: url('../PhoneDetails_Course_files/u101_normal.png');
+}
+
+.u101_container {
+    position:absolute;
+    left:774px;
+    top:174px;
+    width:126px;
+    height:71px;
+}
+
+#u101_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:132px;
+    height:77px;
+}
+
+.u102 {
+    position:absolute;
+    left:2px;
+    top:26px;
+    width:122px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u103_normal {
+    background-image: url('../PhoneDetails_Course_files/u103_normal.png');
+}
+
+.u103_container {
+    position:absolute;
+    left:900px;
+    top:174px;
+    width:64px;
+    height:71px;
+}
+
+#u103_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:70px;
+    height:77px;
+}
+
+.u104 {
+    position:absolute;
+    left:2px;
+    top:26px;
+    width:60px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u105_normal {
+    background-image: url('../PhoneDetails_Course_files/u105_normal.png');
+}
+
+.u105_container {
+    position:absolute;
+    left:964px;
+    top:174px;
+    width:118px;
+    height:71px;
+}
+
+#u105_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:124px;
+    height:77px;
+}
+
+.u106 {
+    position:absolute;
+    left:2px;
+    top:26px;
+    width:114px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u107 {
+    position:absolute;
+    left:211px;
+    top:715px;
+    width:646px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u108_normal {
+    background-image: url('../PhoneDetails_Course_files/u108_normal.png');
+}
+
+.u108_container {
+    position:absolute;
+    left:211px;
+    top:811px;
+    width:1029px;
+    height:55px;
+}
+
+#u108_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1029px;
+    height:55px;
+}
+
+.u109 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:1025px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u110_normal {
+    background-image: url('../PhoneDetails_Course_files/u108_normal.png');
+}
+
+.u110_container {
+    position:absolute;
+    left:211px;
+    top:746px;
+    width:1029px;
+    height:55px;
+}
+
+#u110_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1029px;
+    height:55px;
+}
+
+.u111 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:1025px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u112 {
+    position:absolute;
+    left:89px;
+    top:486px;
+    width:113px;
+    height:44px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u113 {
+    position:absolute;
+    left:89px;
+    top:550px;
+    width:113px;
+    height:44px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u114 {
+    position:absolute;
+    left:89px;
+    top:617px;
+    width:113px;
+    height:44px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u115_normal {
+    background-image: url('../PhoneDetails_Course_files/u115_normal.png');
+}
+
+.u115_container {
+    position:absolute;
+    left:86px;
+    top:158px;
+    width:1277px;
+    height:80px;
+}
+
+#u115_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1283px;
+    height:86px;
+}
+
+.u116 {
+    position:absolute;
+    left:2px;
+    top:32px;
+    width:1273px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u117_normal {
+    background-image: url('../PhoneDetails_Course_files/u117_normal.png');
+}
+
+.u117_container {
+    position:absolute;
+    left:90px;
+    top:158px;
+    width:612px;
+    height:80px;
+}
+
+#u117_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:618px;
+    height:86px;
+}
+
+.u118 {
+    position:absolute;
+    left:2px;
+    top:32px;
+    width:608px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u119 {
+    position:absolute;
+    left:111px;
+    top:176px;
+    width:533px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u120_normal {
+    background-image: url('../PhoneDetails_Course_files/u120_normal.png');
+}
+
+.u120_container {
+    position:absolute;
+    left:90px;
+    top:92px;
+    width:1278px;
+    height:64px;
+}
+
+#u120_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1284px;
+    height:70px;
+}
+
+.u121 {
+    position:absolute;
+    left:2px;
+    top:24px;
+    width:1274px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u122_normal {
+    background-image: url('../PhoneDetails_Course_files/u122_normal.png');
+}
+
+.u122_container {
+    position:absolute;
+    left:1246px;
+    top:92px;
+    width:64px;
+    height:64px;
+}
+
+#u122_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:64px;
+    height:64px;
+}
+
+.u123 {
+    position:absolute;
+    left:2px;
+    top:24px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u124_container {
+    position:absolute;
+    left:1130px;
+    top:94px;
+    width:63px;
+    height:62px;
+}
+
+#u124_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:63px;
+    height:62px;
+}
+
+.u125 {
+    position:absolute;
+    left:2px;
+    top:23px;
+    width:59px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u126_container {
+    position:absolute;
+    left:90px;
+    top:92px;
+    width:161px;
+    height:64px;
+}
+
+#u126_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:161px;
+    height:64px;
+}
+
+.u127 {
+    position:absolute;
+    left:2px;
+    top:24px;
+    width:157px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u128 {
+    position:absolute;
+    left:718px;
+    top:170px;
+    width:355px;
+    height:82px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u129 {
+    position:absolute;
+    left:88px;
+    top:746px;
+    width:113px;
+    height:44px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u130 {
+    position:absolute;
+    left:88px;
+    top:813px;
+    width:113px;
+    height:44px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Heiti SC';
+    font-size: 20px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
