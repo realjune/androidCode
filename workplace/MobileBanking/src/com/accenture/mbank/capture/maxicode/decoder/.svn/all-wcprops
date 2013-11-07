@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/maxicode/decoder
+END
+DecodedBitStreamParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/maxicode/decoder/DecodedBitStreamParser.java
+END
+BitMatrixParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/maxicode/decoder/BitMatrixParser.java
+END
+Decoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/maxicode/decoder/Decoder.java
+END

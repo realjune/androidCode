@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/common
+END
+BitSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/common/BitSource.java
+END
+HttpProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/common/HttpProxy.java
+END
+BitMatrix.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/common/BitMatrix.java
+END
+DecoderResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/common/DecoderResult.java
+END
+GlobalHistogramBinarizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/common/GlobalHistogramBinarizer.java
+END
+PerspectiveTransform.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/common/PerspectiveTransform.java
+END
+HybridBinarizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/common/HybridBinarizer.java
+END
+StringUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/common/StringUtils.java
+END
+DetectorResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/common/DetectorResult.java
+END
+CharacterSetECI.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/common/CharacterSetECI.java
+END
+GridSampler.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/common/GridSampler.java
+END
+BitArray.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/common/BitArray.java
+END
+DefaultGridSampler.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/common/DefaultGridSampler.java
+END

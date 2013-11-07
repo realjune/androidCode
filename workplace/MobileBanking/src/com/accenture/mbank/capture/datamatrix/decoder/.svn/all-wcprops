@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/datamatrix/decoder
+END
+DecodedBitStreamParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/datamatrix/decoder/DecodedBitStreamParser.java
+END
+BitMatrixParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/datamatrix/decoder/BitMatrixParser.java
+END
+DataBlock.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/datamatrix/decoder/DataBlock.java
+END
+Decoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/datamatrix/decoder/Decoder.java
+END
+Version.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/datamatrix/decoder/Version.java
+END

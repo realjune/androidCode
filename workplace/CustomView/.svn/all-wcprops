@@ -1,0 +1,45 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 21
+/svn/sample/!svn/act/
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/sample/!svn/ver/268/a_ws_done/CustomView
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sample/!svn/ver/249/a_ws_done/CustomView/.classpath
+END
+project.properties
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/sample/!svn/ver/223/a_ws_done/CustomView/project.properties
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sample/!svn/ver/190/a_ws_done/CustomView/.project
+END
+proguard-project.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/sample/!svn/ver/190/a_ws_done/CustomView/proguard-project.txt
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/sample/!svn/ver/268/a_ws_done/CustomView/AndroidManifest.xml
+END
+ic_launcher-web.png
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/sample/!svn/ver/190/a_ws_done/CustomView/ic_launcher-web.png
+END

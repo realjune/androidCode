@@ -3,6 +3,12 @@
     <color name="black_overlay">#66000000</color>
     <color name="product_info_price_color">#ff3093EB</color>
     
-    <color name="table_bolder_color">#ffff0000</color>
+    <color name="table_bolder_color">#ff797979</color>
+    <color name="red">#ffff2222</color>
+    
+    <!-- set meal color -->
+    <color name="set_meal_title">#ff00CCCC</color>
+    <color name="setmeal_seleted_color">#ff00CCCC</color>
+    <color name="transparency_color">#00000000</color>
 
 </resources>

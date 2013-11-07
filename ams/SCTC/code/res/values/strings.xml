@@ -19,5 +19,23 @@
 	<!-- setmeal -->
 	<string name="month_base_rent">月基本费（元）</string>
 	<string name="domestic_traffic">国内流量</string>
-	<string name="freeInlandCall">国内通话（分钟）</string>
+	<string name="select_title_free_inland_call">国内通话（分钟）</string>
+	<string name="all">全部</string>
+	<string name="less_than">%d以下</string>
+	<string name="more_than">%d以上</string>
+	
+	<string name="setmeal_category">套餐分类</string>
+	<string name="month_rent">月租</string>
+	<string name="freeinlandcall">国内语音</string>
+	<string name="wifi_time">WIFI时长</string>
+	<string name="sms_count">短信条数</string>
+	<string name="mms_count">彩信条数</string>
+	<string name="exceed_call">超出语音</string>
+	<string name="exceed_traffic">超出流量</string>
+	<string name="free_answer_area">免费接听范围</string>
+	<string name="free_service">赠送业务</string>
+	<string name="setmeal_recommend">套餐推荐</string>
+	
+	
+	
 </resources>

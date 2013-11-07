@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/sample/!svn/ver/254/a_ws_done/AExamples
+END
+default.properties
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/sample/!svn/ver/254/a_ws_done/AExamples/default.properties
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sample/!svn/ver/254/a_ws_done/AExamples/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sample/!svn/ver/254/a_ws_done/AExamples/.project
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/sample/!svn/ver/254/a_ws_done/AExamples/AndroidManifest.xml
+END

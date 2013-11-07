@@ -1,10 +1,6 @@
 package com.act.test;
 
 import android.app.Activity;
-import android.content.ContentUris;
-import android.content.ContentValues;
-import android.database.Cursor;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -13,9 +9,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.act.sctc.R;
-import com.act.sctc.been.ProductPhone;
+import com.act.sctc.been.SetMeal;
 import com.act.sctc.db.DBHelper;
-import com.act.sctc.db.ProductPhoneColumn;
 import com.act.sctc.db.SetMealColumn;
 
 
@@ -107,4 +102,5 @@ public class Test extends Activity implements OnClickListener {
 		}
 		
 	}
+	
 }

@@ -7,14 +7,19 @@
     <include
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_large"
         android:layout_weight="1"
         layout="@layout/title_content" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" 
-        android:layout_weight="9">
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_weight="9"
+        android:orientation="vertical" >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,26 +27,30 @@
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical" >
 
                 <TextView
                     android:id="@+id/textView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/month_base_rent" />
+                    android:text="@string/month_base_rent"
+                    android:layout_weight="1" />
 
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/domestic_traffic" />
+                    android:text="@string/domestic_traffic"
+                    android:layout_weight="1"  />
 
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/freeInlandCall" />
+                    android:text="@string/select_title_free_inland_call"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"  />
             </LinearLayout>
 
             <LinearLayout
@@ -55,24 +64,6 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal" >
 
-                    <RadioButton
-                        android:id="@+id/radio0"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:checked="true"
-                        android:text="RadioButton" />
-
-                    <RadioButton
-                        android:id="@+id/radio1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="RadioButton" />
-
-                    <RadioButton
-                        android:id="@+id/radio2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="RadioButton" />
                 </RadioGroup>
 
                 <RadioGroup
@@ -81,24 +72,6 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal" >
 
-                    <RadioButton
-                        android:id="@+id/radio0"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:checked="true"
-                        android:text="RadioButton" />
-
-                    <RadioButton
-                        android:id="@+id/radio1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="RadioButton" />
-
-                    <RadioButton
-                        android:id="@+id/radio2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="RadioButton" />
                 </RadioGroup>
 
                 <RadioGroup
@@ -107,24 +80,6 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal" >
 
-                    <RadioButton
-                        android:id="@+id/radio0"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:checked="true"
-                        android:text="RadioButton" />
-
-                    <RadioButton
-                        android:id="@+id/radio1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="RadioButton" />
-
-                    <RadioButton
-                        android:id="@+id/radio2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="RadioButton" />
                 </RadioGroup>
             </LinearLayout>
         </LinearLayout>
@@ -133,9 +88,22 @@
             android:id="@+id/listView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:divider="@color/table_bolder_color"
-            android:dividerHeight="1dp" >
+            android:layout_weight="1">
         </ListView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:text="@string/setmeal_recommend" />
+
+        <ListView
+            android:id="@+id/listView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
     </LinearLayout>
 
 </LinearLayout>

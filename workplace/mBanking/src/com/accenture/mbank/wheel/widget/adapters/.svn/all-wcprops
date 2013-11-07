@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/Prototyping/!svn/ver/5768/Presale/mBanking_CN/Src/Android/mBanking/src/com/accenture/mbank/wheel/widget/adapters
+END
+WheelViewAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/Prototyping/!svn/ver/5768/Presale/mBanking_CN/Src/Android/mBanking/src/com/accenture/mbank/wheel/widget/adapters/WheelViewAdapter.java
+END
+ArrayWheelAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/Prototyping/!svn/ver/5768/Presale/mBanking_CN/Src/Android/mBanking/src/com/accenture/mbank/wheel/widget/adapters/ArrayWheelAdapter.java
+END
+AdapterWheel.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/Prototyping/!svn/ver/5768/Presale/mBanking_CN/Src/Android/mBanking/src/com/accenture/mbank/wheel/widget/adapters/AdapterWheel.java
+END
+NumericWheelAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/Prototyping/!svn/ver/5768/Presale/mBanking_CN/Src/Android/mBanking/src/com/accenture/mbank/wheel/widget/adapters/NumericWheelAdapter.java
+END
+AbstractWheelAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/Prototyping/!svn/ver/5768/Presale/mBanking_CN/Src/Android/mBanking/src/com/accenture/mbank/wheel/widget/adapters/AbstractWheelAdapter.java
+END
+AbstractWheelTextAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/Prototyping/!svn/ver/5768/Presale/mBanking_CN/Src/Android/mBanking/src/com/accenture/mbank/wheel/widget/adapters/AbstractWheelTextAdapter.java
+END

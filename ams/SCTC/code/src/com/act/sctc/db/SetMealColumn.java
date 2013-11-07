@@ -115,6 +115,13 @@ public class SetMealColumn extends DatabaseColumn {
 		return values;
 	}
 	public static class Test{
+		
+		public static void insert(Context context,SetMeal sm){
+			ContentValues values = new ContentValues();//toContentValue(sm);
+			
+			/**套餐名称*/
+			values.put(SetMealColumn.NAME,"乐享5G上网版");
+		}
 	
 	public static void writeDB(Context content){
 		SetMeal sm=new SetMeal();
