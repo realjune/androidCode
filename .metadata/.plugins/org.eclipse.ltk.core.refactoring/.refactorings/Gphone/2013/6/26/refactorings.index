@@ -1,9 +1,0 @@
-1372344268267	Rename method 'getSimState'
-1372345396189	Rename field 'uri'
-1372345404754	Rename field 'URI'
-1372345677816	Rename local variable 'activity'
-1372346042607	Encapsulate field 'name'
-1372346113416	Encapsulate field 'number'
-1372346286686	Rename field 'activity'
-1372347663389	Encapsulate field '_id'
-1372351805966	Move compilation unit
