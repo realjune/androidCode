@@ -1,0 +1,22 @@
+//============================================================================
+// Name        : n.cpp
+// Author      : wu
+// Version     :
+// Copyright   : 2014 copyright
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+//int main() {
+//	cout << "Hello World!!!" << endl; // prints Hello World!!!
+//	return 0;
+//}
+int main(){
+	int c=33;
+	int * x;
+
+	x=&c;
+	return 0;
+}
