@@ -1,0 +1,11 @@
+
+**** Build of configuration Default for project NokiaPaper ****
+
+make all 
+
+Cannot run program "make": Launching failed
+Error: Program "make" is not found in PATH
+
+PATH=[C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\1.5\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\1.5\bin\x64;C:\Program Files (x86)\Java\jdk1.6.0_10\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\junxu.wang\pf\adt-bundle-windows-x86_64-20130514\sdk\platform-tools;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Git\cmd;C:\Program Files (x86)\Git\bin]
+
+**** Build Finished ****
