@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/oned/rss
+END
+RSS14Reader.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/oned/rss/RSS14Reader.java
+END
+FinderPattern.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/oned/rss/FinderPattern.java
+END
+DataCharacter.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/oned/rss/DataCharacter.java
+END
+RSSUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/oned/rss/RSSUtils.java
+END
+Pair.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/oned/rss/Pair.java
+END
+AbstractRSSReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/oned/rss/AbstractRSSReader.java
+END

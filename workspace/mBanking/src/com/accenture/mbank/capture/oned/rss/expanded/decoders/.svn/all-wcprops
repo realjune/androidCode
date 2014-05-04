@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/Prototyping/!svn/ver/6682/Presale/mBanking_CN/Src/Android/mBanking/src/com/accenture/mbank/capture/oned/rss/expanded/decoders
+END
+FieldParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/Prototyping/!svn/ver/6682/Presale/mBanking_CN/Src/Android/mBanking/src/com/accenture/mbank/capture/oned/rss/expanded/decoders/FieldParser.java
+END
+AbstractExpandedDecoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/Prototyping/!svn/ver/6682/Presale/mBanking_CN/Src/Android/mBanking/src/com/accenture/mbank/capture/oned/rss/expanded/decoders/AbstractExpandedDecoder.java
+END
+AI013x0xDecoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/Prototyping/!svn/ver/6682/Presale/mBanking_CN/Src/Android/mBanking/src/com/accenture/mbank/capture/oned/rss/expanded/decoders/AI013x0xDecoder.java
+END
+AI01392xDecoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/Prototyping/!svn/ver/6682/Presale/mBanking_CN/Src/Android/mBanking/src/com/accenture/mbank/capture/oned/rss/expanded/decoders/AI01392xDecoder.java
+END
+AI01393xDecoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/Prototyping/!svn/ver/6682/Presale/mBanking_CN/Src/Android/mBanking/src/com/accenture/mbank/capture/oned/rss/expanded/decoders/AI01393xDecoder.java
+END
+CurrentParsingState.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/Prototyping/!svn/ver/6682/Presale/mBanking_CN/Src/Android/mBanking/src/com/accenture/mbank/capture/oned/rss/expanded/decoders/CurrentParsingState.java
+END
+DecodedNumeric.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/Prototyping/!svn/ver/6682/Presale/mBanking_CN/Src/Android/mBanking/src/com/accenture/mbank/capture/oned/rss/expanded/decoders/DecodedNumeric.java
+END
+AI013x0x1xDecoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/Prototyping/!svn/ver/6682/Presale/mBanking_CN/Src/Android/mBanking/src/com/accenture/mbank/capture/oned/rss/expanded/decoders/AI013x0x1xDecoder.java
+END
+AI01AndOtherAIs.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/Prototyping/!svn/ver/6682/Presale/mBanking_CN/Src/Android/mBanking/src/com/accenture/mbank/capture/oned/rss/expanded/decoders/AI01AndOtherAIs.java
+END
+DecodedObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/Prototyping/!svn/ver/6682/Presale/mBanking_CN/Src/Android/mBanking/src/com/accenture/mbank/capture/oned/rss/expanded/decoders/DecodedObject.java
+END
+AI01decoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/Prototyping/!svn/ver/6682/Presale/mBanking_CN/Src/Android/mBanking/src/com/accenture/mbank/capture/oned/rss/expanded/decoders/AI01decoder.java
+END
+GeneralAppIdDecoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/Prototyping/!svn/ver/6682/Presale/mBanking_CN/Src/Android/mBanking/src/com/accenture/mbank/capture/oned/rss/expanded/decoders/GeneralAppIdDecoder.java
+END
+DecodedChar.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/Prototyping/!svn/ver/6682/Presale/mBanking_CN/Src/Android/mBanking/src/com/accenture/mbank/capture/oned/rss/expanded/decoders/DecodedChar.java
+END
+AI013103decoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/Prototyping/!svn/ver/6682/Presale/mBanking_CN/Src/Android/mBanking/src/com/accenture/mbank/capture/oned/rss/expanded/decoders/AI013103decoder.java
+END
+AnyAIDecoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/Prototyping/!svn/ver/6682/Presale/mBanking_CN/Src/Android/mBanking/src/com/accenture/mbank/capture/oned/rss/expanded/decoders/AnyAIDecoder.java
+END
+BlockParsedResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/Prototyping/!svn/ver/6682/Presale/mBanking_CN/Src/Android/mBanking/src/com/accenture/mbank/capture/oned/rss/expanded/decoders/BlockParsedResult.java
+END
+AI01weightDecoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/Prototyping/!svn/ver/6682/Presale/mBanking_CN/Src/Android/mBanking/src/com/accenture/mbank/capture/oned/rss/expanded/decoders/AI01weightDecoder.java
+END
+DecodedInformation.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/Prototyping/!svn/ver/6682/Presale/mBanking_CN/Src/Android/mBanking/src/com/accenture/mbank/capture/oned/rss/expanded/decoders/DecodedInformation.java
+END
+AI01320xDecoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/Prototyping/!svn/ver/6682/Presale/mBanking_CN/Src/Android/mBanking/src/com/accenture/mbank/capture/oned/rss/expanded/decoders/AI01320xDecoder.java
+END

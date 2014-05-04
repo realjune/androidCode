@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/pdf417/encoder
+END
+PDF417Writer.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/pdf417/encoder/PDF417Writer.java
+END
+BarcodeMatrix.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/pdf417/encoder/BarcodeMatrix.java
+END
+PDF417.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/pdf417/encoder/PDF417.java
+END
+BarcodeRow.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/pdf417/encoder/BarcodeRow.java
+END
+PDF417ErrorCorrection.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/pdf417/encoder/PDF417ErrorCorrection.java
+END
+Compaction.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/pdf417/encoder/Compaction.java
+END
+PDF417HighLevelEncoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/Prototyping/!svn/ver/6683/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/capture/pdf417/encoder/PDF417HighLevelEncoder.java
+END

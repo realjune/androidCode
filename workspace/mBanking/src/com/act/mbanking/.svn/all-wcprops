@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/Prototyping/!svn/ver/6824/Presale/mBanking_CN/Src/Android/mBanking/src/com/act/mbanking
+END
+App.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Prototyping/!svn/ver/6479/Presale/mBanking_CN/Src/Android/mBanking/src/com/act/mbanking/App.java
+END
+ServiceType.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/Prototyping/!svn/ver/6698/Presale/mBanking_CN/Src/Android/mBanking/src/com/act/mbanking/ServiceType.java
+END
+SerializeUserInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/Prototyping/!svn/ver/5525/Presale/mBanking_CN/Src/Android/mBanking/src/com/act/mbanking/SerializeUserInfo.java
+END
+NewPaymentDataUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/Prototyping/!svn/ver/6394/Presale/mBanking_CN/Src/Android/mBanking/src/com/act/mbanking/NewPaymentDataUtils.java
+END
+CommonUtilities.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/Prototyping/!svn/ver/6146/Presale/mBanking_CN/Src/Android/mBanking/src/com/act/mbanking/CommonUtilities.java
+END
+TransferState.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/Prototyping/!svn/ver/5797/Presale/mBanking_CN/Src/Android/mBanking/src/com/act/mbanking/TransferState.java
+END
+BaseActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/Prototyping/!svn/ver/5882/Presale/mBanking_CN/Src/Android/mBanking/src/com/act/mbanking/BaseActivity.java
+END
+GCMIntentService.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/Prototyping/!svn/ver/6613/Presale/mBanking_CN/Src/Android/mBanking/src/com/act/mbanking/GCMIntentService.java
+END
+AggregatedAccountType.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/Prototyping/!svn/ver/5797/Presale/mBanking_CN/Src/Android/mBanking/src/com/act/mbanking/AggregatedAccountType.java
+END
+Contants.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/Prototyping/!svn/ver/6766/Presale/mBanking_CN/Src/Android/mBanking/src/com/act/mbanking/Contants.java
+END
+DestProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/Prototyping/!svn/ver/5797/Presale/mBanking_CN/Src/Android/mBanking/src/com/act/mbanking/DestProvider.java
+END
+CurrencyStyle.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/Prototyping/!svn/ver/5797/Presale/mBanking_CN/Src/Android/mBanking/src/com/act/mbanking/CurrencyStyle.java
+END
+ServiceCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/Prototyping/!svn/ver/5944/Presale/mBanking_CN/Src/Android/mBanking/src/com/act/mbanking/ServiceCode.java
+END
+ChartModelManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/Prototyping/!svn/ver/6766/Presale/mBanking_CN/Src/Android/mBanking/src/com/act/mbanking/ChartModelManager.java
+END

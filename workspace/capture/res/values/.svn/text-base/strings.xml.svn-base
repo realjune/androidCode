@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">capture</string>
+
+    <string name="auto_login">auto login</string>
+    <string name="preferences_login">login</string>
+    <string name="btn_input">hand input</string>
+    <string name="menu_settings">Settings</string>
+    <string name="msg_bulk_mode_scanned">批量扫描：找到条码，已保存</string>
+    <string name="msg_camera_framework_bug">抱歉，Android相机出现问题。您可能需要重启设备。</string>
+    <string name="button_ok">确定</string>
+</resources>

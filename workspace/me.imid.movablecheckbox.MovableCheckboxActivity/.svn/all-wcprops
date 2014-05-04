@@ -1,0 +1,51 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 21
+/svn/sample/!svn/act/
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sample/!svn/ver/270/android_studing/SwitchButton-master
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sample/!svn/ver/267/android_studing/SwitchButton-master/.classpath
+END
+proguard.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sample/!svn/ver/267/android_studing/SwitchButton-master/proguard.cfg
+END
+project.properties
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sample/!svn/ver/267/android_studing/SwitchButton-master/project.properties
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/sample/!svn/ver/267/android_studing/SwitchButton-master/.project
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sample/!svn/ver/267/android_studing/SwitchButton-master/.gitignore
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sample/!svn/ver/267/android_studing/SwitchButton-master/AndroidManifest.xml
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/sample/!svn/ver/267/android_studing/SwitchButton-master/README.md
+END

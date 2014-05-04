@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Prototyping/!svn/ver/6537/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/google/android/gcm
+END
+GCMConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/Prototyping/!svn/ver/6537/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/google/android/gcm/GCMConstants.java
+END
+GCMBaseIntentService.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/Prototyping/!svn/ver/6537/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/google/android/gcm/GCMBaseIntentService.java
+END
+GCMRegistrar.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/Prototyping/!svn/ver/6537/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/google/android/gcm/GCMRegistrar.java
+END
+GCMBroadcastReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/Prototyping/!svn/ver/6537/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/google/android/gcm/GCMBroadcastReceiver.java
+END

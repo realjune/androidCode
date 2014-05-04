@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/Prototyping/!svn/ver/5865/Presale/mBanking_CN/Src/Android/mBanking/src/com/act/mbanking/net
+END
+AsyncImageTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/Prototyping/!svn/ver/4441/Presale/mBanking_CN/Src/Android/mBanking/src/com/act/mbanking/net/AsyncImageTask.java
+END
+GeocodeResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/Prototyping/!svn/ver/5582/Presale/mBanking_CN/Src/Android/mBanking/src/com/act/mbanking/net/GeocodeResult.java
+END
+ProgressOverlay.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/Prototyping/!svn/ver/5865/Presale/mBanking_CN/Src/Android/mBanking/src/com/act/mbanking/net/ProgressOverlay.java
+END
+AsyncImageLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/Prototyping/!svn/ver/4581/Presale/mBanking_CN/Src/Android/mBanking/src/com/act/mbanking/net/AsyncImageLoader.java
+END
+HttpConnector.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/Prototyping/!svn/ver/4467/Presale/mBanking_CN/Src/Android/mBanking/src/com/act/mbanking/net/HttpConnector.java
+END
+HttpConnectionUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/Prototyping/!svn/ver/5582/Presale/mBanking_CN/Src/Android/mBanking/src/com/act/mbanking/net/HttpConnectionUtil.java
+END

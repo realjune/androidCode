@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/Prototyping/!svn/ver/6904/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/util
+END
+Utils.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/Prototyping/!svn/ver/6558/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/util/Utils.java
+END
+NewPaymentDataUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/Prototyping/!svn/ver/6395/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/util/NewPaymentDataUtils.java
+END
+ServiceType.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/Prototyping/!svn/ver/6877/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/util/ServiceType.java
+END
+GoogleMapUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/Prototyping/!svn/ver/5334/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/util/GoogleMapUtil.java
+END
+ViewUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/Prototyping/!svn/ver/6877/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/util/ViewUtil.java
+END
+DestProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/Prototyping/!svn/ver/1549/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/util/DestProvider.java
+END
+LogManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/Prototyping/!svn/ver/3303/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/util/LogManager.java
+END
+KeyBoardUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/Prototyping/!svn/ver/6227/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/util/KeyBoardUtils.java
+END
+EncryptUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/Prototyping/!svn/ver/1732/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/util/EncryptUtil.java
+END
+LocationInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/Prototyping/!svn/ver/1041/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/util/LocationInfo.java
+END
+TransferState.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/Prototyping/!svn/ver/2258/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/util/TransferState.java
+END
+Contants.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/Prototyping/!svn/ver/6904/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/util/Contants.java
+END
+DialogManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/Prototyping/!svn/ver/6843/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/util/DialogManager.java
+END
+ServiceCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/Prototyping/!svn/ver/5004/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/util/ServiceCode.java
+END
+AvailableOperator.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/Prototyping/!svn/ver/5328/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/util/AvailableOperator.java
+END
+TimeUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/Prototyping/!svn/ver/6904/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/util/TimeUtil.java
+END

@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/Prototyping/!svn/ver/6904/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic
+END
+CheckRechargeCardJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/Prototyping/!svn/ver/5324/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/CheckRechargeCardJson.java
+END
+GetFinancingInfoJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/Prototyping/!svn/ver/4254/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/GetFinancingInfoJson.java
+END
+CheckSimTopUpJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/Prototyping/!svn/ver/5322/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/CheckSimTopUpJson.java
+END
+PaymentTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/Prototyping/!svn/ver/6877/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/PaymentTemplate.java
+END
+SimTopUpJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/Prototyping/!svn/ver/6844/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/SimTopUpJson.java
+END
+RegisterNotificationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/Prototyping/!svn/ver/6555/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/RegisterNotificationService.java
+END
+CheckTransferJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/Prototyping/!svn/ver/5327/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/CheckTransferJson.java
+END
+BalanceJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/Prototyping/!svn/ver/4832/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/BalanceJson.java
+END
+GetBranchListJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/Prototyping/!svn/ver/2079/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/GetBranchListJson.java
+END
+GetAccountByPhoneNumberJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/Prototyping/!svn/ver/6843/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/GetAccountByPhoneNumberJson.java
+END
+InsertCommunicationJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/Prototyping/!svn/ver/2898/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/InsertCommunicationJson.java
+END
+CompanyAmountJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/Prototyping/!svn/ver/2079/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/CompanyAmountJson.java
+END
+GetDepositInfoRequestJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/Prototyping/!svn/ver/1947/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/GetDepositInfoRequestJson.java
+END
+GetPaymentTemplatesJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/Prototyping/!svn/ver/6877/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/GetPaymentTemplatesJson.java
+END
+InsertRechargeCardJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/Prototyping/!svn/ver/6844/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/InsertRechargeCardJson.java
+END
+InsertBillPaymentJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/Prototyping/!svn/ver/6877/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/InsertBillPaymentJson.java
+END
+AdvNewsJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/Prototyping/!svn/ver/2379/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/AdvNewsJson.java
+END
+InsertRecipientJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/Prototyping/!svn/ver/4855/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/InsertRecipientJson.java
+END
+HelpItemJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/Prototyping/!svn/ver/2079/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/HelpItemJson.java
+END
+LoginJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/Prototyping/!svn/ver/2079/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/LoginJson.java
+END
+GetAssetsInformationJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/Prototyping/!svn/ver/1952/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/GetAssetsInformationJson.java
+END
+InsertTransferJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/Prototyping/!svn/ver/6843/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/InsertTransferJson.java
+END
+TablesJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/Prototyping/!svn/ver/2810/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/TablesJson.java
+END
+GenerateOTPJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/Prototyping/!svn/ver/2079/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/GenerateOTPJson.java
+END
+GetMovementsJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/Prototyping/!svn/ver/3880/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/GetMovementsJson.java
+END
+GetRecipientListJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/Prototyping/!svn/ver/6843/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/GetRecipientListJson.java
+END
+AccountsByServicesJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/Prototyping/!svn/ver/2213/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/AccountsByServicesJson.java
+END
+CheckBillPaymentJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/Prototyping/!svn/ver/6904/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/CheckBillPaymentJson.java
+END
+GetPushReferencesJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/Prototyping/!svn/ver/6485/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/GetPushReferencesJson.java
+END
+GetDashBoardDataJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/Prototyping/!svn/ver/3118/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/GetDashBoardDataJson.java
+END
+RecentTransferJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/Prototyping/!svn/ver/3984/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/RecentTransferJson.java
+END
+GetDepositDetailsRequestJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/Prototyping/!svn/ver/3295/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/GetDepositDetailsRequestJson.java
+END
+UserInfoJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/Prototyping/!svn/ver/4175/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/UserInfoJson.java
+END
+GetCardsJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/Prototyping/!svn/ver/4175/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/GetCardsJson.java
+END
+SetPushReferencesJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/Prototyping/!svn/ver/6485/Presale/mBanking_CN/Src/Android/MobileBanking/src/com/accenture/mbank/logic/SetPushReferencesJson.java
+END

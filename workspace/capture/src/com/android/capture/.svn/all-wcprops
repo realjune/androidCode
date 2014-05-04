@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture
+END
+Reader.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/Reader.java
+END
+ResultPointCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/ResultPointCallback.java
+END
+DecodeHintType.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/DecodeHintType.java
+END
+Writer.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/Writer.java
+END
+Result.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/Result.java
+END
+CaptureActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/CaptureActivity.java
+END
+ResultMetadataType.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/ResultMetadataType.java
+END
+ChecksumException.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/ChecksumException.java
+END
+IntentSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/IntentSource.java
+END
+InactivityTimer.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/InactivityTimer.java
+END
+FinishListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/FinishListener.java
+END
+ViewfinderResultPointCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/ViewfinderResultPointCallback.java
+END
+ResultPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/ResultPoint.java
+END
+LuminanceSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/LuminanceSource.java
+END
+ViewfinderView.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/ViewfinderView.java
+END
+PlanarYUVLuminanceSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/PlanarYUVLuminanceSource.java
+END
+BeepManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/BeepManager.java
+END
+FormatException.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/FormatException.java
+END
+BarcodeFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/BarcodeFormat.java
+END
+NotFoundException.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/NotFoundException.java
+END
+DecodeThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/DecodeThread.java
+END
+PreferencesActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/PreferencesActivity.java
+END
+CaptureActivityHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/CaptureActivityHandler.java
+END
+ReaderException.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/ReaderException.java
+END
+BinaryBitmap.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/BinaryBitmap.java
+END
+DecodeHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/DecodeHandler.java
+END
+EncodeHintType.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/EncodeHintType.java
+END
+Intents.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/Intents.java
+END
+Binarizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/Binarizer.java
+END
+MultiFormatReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/MultiFormatReader.java
+END
+DecodeFormatManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/DecodeFormatManager.java
+END
+WriterException.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/sample/!svn/ver/272/androidNormalAPI/capture/capture/src/com/android/capture/WriterException.java
+END
