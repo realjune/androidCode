@@ -1,55 +1,0 @@
-10
-
-dir
-252
-http://mysvn.xu.com:9060/svn/sample/android_studing/JXDigitPasswordKeypad/res
-http://mysvn.xu.com:9060/svn/sample
-
-
-
-2013-06-05T04:42:23.088899Z
-212
-documents
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-d0f355f7-d30a-0348-9179-509ec0ede216
-
-values
-dir
-
-drawable-hdpi
-dir
-
-drawable-xxhdpi
-dir
-
-values-v11
-dir
-
-drawable-ldpi
-dir
-
-values-v14
-dir
-
-drawable-mdpi
-dir
-
-drawable-xhdpi
-dir
-
-layout
-dir
-
