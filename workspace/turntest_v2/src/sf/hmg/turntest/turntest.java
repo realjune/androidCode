@@ -32,15 +32,13 @@ public class turntest extends Activity {
 		setContentView(mPageWidget);
 
 		mCurPageBitmap = Bitmap.createBitmap(480, 800, Bitmap.Config.ARGB_8888);
-		mNextPageBitmap = Bitmap
-				.createBitmap(480, 800, Bitmap.Config.ARGB_8888);
+		mNextPageBitmap = Bitmap.createBitmap(480, 800, Bitmap.Config.ARGB_8888);
 
 		mCurPageCanvas = new Canvas(mCurPageBitmap);
 		mNextPageCanvas = new Canvas(mNextPageBitmap);
 		pagefactory = new BookPageFactory(480, 800);
 
-		pagefactory.setBgBitmap(BitmapFactory.decodeResource(
-				this.getResources(), R.drawable.bg));
+		pagefactory.setBgBitmap(BitmapFactory.decodeResource( this.getResources(), R.drawable.bg));
 
 		try {
 			pagefactory.openbook("/sdcard/test.txt");

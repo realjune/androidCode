@@ -4,6 +4,13 @@
  */
 package com.turn;
 
+import sf.hmg.turntest.R;
+import android.app.Activity;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.view.Display;
+import android.view.Window;
+
 /**
  * hmg25's android Type
  *
@@ -24,8 +31,8 @@ public class PageActivity extends Activity {
 
         pageWidget.SetScreen(width, height);
 
-        Bitmap bm1 = BitmapFactory.decodeResource(getResources(), R.drawable.pre7);
-        Bitmap bm2 = BitmapFactory.decodeResource(getResources(), R.drawable.after7);
+        Bitmap bm1 = BitmapFactory.decodeResource(getResources(), R.drawable.icon);
+        Bitmap bm2 = BitmapFactory.decodeResource(getResources(), R.drawable.icon);
 
         Bitmap foreImage = Bitmap.createScaledBitmap(bm1, width, height,false);
         Bitmap bgImage = Bitmap.createScaledBitmap(bm2, width, height,false);
