@@ -53,7 +53,7 @@ public class FlipViewController extends AdapterView<Adapter> {
 
   public static interface ViewFlipListener {
 
-    void onViewFlipped(View view, int position);
+    void onViewFlipped(FlipViewController mFlipViewController,View view, int position);
   }
 
   private static final int MAX_RELEASED_VIEW_SIZE = 1;
@@ -165,9 +165,14 @@ public class FlipViewController extends AdapterView<Adapter> {
   }
   
   public void setOrientation(int orientation){
-    flipOrientation = orientation;
-    
-    init(getContext(), orientation);
+	    this.flipOrientation = orientation;
+	    cards.setOrientation(orientation);// = new FlipCards(this, flipOrientation);
+//    init(getContext(), orientation);
+	    refreshAllPages();
+  }
+  
+  public int getOrientation(){
+    return flipOrientation;
   }
 
   private void init(Context context, int orientation) {
@@ -586,16 +591,26 @@ public class FlipViewController extends AdapterView<Adapter> {
     }
   }
 
+//  void postHideFlipAnimation() {
+//    if (inFlipAnimation) {
+//      handler.post(new Runnable() {
+//        @Override
+//        public void run() {
+//          hideFlipAnimation();
+//        }
+//      });
+//    }
+//  }
   void postHideFlipAnimation() {
-    if (inFlipAnimation) {
-      handler.post(new Runnable() {
-        @Override
-        public void run() {
-          hideFlipAnimation();
-        }
-      });
+      if (inFlipAnimation) {
+        handler.postDelayed(new Runnable() {
+          @Override
+          public void run() {
+            hideFlipAnimation();
+          }
+        }, 200);
+      }
     }
-  }
 
   private void hideFlipAnimation() {
     if (inFlipAnimation) {
@@ -604,7 +619,7 @@ public class FlipViewController extends AdapterView<Adapter> {
       updateVisibleView(bufferIndex);
 
       if (onViewFlipListener != null) {
-        onViewFlipListener.onViewFlipped(bufferedViews.get(bufferIndex), adapterIndex);
+        onViewFlipListener.onViewFlipped(this,bufferedViews.get(bufferIndex), adapterIndex);
       }
 
       handler.post(new Runnable() {

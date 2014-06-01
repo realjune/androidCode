@@ -67,6 +67,11 @@ public class FlipCards {
     backCards = new ViewDualCards(getOrientationVertical());
     // this.orientationVertical = orientationVertical;
   }
+  public void setOrientation(int orientation){
+	    this.orientation = orientation;
+	    frontCards.setOrientation(getOrientationVertical());
+	    backCards.setOrientation(getOrientationVertical());
+  }
 
   public boolean getOrientationVertical() {
     return orientation == 0 || orientation == 1 ? true : false;
@@ -324,9 +329,16 @@ public class FlipCards {
           Log.e("FlipCards", "FlipCards:angleDelta is " + angleDelta);
 
           // do not flip more than one page with one touch...
-          if (Math.abs(getPageIndexFromAngle(accumulatedAngle + angleDelta) - lastPageIndex) <= 1) {
-            accumulatedAngle += angleDelta;
-          }
+//          if (Math.abs(getPageIndexFromAngle(accumulatedAngle + angleDelta) - lastPageIndex) <= 1) {
+//            accumulatedAngle += angleDelta;
+//          }
+          if(((accumulatedAngle + angleDelta > lastPageIndex*180)
+                  && (accumulatedAngle + angleDelta <= (lastPageIndex+1) * 180)) ||  
+                  ((accumulatedAngle + angleDelta < lastPageIndex*180) && 
+                      (accumulatedAngle + angleDelta >= (lastPageIndex-1) * 180))){
+                accumulatedAngle += angleDelta;
+              }
+
           Log.e("FlipCards", "FlipCards:accumulatedAngle is " + accumulatedAngle);
 
           // Bounce the page for the first and the last page
@@ -444,9 +456,16 @@ public class FlipCards {
         }
 
         // do not flip more than one page with one touch...
-        if (Math.abs(getPageIndexFromAngle(accumulatedAngle + angleDelta) - lastPageIndex) <= 1) {
-          accumulatedAngle += angleDelta;
-        }
+//        if (Math.abs(getPageIndexFromAngle(accumulatedAngle + angleDelta) - lastPageIndex) <= 1) {
+//          accumulatedAngle += angleDelta;
+//        }
+        if(((accumulatedAngle + angleDelta > lastPageIndex*180)
+                && (accumulatedAngle + angleDelta <= (lastPageIndex+1) * 180)) ||  
+                ((accumulatedAngle + angleDelta < lastPageIndex*180) && 
+                    (accumulatedAngle + angleDelta >= (lastPageIndex-1) * 180))){
+              accumulatedAngle += angleDelta;
+            }
+
 
         // Bounce the page for the first and the last page
         if (frontCards.getIndex() == maxIndex - 1) { // the last page

@@ -24,9 +24,10 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
 import com.aphidmobile.flip.FlipViewController;
+import com.aphidmobile.flip.FlipViewController.ViewFlipListener;
 import com.aphidmobile.flipview.demo.views.NumberButton;
 
-public class FlipButtonActivity extends Activity {
+public class FlipOrChangeActivity extends Activity {
 
   private FlipViewController flipView;
 
@@ -40,6 +41,27 @@ public class FlipButtonActivity extends Activity {
     setTitle(R.string.activity_title);
 
     flipView = new FlipViewController(this, FlipViewController.HORIZONTAL_LEFT);
+    flipView.setOnViewFlipListener(new ViewFlipListener() {
+		
+		@Override
+		public void onViewFlipped(FlipViewController mFlipViewController,
+				View view, int position) {
+			if(mFlipViewController.getOrientation()==FlipViewController.HORIZONTAL_LEFT){
+				mFlipViewController.setOrientation(FlipViewController.VERTICAL_BOTTOM);
+			}else{
+				mFlipViewController.setOrientation(FlipViewController.HORIZONTAL_LEFT);
+			}
+
+		    flipView.postDelayed(new Runnable() {
+				
+				@Override
+				public void run() {
+					// TODO Auto-generated method stub
+					flipView.onAutoEvent();
+				}
+			}, 2000);
+		}
+	});
 
     flipView.setAdapter(new BaseAdapter() {
       @Override
@@ -73,14 +95,15 @@ public class FlipButtonActivity extends Activity {
       }
     });
 
-    setContentView(flipView); flipView.postDelayed(new Runnable() {
+    setContentView(flipView); 
+    flipView.postDelayed(new Runnable() {
 		
 		@Override
 		public void run() {
 			// TODO Auto-generated method stub
 			flipView.onAutoEvent();
 		}
-	}, 5000);
+	}, 2000);
   }
 
   @Override

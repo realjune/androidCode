@@ -21,6 +21,8 @@
       </intent-filter>
     </activity>
     
+    <activity android:name=".FlipCalendarActivity"/>
+    <activity android:name=".FlipOrChangeActivity"/>
     <activity android:name=".FlipTextViewActivity"/>
     <activity android:name=".FlipButtonActivity"/>
     <activity android:name=".FlipComplexLayoutActivity"/>

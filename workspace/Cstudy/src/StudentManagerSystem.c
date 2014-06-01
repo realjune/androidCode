@@ -14,27 +14,27 @@
 #include <stdlib.h>
 
 /*链表节点的数据结构*/
-struct node {
+struct student {
 	int num; /*学号*/
 	char name[20]; /*姓名*/
-	struct node *next; /*指针域*/
+	struct student *next; /*指针域*/
 };
 
-typedef struct node STUDENT;
+typedef struct student STUDENT;
 
 /*主函数*/
-int main() {
+int StudentManagerSystemMain() {
 	setbuf(stdout, NULL); /*取消，默认输出流存在buffer机制*/
 	/*函数声明*/
 	char menu(); /*菜单*/
-	struct node *create(); /*创建链表*/
-	struct node *insert(); /*插入节点*/
-	struct node *delet(); /*删除节点*/
-	void print(); /*输出链表*/
+	struct student *create(); /*创建链表*/
+	struct student *insert(); /*插入节点*/
+	struct student *delet(); /*删除节点*/
+	void printStudent(); /*输出链表*/
 	STUDENT *find();
 
 	/*数据定义*/
-	struct node *head; /**/
+	struct student *head; /**/
 	char name[20];
 	int n;
 	head = NULL; /*作空链表*/
@@ -60,7 +60,7 @@ int main() {
 			head = delet(head, name); /*调用函数删除结点*/
 			break;
 		case '4':
-			print(head); /*调用函数输出节点*/
+			printStudent(head); /*调用函数输出节点*/
 			printf("press any key back...");
 			scanf("%c", &type);
 			scanf("%c", &type);
@@ -93,84 +93,84 @@ int main() {
 char menu() {
 	char type[10];
 	printf("Student Manager System demo\n");
-	printf("create node(1)\n");
-	printf("insert node(2)\n");
-	printf("delet node(3)\n");
+	printf("create student(1)\n");
+	printf("insert student(2)\n");
+	printf("delet student(3)\n");
 	printf("print nod(4)\n");
-	printf("find node(5)\n");
+	printf("find student(5)\n");
 	printf("exit(q)\n");
 //	scanf("%c", &type);
 	gets(type);
 	return type[0];
 }
 /*创建链表*/
-struct node *create(struct node *head) {
+struct student *create(struct student *head) {
 	char temp[30];
-	struct node *newNode, *curNode;
+	struct student *newstudent, *curstudent;
 
-	newNode = curNode = (STUDENT*) malloc(sizeof(STUDENT));
+	newstudent = curstudent = (STUDENT*) malloc(sizeof(STUDENT));
 	printf("Input the num and name:\n");
 	printf("Exit:double times Enter!\n");
 	gets(temp);
-	newNode->num = atoi(temp);
-	printf("num:%d\n",newNode->num);
-	gets(newNode->name);
-	printf("%s\n",newNode->name);
-	newNode->next = NULL;
-	while (strlen(newNode->name) > 0) {
+	newstudent->num = atoi(temp);
+	printf("num:%d\n",newstudent->num);
+	gets(newstudent->name);
+	printf("%s\n",newstudent->name);
+	newstudent->next = NULL;
+	while (strlen(newstudent->name) > 0) {
 		if (head == NULL)
-			head = newNode;
+			head = newstudent;
 		else
-			curNode->next = newNode;
-		curNode = newNode;
-		newNode = (struct node *) malloc(sizeof(struct node));
+			curstudent->next = newstudent;
+		curstudent = newstudent;
+		newstudent = (struct student *) malloc(sizeof(struct student));
 		printf("Input the num and name:\n");
 		printf("Exit:double times Enter!\n");
 			gets(temp);
-			newNode->num = atoi(temp);
-//			scanf("%d",&(newNode->num));
-			printf("num:%d\n",newNode->num);
-			gets(newNode->name);
-			printf("%s\n",newNode->name);
-			newNode->next = NULL;
+			newstudent->num = atoi(temp);
+//			scanf("%d",&(newstudent->num));
+			printf("num:%d\n",newstudent->num);
+			gets(newstudent->name);
+			printf("%s\n",newstudent->name);
+			newstudent->next = NULL;
 	}
 	return head;
 }
 
 /*插入结点*/
-struct node *insert(struct node *head, char *name, int n) {
-	struct node *newNode, *curentNode, *lastNode;
-	newNode = (struct node *) malloc(sizeof(struct node));
-	strcpy(newNode->name, name);
-	newNode->num = n;
-	curentNode = head;
+struct student *insert(struct student *head, char *name, int n) {
+	struct student *newstudent, *curentstudent, *laststudent;
+	newstudent = (struct student *) malloc(sizeof(struct student));
+	strcpy(newstudent->name, name);
+	newstudent->num = n;
+	curentstudent = head;
 	if (head == NULL) {
-		head = newNode;
-		newNode->next = NULL;
+		head = newstudent;
+		newstudent->next = NULL;
 	} else {
-		while (n > curentNode->num && curentNode->next != NULL) {
-			lastNode = curentNode;
-			curentNode = curentNode->next;
+		while (n > curentstudent->num && curentstudent->next != NULL) {
+			laststudent = curentstudent;
+			curentstudent = curentstudent->next;
 		}
-		if (n < curentNode->num) {
-			if (head == curentNode) { /*插入表头*/
-				head = newNode;
-				newNode->next = curentNode;
+		if (n < curentstudent->num) {
+			if (head == curentstudent) { /*插入表头*/
+				head = newstudent;
+				newstudent->next = curentstudent;
 			} else { /*插入中间*/
-				lastNode->next = newNode;
-				newNode->next = curentNode;
+				laststudent->next = newstudent;
+				newstudent->next = curentstudent;
 			}
 		} else { /*插入表尾*/
-			curentNode->next = newNode;
-			newNode->next = NULL;
+			curentstudent->next = newstudent;
+			newstudent->next = NULL;
 		}
 	}
 	return (head);
 }
 
 /*删除结点*/
-struct node *delet(struct node *head, char *name) {
-	struct node *temp, *p;
+struct student *delet(struct student *head, char *name) {
+	struct student *temp, *p;
 
 	temp = head;
 	if (temp == NULL) {
@@ -216,8 +216,8 @@ STUDENT *find(STUDENT *head,char *name){
 }
 
 /*输出链表*/
-void print(struct node *head) {
-	struct node *temp;
+void printStudent(STUDENT *head) {
+	struct student *temp;
 	temp = head;
 	printf("\nOutput strings:\n");
 	while (temp != NULL) {

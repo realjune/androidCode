@@ -1,4 +1,5 @@
-package com.android.math;
+package com.wu.a.utils;
+
 
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
