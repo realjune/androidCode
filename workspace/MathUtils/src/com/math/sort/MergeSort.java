@@ -9,7 +9,7 @@ public class MergeSort {
 		sort(data, 0, data.length - 1);
 	}
 
-	/*
+	/**
 	 * 将索引从left到right范围的数组元素进行归并排序 data 待排序数组 left 待排序数组的第一个元素索引 right
 	 * 待排序数组的最后一个元素索引
 	 */

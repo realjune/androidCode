@@ -32,11 +32,14 @@ public class ShellSort {
 		// System.out.println(a[i]);
 		// }
 	}
-	/**希尔排序是基于插入排序，由于增加了新的特性，大大提高了插入排序的执行效率
+
+	/**
+	 * 希尔排序是基于插入排序，由于增加了新的特性，大大提高了插入排序的执行效率
+	 * 
 	 * @param a
 	 * @return
 	 */
-	private static void shellSort(int[] a) {
+	private static void shellSort3(int[] a) {
 		int h = 1;
 		int temp;
 		int inner, outer;
@@ -55,11 +58,14 @@ public class ShellSort {
 			h = (h - 1) / 3;
 		}
 	}
-	/**insert sort
+
+	/**
+	 * insert sort
+	 * 
 	 * @param b
 	 */
-	public static void insertSort(int b[]){
-		int temp,outer,inner;
+	public static void insertSort(int b[]) {
+		int temp, outer, inner;
 		for (outer = 1; outer < b.length; outer++) {
 			temp = b[outer];
 			inner = outer;
@@ -68,6 +74,52 @@ public class ShellSort {
 				inner--;
 			}
 			b[inner] = temp;
+		}
+	}
+
+	/**
+	 * 插入法insertion sort 插入法较为复杂，它的基本工作原理是抽出牌，在前面的牌中寻找相应的位置插入，然后继续下一张
+	 * 
+	 * @param pData
+	 * @param Count
+	 */
+	void InsertSort(int[] pData, int Count) {
+		int iTemp;
+		int iPos;
+		for (int i = 1; i < Count; i++) {
+			iTemp = pData[i];// 保存要插入的数
+			iPos = i - 1;// 被插入的数组数字个数
+			while ((iPos >= 0) && (iTemp < pData[iPos])) {// 从最后一个（最大数字）开始对比，大于它的数字往后移位
+				pData[iPos + 1] = pData[iPos];
+				iPos--;
+			}
+			pData[iPos + 1] = iTemp;// 插入数字的位置
+		}
+	}
+
+	public static void shellSort(int[] a) {
+		// 希尔排序
+		int d = a.length;
+		while (true) {
+			d = d / 2;
+			for (int x = 0; x < d; x++) {
+				for (int i = x + d; i < a.length; i = i + d) {
+					int temp = a[i];
+					int j;
+					for (j = i - d; j >= 0 && a[j] > temp; j = j - d) {
+						a[j + d] = a[j];
+					}
+					a[j + d] = temp;
+				}
+			}
+			if (d == 1) {
+				break;
+			}
+		}
+		System.out.println();
+		System.out.println("排序之后：");
+		for (int i = 0; i < a.length; i++) {
+			System.out.print(a[i] + "");
 		}
 	}
 }
