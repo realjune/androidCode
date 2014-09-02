@@ -175,17 +175,17 @@ public class SensorUtils {
     
     
     SensorEventListener lsn = new SensorEventListener() {       
-       public void onSensorChanged(SensorEvent e) {       
+       public void onSensorChanged(SensorEvent e) {  
            x = e.values[SensorManager.DATA_X];       
            y = e.values[SensorManager.DATA_Y];       
            z = e.values[SensorManager.DATA_Z];
-           Message msg=handler.obtainMessage(0, "x=" + x + "," + "y=" +  y + "," + "z="+  z);
+           Message msg=handler.obtainMessage(0, e.sensor.getName()+"  "+"x=" + x + "," + "y=" +  y + "," + "z="+  z);
            handler.sendMessage(msg);
        }       
   
-       public void onAccuracyChanged(Sensor s, int accuracy) {      
+       public void onAccuracyChanged(Sensor s, int accuracy) {
            Message msg=handler.obtainMessage(0, "onAccuracyChanged " + s.getName()+ "," + "getPower=" + s.getPower() + "," + "accuracy="+ accuracy);
            handler.sendMessage(msg);
-       }       
-   };       
+       }
+   };
 }

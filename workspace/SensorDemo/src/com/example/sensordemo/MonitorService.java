@@ -51,7 +51,7 @@ import android.util.Log;
 	           }
 
 	  };
-	  timer.schedule(timerTask, 1000*60*60) ;
+	  timer.schedule(timerTask, 0) ;
 
 
 	 
