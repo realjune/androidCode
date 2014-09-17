@@ -77,7 +77,7 @@
                 <category android:name="com.android.stuly.abc.examples" />
             </intent-filter>
         </activity>
-        <activity android:name=".MemoryActivity" >
+        <activity android:name=".memory.MemoryActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

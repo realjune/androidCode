@@ -69,9 +69,7 @@ public class CleanEvent {
 		if (cleanMb.contains("0.0") || cleanMb.contains("-")) {
 			cleanDoneMb = ("不需清楚内存");
 		} else {
-			cleanDoneMb = ("清除了")
-					+ cleanMb.trim()
-					+ ("大小内存");
+			cleanDoneMb = ("清除了") + cleanMb.trim() + ("大小内存");
 		}
 		Toast.makeText(context, cleanDoneMb, Toast.LENGTH_SHORT).show();
 	}
