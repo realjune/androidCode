@@ -21,4 +21,4 @@ local.properties
 
 #shared
 android-support-v4.jar
-!/workspace/android-support-v4.jar
+!/workspace/lib/android-support-v4.jar
