@@ -21,6 +21,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 public class DiscoveryActivity extends ListActivity {
+	private boolean discovery;
 	private Handler _handler = new Handler();
 	/* 取得默认的蓝牙适配器 */
 	private BluetoothAdapter _bluetooth = BluetoothAdapter.getDefaultAdapter();
@@ -46,8 +47,9 @@ public class DiscoveryActivity extends ListActivity {
 	/**
 	 * 接收器 当搜索蓝牙设备完成时调用
 	 */
-	private BroadcastReceiver _foundReceiver = new BroadcastReceiver() {
+	private BroadcastReceiver mReceiver = new BroadcastReceiver() {
 		public void onReceive(Context context, Intent intent) {
+			if(BluetoothDevice.ACTION_FOUND.equals(intent.getAction())){
 			/* 从intent中取得搜索结果数据 */
 			BluetoothDevice device = intent
 					.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
@@ -55,16 +57,12 @@ public class DiscoveryActivity extends ListActivity {
 			_devices.add(device);
 			/* 显示列表 */
 			showDevices();
-		}
-	};
-	private BroadcastReceiver _discoveryReceiver = new BroadcastReceiver() {
-
-		@Override
-		public void onReceive(Context context, Intent intent) {
-			/* 卸载注册的接收器 */
-			unregisterReceiver(_foundReceiver);
-			unregisterReceiver(this);
-			_discoveryFinished = true;
+			}else if(BluetoothAdapter.ACTION_DISCOVERY_FINISHED.equals(intent.getAction())){
+				/* 卸载注册的接收器 */
+				unregisterReceiver(mReceiver);
+				unregisterReceiver(this);
+				_discoveryFinished = true;
+			}
 		}
 	};
 
@@ -83,10 +81,10 @@ public class DiscoveryActivity extends ListActivity {
 		/* 注册接收器 */
 		IntentFilter discoveryFilter = new IntentFilter(
 				BluetoothAdapter.ACTION_DISCOVERY_FINISHED);
-		registerReceiver(_discoveryReceiver, discoveryFilter);
+		registerReceiver(mReceiver, discoveryFilter);
 		IntentFilter foundFilter = new IntentFilter(
 				BluetoothDevice.ACTION_FOUND);
-		registerReceiver(_foundReceiver, foundFilter);
+		registerReceiver(mReceiver, foundFilter);
 		/* 显示一个对话框,正在搜索蓝牙设备 */
 		SamplesUtils.indeterminate(DiscoveryActivity.this, _handler,
 				"Scanning...", _discoveryWorkder, new OnDismissListener() {
