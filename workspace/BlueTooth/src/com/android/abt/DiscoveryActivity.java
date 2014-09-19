@@ -8,6 +8,11 @@ import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.content.BroadcastReceiver;
 import android.content.Context;
+<<<<<<< HEAD
+=======
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnDismissListener;
+>>>>>>> 3c904bdc23bb1593ec7763beda9574b4b8b8382e
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
@@ -29,6 +34,7 @@ public class DiscoveryActivity extends ListActivity {
 	/* 用来存储搜索到的蓝牙设备 */
 	private List<BluetoothDevice> _devices = new ArrayList<BluetoothDevice>();
 	/* 是否完成搜索 */
+<<<<<<< HEAD
 	// private volatile boolean _discoveryFinished;
 	// private Runnable _discoveryWorkder = new Runnable() {
 	// public void run() {
@@ -47,11 +53,27 @@ public class DiscoveryActivity extends ListActivity {
 	IntentFilter discoveryFilter = new IntentFilter(
 			BluetoothAdapter.ACTION_DISCOVERY_FINISHED);
 	IntentFilter foundFilter = new IntentFilter(BluetoothDevice.ACTION_FOUND);
+=======
+	private volatile boolean _discoveryFinished;
+//	private Runnable _discoveryWorkder = new Runnable() {
+//		public void run() {
+//			/* 开始搜索 */
+//			_bluetooth.startDiscovery();
+//			while(!_discoveryFinished) {
+//				try {
+//					Thread.sleep(100);
+//				} catch (InterruptedException e) {
+//				}
+//			}
+//		}
+//	};
+>>>>>>> 3c904bdc23bb1593ec7763beda9574b4b8b8382e
 	/**
 	 * 接收器 当搜索蓝牙设备完成时调用
 	 */
 	private BroadcastReceiver mReceiver = new BroadcastReceiver() {
 		public void onReceive(Context context, Intent intent) {
+<<<<<<< HEAD
 			if (BluetoothDevice.ACTION_FOUND.equals(intent.getAction())) {
 				/* 从intent中取得搜索结果数据 */
 				BluetoothDevice device = intent
@@ -70,6 +92,24 @@ public class DiscoveryActivity extends ListActivity {
 					_bluetooth.startDiscovery();
 					_devices.clear();
 					showDevices();
+=======
+			if(BluetoothDevice.ACTION_FOUND.equals(intent.getAction())){
+			/* 从intent中取得搜索结果数据 */
+			BluetoothDevice device = intent
+					.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
+			/* 将结果添加到列表中 */
+			_devices.add(device);
+			/* 显示列表 */
+			showDevices();
+			}else if(BluetoothAdapter.ACTION_DISCOVERY_FINISHED.equals(intent.getAction())){
+				if(!isDiscovery){
+				/* 卸载注册的接收器 */
+				unregisterReceiver(mReceiver);
+				_discoveryFinished = true;
+				}else{
+					_bluetooth.startDiscovery();
+					_devices.clear();showDevices();
+>>>>>>> 3c904bdc23bb1593ec7763beda9574b4b8b8382e
 				}
 			}
 		}
@@ -88,6 +128,7 @@ public class DiscoveryActivity extends ListActivity {
 			return;
 		}
 		/* 显示一个对话框,正在搜索蓝牙设备 */
+<<<<<<< HEAD
 		// SamplesUtils.indeterminate(DiscoveryActivity.this, _handler,
 		// "Scanning...", _discoveryWorkder, new OnDismissListener() {
 		// public void onDismiss(DialogInterface dialog) {
@@ -116,6 +157,34 @@ public class DiscoveryActivity extends ListActivity {
 					isDiscovery = true;
 					registerReceiver(mReceiver, discoveryFilter);
 					registerReceiver(mReceiver, foundFilter);
+=======
+//		SamplesUtils.indeterminate(DiscoveryActivity.this, _handler,
+//				"Scanning...", _discoveryWorkder, new OnDismissListener() {
+//					public void onDismiss(DialogInterface dialog) {
+//
+//						for (; _bluetooth.isDiscovering();) {
+//
+//							_bluetooth.cancelDiscovery();
+//						}
+//
+//						_discoveryFinished = true;
+//					}
+//				}, false);
+		
+
+		info_btn=(Button) findViewById(R.id.info_btn);
+		info_btn.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				if(_bluetooth.isDiscovering()){
+					_devices.clear();
+					isDiscovery=false;
+					_bluetooth.cancelDiscovery();
+					info_btn.setText("开始搜索");showDevices();
+				}else{
+					isDiscovery=true;
+>>>>>>> 3c904bdc23bb1593ec7763beda9574b4b8b8382e
 					_bluetooth.startDiscovery();
 					info_btn.setText("停止搜索");
 				}
@@ -131,8 +200,13 @@ public class DiscoveryActivity extends ListActivity {
 			BluetoothDevice d = _devices.get(i);
 			b.append(d.getAddress());
 			b.append('\n');
+<<<<<<< HEAD
 			String name = d.getName();
 			if (name != null && name.length() > 0 && !name.equals("null")) {
+=======
+			String name=d.getName();
+			if(name!=null&&name.length()>0&&!name.equals("null")){
+>>>>>>> 3c904bdc23bb1593ec7763beda9574b4b8b8382e
 				b.append(d.getName());
 			}
 			String s = b.toString();
