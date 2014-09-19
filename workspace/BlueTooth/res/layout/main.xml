@@ -35,22 +35,29 @@
         android:onClick="onStartDiscoveryButtonClicked"
         android:text="开始搜索" />
 
-    <Button
+    <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:onClick="onOpenClientSocketButtonClicked"
-        android:text="客户端"/>
+        android:visibility="gone"
+        android:orientation="vertical" >
 
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:onClick="onOpenServerSocketButtonClicked"
-        android:text="服务器端"/>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onOpenClientSocketButtonClicked"
+            android:text="客户端" />
 
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:onClick="onOpenOBEXServerSocketButtonClicked"
-        android:text="OBEX服务器"/>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onOpenServerSocketButtonClicked"
+            android:text="服务器端" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onOpenOBEXServerSocketButtonClicked"
+            android:text="OBEX服务器" />
+    </LinearLayout>
 
 </LinearLayout>
