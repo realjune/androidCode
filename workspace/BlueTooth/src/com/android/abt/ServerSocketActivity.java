@@ -105,7 +105,9 @@ public class ServerSocketActivity extends ListActivity {
 				}
 			});
 			/* 接受客户端的连接请求 */
+			Log.d("ddd","socket accep wating...");
 			BluetoothSocket socket = _serverSocket.accept();
+			Log.d("ddd","socket accept"+socket.getRemoteDevice().getAddress());
 			/* 处理请求内容 */
 			if (socket != null) {
 				OutputStream os=socket.getOutputStream();
