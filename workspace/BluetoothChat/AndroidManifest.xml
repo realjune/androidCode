@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".chatActivity" />
-        <activity android:name="gjz.bluetooth.deviceActivity" />
+        <activity android:name="gjz.bluetooth.BtDiscoveryActivity" />
     </application>
 
     <uses-sdk android:minSdkVersion="8" />

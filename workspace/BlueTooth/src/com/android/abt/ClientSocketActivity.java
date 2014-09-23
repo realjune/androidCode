@@ -27,12 +27,12 @@ public class ClientSocketActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND,
 				WindowManager.LayoutParams.FLAG_BLUR_BEHIND);
-		setContentView(R.layout.client_socket);
 		if (!_bluetooth.isEnabled()) {
 			Toast.makeText(this, "蓝牙不可用", Toast.LENGTH_LONG).show();
 			finish();
 			return;
 		}
+		setContentView(R.layout.client_socket);
 		Intent intent = new Intent(this, DiscoveryActivity.class);
 		/* 提示选择一个要连接的服务器 */
 		Toast.makeText(this, "select device to connect", Toast.LENGTH_SHORT)
@@ -67,8 +67,14 @@ public class ClientSocketActivity extends Activity {
 			// device.createRfcommSocketToServiceRecord(BluetoothProtocols.OBEX_OBJECT_PUSH_PROTOCOL_UUID);
 			socket = device.createRfcommSocketToServiceRecord(UUID
 					.fromString("a60f35f0-b93a-11de-8a39-08002009c666"));
+			if(Constant.DEBUG){
+				Log.d(TAG,"waiting to connect server...");
+			}
 			// 连接
 			socket.connect();
+			if(Constant.DEBUG){
+				Log.d(TAG,"connected server and write will...");
+			}
 			OutputStream os=socket.getOutputStream();
 			os.write("Hello,server!".getBytes());
 			os.flush();

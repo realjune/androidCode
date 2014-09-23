@@ -20,13 +20,12 @@ import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
 public class ServerSocketActivity extends ListActivity {
+	private static final String TAG = ServerSocketActivity.class .getSimpleName();
 	/* 一些常量，代表服务器的名称 */
 	public static final String PROTOCOL_SCHEME_L2CAP = "btl2cap";
 	public static final String PROTOCOL_SCHEME_RFCOMM = "btspp";
 	public static final String PROTOCOL_SCHEME_BT_OBEX = "btgoep";
 	public static final String PROTOCOL_SCHEME_TCP_OBEX = "tcpobex";
-	private static final String TAG = ServerSocketActivity.class
-			.getSimpleName();
 	private Handler _handler = new Handler();
 	/* 取得默认的蓝牙适配器 */
 	private BluetoothAdapter _bluetooth = BluetoothAdapter.getDefaultAdapter();
@@ -43,12 +42,12 @@ public class ServerSocketActivity extends ListActivity {
 		super.onCreate(savedInstanceState);
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND,
 				WindowManager.LayoutParams.FLAG_BLUR_BEHIND);
-		setContentView(R.layout.server_socket);
 		if (!_bluetooth.isEnabled()) {
 			Toast.makeText(this, "蓝牙不可用", Toast.LENGTH_SHORT).show();
 			finish();
 			return;
 		}
+		setContentView(R.layout.server_socket);
 		/* 开始监听 */
 		_serverWorker.start();
 	}
@@ -105,9 +104,11 @@ public class ServerSocketActivity extends ListActivity {
 				}
 			});
 			/* 接受客户端的连接请求 */
-			Log.d("ddd","socket accep wating...");
+			if(Constant.DEBUG)
+			Log.d(TAG,"socket accep wating...");
 			BluetoothSocket socket = _serverSocket.accept();
-			Log.d("ddd","socket accept"+socket.getRemoteDevice().getAddress());
+			if(Constant.DEBUG)
+				Log.d(TAG,"socket accept"+socket.getRemoteDevice().getAddress());
 			/* 处理请求内容 */
 			if (socket != null) {
 				OutputStream os=socket.getOutputStream();
@@ -117,31 +118,36 @@ public class ServerSocketActivity extends ListActivity {
 				InputStream inputStream = socket.getInputStream();
 				int read = -1;
 				final byte[] bytes = new byte[2048];
-				for (; (read = inputStream.read(bytes)) > -1;) {
-					final int count = read;
-					_handler.post(new Runnable() {
-						public void run() {
-							StringBuilder b = new StringBuilder();
-							for (int i = 0; i < count; ++i) {
-								if (i > 0) {
-									b.append(' ');
-								}
-								String s = Integer.toHexString(bytes[i] & 0xFF);
-								if (s.length() < 2) {
-
-									b.append('0');
-								}
-								b.append(s);
-							}
-							String s = b.toString();
-							lines.add(s);
-							ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-									ServerSocketActivity.this,
-									android.R.layout.simple_list_item_1, lines);
-							setListAdapter(adapter);
-						}
-					});
+				while((read = inputStream.read(bytes))>=0){
+					if(Constant.DEBUG){
+						Log.d(TAG,read+" -> "+new String(bytes));
+					}
 				}
+//				for (; (read = inputStream.read(bytes)) > -1;) {
+//					final int count = read;
+//					_handler.post(new Runnable() {
+//						public void run() {
+//							StringBuilder b = new StringBuilder();
+//							for (int i = 0; i < count; ++i) {
+//								if (i > 0) {
+//									b.append(' ');
+//								}
+//								String s = Integer.toHexString(bytes[i] & 0xFF);
+//								if (s.length() < 2) {
+//
+//									b.append('0');
+//								}
+//								b.append(s);
+//							}
+//							String s = b.toString();
+//							lines.add(s);
+//							ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+//									ServerSocketActivity.this,
+//									android.R.layout.simple_list_item_1, lines);
+//							setListAdapter(adapter);
+//						}
+//					});
+//				}
 			}
 		} catch (IOException e) {
 			Log.e(TAG, "", e);
