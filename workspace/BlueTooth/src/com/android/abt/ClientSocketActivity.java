@@ -3,6 +3,8 @@ package com.android.abt;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 import android.app.Activity;
@@ -14,14 +16,24 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.view.WindowManager;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Toast;
 
 public class ClientSocketActivity extends Activity {
 	private static final String TAG = ClientSocketActivity.class
 			.getSimpleName();
 	private static final int REQUEST_DISCOVERY = 0x1;
-	private Handler _handler = new Handler();
+	private Handler _handler = new Handler(){
+		public void dispatchMessage(android.os.Message msg) {
+			msgAdapter.notifyDataSetChanged();
+		};
+	};
 	private BluetoothAdapter _bluetooth = BluetoothAdapter.getDefaultAdapter();
+	
+	private ListView msg_ls;
+	private ArrayAdapter msgAdapter;
+	private List<String> msgs=new ArrayList<String>();
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -33,12 +45,22 @@ public class ClientSocketActivity extends Activity {
 			return;
 		}
 		setContentView(R.layout.client_socket);
+		msg_ls=(ListView) findViewById(R.id.msg_ls);
+		msgAdapter = new ArrayAdapter<String>(
+				this,
+				android.R.layout.simple_list_item_1, msgs);
+		msg_ls.setAdapter(msgAdapter);
 		Intent intent = new Intent(this, DiscoveryActivity.class);
 		/* 提示选择一个要连接的服务器 */
 		Toast.makeText(this, "select device to connect", Toast.LENGTH_SHORT)
 				.show();
 		/* 跳转到搜索的蓝牙设备列表区，进行选择 */
 		startActivityForResult(intent, REQUEST_DISCOVERY);
+	}
+	
+	private void addMessage(String msg){
+		_handler.sendEmptyMessage(1);
+		msgs.add(msg);
 	}
 
 	/* 选择了服务器之后进行连接 */
@@ -51,6 +73,10 @@ public class ClientSocketActivity extends Activity {
 		}
 		final BluetoothDevice device = data
 				.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
+		if(device==null){
+			return;
+		}
+		addMessage(device.getAddress()+"---"+device.getName());
 		new Thread() {
 			public void run() {
 				/* 连接 */
@@ -70,21 +96,24 @@ public class ClientSocketActivity extends Activity {
 			if(Constant.DEBUG){
 				Log.d(TAG,"waiting to connect server...");
 			}
+			addMessage("waiting to connect server...");
 			// 连接
 			socket.connect();
 			if(Constant.DEBUG){
 				Log.d(TAG,"connected server and write will...");
 			}
+			addMessage("connected server successful");
 			OutputStream os=socket.getOutputStream();
 			os.write("Hello,server!".getBytes());
+			addMessage("s-->Hello,server!");
 			os.flush();
-			os.close();
 			byte[] red=new byte[100]; 
 			InputStream is=socket.getInputStream();
 			is.read(red);
+			addMessage("r<--"+new String(red));
+			Log.d(TAG,"receve:"+new String(red));
 			is.close();
-			String readStr=String.valueOf(red);
-			Toast.makeText(ClientSocketActivity.this, "R:"+readStr, Toast.LENGTH_SHORT).show();
+			os.close();
 		} catch (IOException e) {
 			Log.e(TAG, "", e);
 		} finally {
@@ -96,5 +125,6 @@ public class ClientSocketActivity extends Activity {
 				}
 			}
 		}
+		Log.d(TAG,"disconnected");
 	}
 }

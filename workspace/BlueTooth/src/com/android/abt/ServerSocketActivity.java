@@ -26,11 +26,18 @@ public class ServerSocketActivity extends ListActivity {
 	public static final String PROTOCOL_SCHEME_RFCOMM = "btspp";
 	public static final String PROTOCOL_SCHEME_BT_OBEX = "btgoep";
 	public static final String PROTOCOL_SCHEME_TCP_OBEX = "tcpobex";
-	private Handler _handler = new Handler();
+	private Handler _handler = new Handler(){
+		public void dispatchMessage(android.os.Message msg) {
+			adapter.notifyDataSetChanged();
+		};
+	};
 	/* 取得默认的蓝牙适配器 */
 	private BluetoothAdapter _bluetooth = BluetoothAdapter.getDefaultAdapter();
 	/* 蓝牙服务器 */
 	private BluetoothServerSocket _serverSocket;
+	/* 客户端连线列表 */
+	final List<String> lines = new ArrayList<String>();
+	ArrayAdapter<String> adapter;
 	/* 线程-监听客户端的链接 */
 	private Thread _serverWorker = new Thread() {
 		public void run() {
@@ -48,8 +55,17 @@ public class ServerSocketActivity extends ListActivity {
 			return;
 		}
 		setContentView(R.layout.server_socket);
+		adapter = new ArrayAdapter<String>(
+				ServerSocketActivity.this,
+				android.R.layout.simple_list_item_1, lines);
+		setListAdapter(adapter);
 		/* 开始监听 */
 		_serverWorker.start();
+	}
+	
+	private void addMessage(String msg){
+		lines.add(msg);
+		_handler.sendEmptyMessage(1);
 	}
 
 	protected void onDestroy() {
@@ -92,29 +108,23 @@ public class ServerSocketActivity extends ListActivity {
 			_serverSocket = _bluetooth.listenUsingRfcommWithServiceRecord(
 					PROTOCOL_SCHEME_RFCOMM,
 					UUID.fromString("a60f35f0-b93a-11de-8a39-08002009c666"));
-			/* 客户端连线列表 */
-			final List<String> lines = new ArrayList<String>();
 			_handler.post(new Runnable() {
 				public void run() {
-					lines.add("Rfcomm server started...");
-					ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-							ServerSocketActivity.this,
-							android.R.layout.simple_list_item_1, lines);
-					setListAdapter(adapter);
+					addMessage("Rfcomm server started...");
 				}
 			});
 			/* 接受客户端的连接请求 */
 			if(Constant.DEBUG)
-			Log.d(TAG,"socket accep wating...");
+			Log.d(TAG,"socket accept wating...");
 			BluetoothSocket socket = _serverSocket.accept();
-			if(Constant.DEBUG)
-				Log.d(TAG,"socket accept"+socket.getRemoteDevice().getAddress());
 			/* 处理请求内容 */
 			if (socket != null) {
+				if(Constant.DEBUG)
+					Log.d(TAG,"socket accept"+socket.getRemoteDevice().getAddress());
 				OutputStream os=socket.getOutputStream();
 				os.write("Hi,Client".getBytes());
+				ServerSocketActivity.this.addMessage(" <- Hi,Client");
 				os.flush();
-				os.close();
 				InputStream inputStream = socket.getInputStream();
 				int read = -1;
 				final byte[] bytes = new byte[2048];
@@ -122,7 +132,10 @@ public class ServerSocketActivity extends ListActivity {
 					if(Constant.DEBUG){
 						Log.d(TAG,read+" -> "+new String(bytes));
 					}
+					ServerSocketActivity.this.addMessage(new String(bytes));
 				}
+				os.close();
+				inputStream.close();
 //				for (; (read = inputStream.read(bytes)) > -1;) {
 //					final int count = read;
 //					_handler.post(new Runnable() {
@@ -154,5 +167,6 @@ public class ServerSocketActivity extends ListActivity {
 		} finally {
 
 		}
+		ServerSocketActivity.this.addMessage("close");
 	}
 }
