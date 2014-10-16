@@ -1,7 +1,7 @@
 package gjz.bluetooth;
 
 import gjz.bluetooth.R;
-import gjz.bluetooth.deviceActivity.SiriListItem;
+import gjz.bluetooth.BtDiscoveryActivity.SiriListItem;
 import java.util.ArrayList;
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,11 +10,11 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-public class ChatListAdapter extends BaseAdapter {
+public class BtListAdapter extends BaseAdapter {
 	private ArrayList<SiriListItem> list;
 	private LayoutInflater mInflater;
 
-	public ChatListAdapter(Context context, ArrayList<SiriListItem> list2) {
+	public BtListAdapter(Context context, ArrayList<SiriListItem> list2) {
 		list = list2;
 		mInflater = LayoutInflater.from(context);
 	}

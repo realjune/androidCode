@@ -34,7 +34,7 @@ public class Bluetooth extends TabActivity {
 						"设备列表",
 						getResources().getDrawable(
 								android.R.drawable.ic_menu_add))
-				.setContent(new Intent(mContext, deviceActivity.class)));
+				.setContent(new Intent(mContext, BtDiscoveryActivity.class)));
 		mTabHost.addTab(mTabHost
 				.newTabSpec("Tab2")
 				.setIndicator(

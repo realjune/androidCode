@@ -1,7 +1,7 @@
 package gjz.bluetooth;
 
 import gjz.bluetooth.R;
-import gjz.bluetooth.ChatListAdapter;
+import gjz.bluetooth.BtListAdapter;
 import gjz.bluetooth.Bluetooth.ServerOrCilent;
 import java.util.ArrayList;
 import java.util.Set;
@@ -22,12 +22,12 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.AdapterView.OnItemClickListener;
 
-public class deviceActivity extends Activity {
+public class BtDiscoveryActivity extends Activity {
 	private ListView mListView;
 	private ArrayList<SiriListItem> list;
-	private Button seachButton, serviceButton;
-	ChatListAdapter mAdapter;
+	BtListAdapter mAdapter;
 	Context mContext;
+	private Button seachButton, serviceButton;
 
 	/* 取得默认的蓝牙适配器 */
 	private BluetoothAdapter mBtAdapter = BluetoothAdapter.getDefaultAdapter();
@@ -53,21 +53,18 @@ public class deviceActivity extends Activity {
 
 	private void init() {
 		list = new ArrayList<SiriListItem>();
-		mAdapter = new ChatListAdapter(this, list);
+		mAdapter = new BtListAdapter(this, list);
 		mListView = (ListView) findViewById(R.id.list);
 		mListView.setAdapter(mAdapter);
 		mListView.setFastScrollEnabled(true);
 		mListView.setOnItemClickListener(mDeviceClickListener);
 
 		// Register for broadcasts when a device is discovered
-		IntentFilter discoveryFilter = new IntentFilter(
-				BluetoothDevice.ACTION_FOUND);
+		IntentFilter discoveryFilter = new IntentFilter( BluetoothDevice.ACTION_FOUND);
+		// Register for broadcasts when discovery has finished
+		discoveryFilter.addAction( BluetoothAdapter.ACTION_DISCOVERY_FINISHED);
 		this.registerReceiver(mReceiver, discoveryFilter);
 
-		// Register for broadcasts when discovery has finished
-		IntentFilter foundFilter = new IntentFilter(
-				BluetoothDevice.ACTION_FOUND);
-		this.registerReceiver(mReceiver, foundFilter);
 		resetDeviceList();
 
 		seachButton = (Button) findViewById(R.id.start_seach);
