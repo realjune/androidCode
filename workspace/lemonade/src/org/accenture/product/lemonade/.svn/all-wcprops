@@ -1,0 +1,371 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/lemonade/!svn/ver/275/Src/lemonade/src/org/accenture/product/lemonade
+END
+ShortcutsAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/lemonade/!svn/ver/43/Src/lemonade/src/org/accenture/product/lemonade/ShortcutsAdapter.java
+END
+LiveFolderIcon.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/lemonade/!svn/ver/43/Src/lemonade/src/org/accenture/product/lemonade/LiveFolderIcon.java
+END
+OphoneMiniTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/lemonade/!svn/ver/132/Src/lemonade/src/org/accenture/product/lemonade/OphoneMiniTest.java
+END
+ImageLoadTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/lemonade/!svn/ver/169/Src/lemonade/src/org/accenture/product/lemonade/ImageLoadTask.java
+END
+ActivityPickerActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/lemonade/!svn/ver/128/Src/lemonade/src/org/accenture/product/lemonade/ActivityPickerActivity.java
+END
+LiveFolderInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/lemonade/!svn/ver/43/Src/lemonade/src/org/accenture/product/lemonade/LiveFolderInfo.java
+END
+FastXmlSerializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/lemonade/!svn/ver/42/Src/lemonade/src/org/accenture/product/lemonade/FastXmlSerializer.java
+END
+DragView.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/lemonade/!svn/ver/42/Src/lemonade/src/org/accenture/product/lemonade/DragView.java
+END
+DragLayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lemonade/!svn/ver/42/Src/lemonade/src/org/accenture/product/lemonade/DragLayer.java
+END
+UserFolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/lemonade/!svn/ver/43/Src/lemonade/src/org/accenture/product/lemonade/UserFolder.java
+END
+DropTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/lemonade/!svn/ver/42/Src/lemonade/src/org/accenture/product/lemonade/DropTarget.java
+END
+Folder.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/lemonade/!svn/ver/42/Src/lemonade/src/org/accenture/product/lemonade/Folder.java
+END
+IconCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/lemonade/!svn/ver/198/Src/lemonade/src/org/accenture/product/lemonade/IconCache.java
+END
+CustomShirtcutActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/lemonade/!svn/ver/178/Src/lemonade/src/org/accenture/product/lemonade/CustomShirtcutActivity.java
+END
+LockReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/lemonade/!svn/ver/229/Src/lemonade/src/org/accenture/product/lemonade/LockReceiver.java
+END
+ClippedImageView.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/lemonade/!svn/ver/42/Src/lemonade/src/org/accenture/product/lemonade/ClippedImageView.java
+END
+DeferredHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/lemonade/!svn/ver/42/Src/lemonade/src/org/accenture/product/lemonade/DeferredHandler.java
+END
+IconConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/lemonade/!svn/ver/259/Src/lemonade/src/org/accenture/product/lemonade/IconConfig.java
+END
+DragController.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/lemonade/!svn/ver/42/Src/lemonade/src/org/accenture/product/lemonade/DragController.java
+END
+XmlUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/lemonade/!svn/ver/43/Src/lemonade/src/org/accenture/product/lemonade/XmlUtils.java
+END
+IconItemInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/lemonade/!svn/ver/42/Src/lemonade/src/org/accenture/product/lemonade/IconItemInfo.java
+END
+LauncherApplication.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/lemonade/!svn/ver/42/Src/lemonade/src/org/accenture/product/lemonade/LauncherApplication.java
+END
+AllAppsView.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/lemonade/!svn/ver/42/Src/lemonade/src/org/accenture/product/lemonade/AllAppsView.java
+END
+AddAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/lemonade/!svn/ver/178/Src/lemonade/src/org/accenture/product/lemonade/AddAdapter.java
+END
+ResizeViewHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/lemonade/!svn/ver/43/Src/lemonade/src/org/accenture/product/lemonade/ResizeViewHandler.java
+END
+SettingActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/lemonade/!svn/ver/272/Src/lemonade/src/org/accenture/product/lemonade/SettingActivity.java
+END
+LiveFolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/lemonade/!svn/ver/43/Src/lemonade/src/org/accenture/product/lemonade/LiveFolder.java
+END
+LiveFolderAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/lemonade/!svn/ver/43/Src/lemonade/src/org/accenture/product/lemonade/LiveFolderAdapter.java
+END
+DeleteZone.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/lemonade/!svn/ver/128/Src/lemonade/src/org/accenture/product/lemonade/DeleteZone.java
+END
+DragSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/lemonade/!svn/ver/42/Src/lemonade/src/org/accenture/product/lemonade/DragSource.java
+END
+TweenCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/lemonade/!svn/ver/43/Src/lemonade/src/org/accenture/product/lemonade/TweenCallback.java
+END
+Launcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lemonade/!svn/ver/272/Src/lemonade/src/org/accenture/product/lemonade/Launcher.java
+END
+ScreenSwitcherActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/lemonade/!svn/ver/275/Src/lemonade/src/org/accenture/product/lemonade/ScreenSwitcherActivity.java
+END
+LockActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/lemonade/!svn/ver/231/Src/lemonade/src/org/accenture/product/lemonade/LockActivity.java
+END
+LockService.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/lemonade/!svn/ver/229/Src/lemonade/src/org/accenture/product/lemonade/LockService.java
+END
+ItemInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lemonade/!svn/ver/248/Src/lemonade/src/org/accenture/product/lemonade/ItemInfo.java
+END
+Utilities.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lemonade/!svn/ver/43/Src/lemonade/src/org/accenture/product/lemonade/Utilities.java
+END
+LauncherProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/lemonade/!svn/ver/255/Src/lemonade/src/org/accenture/product/lemonade/LauncherProvider.java
+END
+CellLayout.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/lemonade/!svn/ver/42/Src/lemonade/src/org/accenture/product/lemonade/CellLayout.java
+END
+LiveWallpaperListActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/lemonade/!svn/ver/66/Src/lemonade/src/org/accenture/product/lemonade/LiveWallpaperListActivity.java
+END
+MenuActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/lemonade/!svn/ver/272/Src/lemonade/src/org/accenture/product/lemonade/MenuActivity.java
+END
+LauncherModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/lemonade/!svn/ver/246/Src/lemonade/src/org/accenture/product/lemonade/LauncherModel.java
+END
+AllApps2D.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/lemonade/!svn/ver/254/Src/lemonade/src/org/accenture/product/lemonade/AllApps2D.java
+END
+LauncherAppWidgetInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/lemonade/!svn/ver/92/Src/lemonade/src/org/accenture/product/lemonade/LauncherAppWidgetInfo.java
+END
+DragScroller.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/lemonade/!svn/ver/42/Src/lemonade/src/org/accenture/product/lemonade/DragScroller.java
+END
+Lemonade.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/lemonade/!svn/ver/129/Src/lemonade/src/org/accenture/product/lemonade/Lemonade.java
+END
+FolderIcon.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/lemonade/!svn/ver/42/Src/lemonade/src/org/accenture/product/lemonade/FolderIcon.java
+END
+MediaPicListActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/lemonade/!svn/ver/175/Src/lemonade/src/org/accenture/product/lemonade/MediaPicListActivity.java
+END
+HandleView.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/lemonade/!svn/ver/42/Src/lemonade/src/org/accenture/product/lemonade/HandleView.java
+END
+UserFolderInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/lemonade/!svn/ver/43/Src/lemonade/src/org/accenture/product/lemonade/UserFolderInfo.java
+END
+WallPaperChangedReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/lemonade/!svn/ver/175/Src/lemonade/src/org/accenture/product/lemonade/WallPaperChangedReceiver.java
+END
+InstallShortcutReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/lemonade/!svn/ver/42/Src/lemonade/src/org/accenture/product/lemonade/InstallShortcutReceiver.java
+END
+FolderInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/lemonade/!svn/ver/42/Src/lemonade/src/org/accenture/product/lemonade/FolderInfo.java
+END
+ShortcutInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/lemonade/!svn/ver/128/Src/lemonade/src/org/accenture/product/lemonade/ShortcutInfo.java
+END
+SymmetricalLinearTween.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/lemonade/!svn/ver/43/Src/lemonade/src/org/accenture/product/lemonade/SymmetricalLinearTween.java
+END
+AllAppsList.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/lemonade/!svn/ver/42/Src/lemonade/src/org/accenture/product/lemonade/AllAppsList.java
+END
+UninstallShortcutReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/lemonade/!svn/ver/43/Src/lemonade/src/org/accenture/product/lemonade/UninstallShortcutReceiver.java
+END
+BubbleTextView.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/lemonade/!svn/ver/42/Src/lemonade/src/org/accenture/product/lemonade/BubbleTextView.java
+END
+FastBitmapDrawable.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/lemonade/!svn/ver/42/Src/lemonade/src/org/accenture/product/lemonade/FastBitmapDrawable.java
+END
+PersonalizationActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/lemonade/!svn/ver/259/Src/lemonade/src/org/accenture/product/lemonade/PersonalizationActivity.java
+END
+Workspace.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/lemonade/!svn/ver/246/Src/lemonade/src/org/accenture/product/lemonade/Workspace.java
+END
