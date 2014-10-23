@@ -136,31 +136,6 @@ public class ServerSocketActivity extends ListActivity {
 				}
 				os.close();
 				inputStream.close();
-//				for (; (read = inputStream.read(bytes)) > -1;) {
-//					final int count = read;
-//					_handler.post(new Runnable() {
-//						public void run() {
-//							StringBuilder b = new StringBuilder();
-//							for (int i = 0; i < count; ++i) {
-//								if (i > 0) {
-//									b.append(' ');
-//								}
-//								String s = Integer.toHexString(bytes[i] & 0xFF);
-//								if (s.length() < 2) {
-//
-//									b.append('0');
-//								}
-//								b.append(s);
-//							}
-//							String s = b.toString();
-//							lines.add(s);
-//							ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-//									ServerSocketActivity.this,
-//									android.R.layout.simple_list_item_1, lines);
-//							setListAdapter(adapter);
-//						}
-//					});
-//				}
 			}
 		} catch (IOException e) {
 			Log.e(TAG, "", e);
