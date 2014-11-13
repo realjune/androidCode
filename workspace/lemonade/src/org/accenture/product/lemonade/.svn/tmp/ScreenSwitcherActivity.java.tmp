@@ -1,0 +1,225 @@
+package org.accenture.product.lemonade;
+
+import java.util.ArrayList;
+
+import org.accenture.product.lemonade.view.HomeScreenLayout;
+
+import android.app.Activity;
+import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.PixelFormat;
+import android.graphics.drawable.BitmapDrawable;
+import android.os.Bundle;
+import android.util.DisplayMetrics;
+import android.util.Log;
+import android.view.Gravity;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.LinearLayout.LayoutParams;
+
+/**
+ * 
+ * @author shaohu.zhu
+ */
+public class ScreenSwitcherActivity extends Activity
+{
+	public static ArrayList<Bitmap> thumbnailList;
+	
+	
+	int imageViewHeight;
+
+	private static Launcher mLauncher;
+	private ScreenSwitcherActivity mScreenSwitcherActivity;
+	@Override
+	protected void onCreate(Bundle savedInstanceState)
+	{
+
+//		thumbnailList = new ArrayList<Bitmap>();
+//		for (int i = 0; i < 9; i++)
+//		{
+//			BitmapDrawable bitmapDrawable = (BitmapDrawable) getResources().getDrawable(R.drawable.temp);
+//			thumbnailList.add(bitmapDrawable.getBitmap());
+//		}
+
+		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+		setContentView(R.layout.screenswitcher);
+
+		addButtonListener();
+		deleteButtonListener();
+
+		fillScreen();
+		
+	}
+
+	private void addButtonListener()
+	{
+		Button add = (Button) findViewById(R.id.add);
+		add.setOnClickListener(new View.OnClickListener()
+		{
+
+			@Override
+			public void onClick(View v)
+			{
+				// for zhenqiang
+				// 加上一屏，然后重新initPic，然后重绘
+				mLauncher.addOneScreen();
+				LinearLayout line1 = (LinearLayout) findViewById(R.id.line1);
+				LinearLayout line2 = (LinearLayout) findViewById(R.id.line2);
+				LinearLayout line3 = (LinearLayout) findViewById(R.id.line3);
+				line1.removeAllViews();
+				line2.removeAllViews();
+				line3.removeAllViews();
+				fillScreen();
+			}
+		});
+	}
+
+	private void deleteButtonListener()
+	{
+		Button delete = (Button) findViewById(R.id.delete);
+		delete.setOnClickListener(new View.OnClickListener()
+		{
+
+			@Override
+			public void onClick(View v)
+			{
+				// TODO Auto-generated method stub
+				mLauncher.removeOneScreen();
+				LinearLayout line1 = (LinearLayout) findViewById(R.id.line1);
+				LinearLayout line2 = (LinearLayout) findViewById(R.id.line2);
+				LinearLayout line3 = (LinearLayout) findViewById(R.id.line3);
+				line1.removeAllViews();
+				line2.removeAllViews();
+				line3.removeAllViews();
+				fillScreen();
+			}
+		});
+	}
+
+	private void fillScreen()
+	{
+		Resources resources = getResources();
+		LinearLayout line1 = (LinearLayout) findViewById(R.id.line1);
+		LinearLayout line2 = (LinearLayout) findViewById(R.id.line2);
+		LinearLayout line3 = (LinearLayout) findViewById(R.id.line3);
+		
+		final HomeScreenLayout mainLayout=(HomeScreenLayout)findViewById(R.id.homescreenlayout);
+		
+		DisplayMetrics dm = getResources().getDisplayMetrics();
+		final int screenWidth = dm.widthPixels;
+		final int screenHeight = dm.heightPixels;
+		
+		if (thumbnailList != null && thumbnailList.size() > 4)
+		{
+			for (int i = 0; i < thumbnailList.size(); i++)
+			{
+				ImageView imageView = new ImageView(this);
+				final int j = i;
+				imageView.setAdjustViewBounds(true);
+				LayoutParams layoutParams = new LinearLayout.LayoutParams(96, 120);
+				layoutParams.setMargins(5, 5, 5, 5);
+				imageView.setLayoutParams(layoutParams);
+				imageView.setImageBitmap(thumbnailList.get(i));
+				imageView.setBackgroundDrawable(resources.getDrawable(R.drawable.preview_background));
+				
+//				imageViewOnClickListener(imageView, j);
+//				imageViewOnTouchListener(imageView,screenWidth,screenHeight);
+				imageView.setOnLongClickListener(new View.OnLongClickListener()
+				{
+					
+					@Override
+					public boolean onLongClick(View v)
+					{					
+						mainLayout.setView(v);
+						mainLayout.startDragging();
+						return false;
+					}
+				});
+				
+				if(i==0){
+					imageViewHeight=imageView.getHeight();
+				}
+				
+				switch (thumbnailList.size())
+				{
+					case 5:
+						if (i == 0)
+							line1.addView(imageView);
+						else if (i == 1 || i == 2 || i == 3)
+							line2.addView(imageView);
+						else if (i == 4)
+							line3.addView(imageView);
+						break;
+					case 6:
+						if (i == 0 || i == 1)
+							line1.addView(imageView);
+						else if (i == 2 || i == 3 || i == 4)
+							line2.addView(imageView);
+						else if (i == 5)
+							line3.addView(imageView);
+						break;
+					case 7:
+						if (i == 0 || i == 1)
+							line1.addView(imageView);
+						else if (i == 2 || i == 3 || i == 4)
+							line2.addView(imageView);
+						else if (i == 5 || i == 6)
+							line3.addView(imageView);
+						break;
+					case 8:
+						if (i == 0 || i == 1 || i == 2)
+							line1.addView(imageView);
+						else if (i == 3 || i == 4 || i == 5)
+							line2.addView(imageView);
+						else if (i == 6 || i == 7)
+							line3.addView(imageView);
+						break;
+					case 9:
+						if (i == 0 || i == 1 || i == 2)
+							line1.addView(imageView);
+						else if (i == 3 || i == 4 || i == 5)
+							line2.addView(imageView);
+						else if (i == 6 || i == 7 || i == 8)
+							line3.addView(imageView);
+						break;
+				}
+			}
+		}
+	}
+	
+	private void imageViewOnClickListener(ImageView imageView,final int j){
+		imageView.setOnClickListener(new View.OnClickListener()
+		{
+
+			@Override
+			public void onClick(View v)
+			{
+				gotoScreen(j);
+				finish();
+			}
+
+		});
+	}
+	
+	public static void initPic(ArrayList<Bitmap> thumbList)
+	{
+		thumbnailList = thumbList;
+	}
+
+	public static void setLauncher(Launcher launcher)
+	{
+		mLauncher = launcher;
+	}
+
+	private void gotoScreen(int index)
+	{
+		mLauncher.setCurrentScreen(index);
+	}
+}

@@ -19,7 +19,7 @@ import android.provider.ContactsContract;
 import android.util.Log;
 
 public class OBEXActivity extends Activity {
-	private static final String TAG = "@MainActivity";
+	private static final String TAG = "OBEXActivity";
 	private Handler _handler = new Handler();
 	private BluetoothServerSocket _server;
 	private BluetoothSocket _socket;
@@ -119,25 +119,27 @@ public class OBEXActivity extends Activity {
 
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		Log.d(TAG, data.getData().toString());
-		switch (requestCode) {
-		case (1):
+//		switch (requestCode) {
+//		case (1):
 			if (resultCode == Activity.RESULT_OK) {
 				Uri contactData = data.getData();
 				Cursor c = managedQuery(contactData, null, null, null, null);
-				for (; c.moveToNext();) {
-					Log.d(TAG, "c1---------------------------------------");
-					dump(c);
-					Uri uri = Uri.withAppendedPath(data.getData(),
-							ContactsContract.Contacts.Photo.CONTENT_DIRECTORY);
-					Cursor c2 = managedQuery(uri, null, null, null, null);
-					for (; c2.moveToNext();) {
-						Log.d(TAG, "c2---------------------------------------");
-						dump(c2);
-					}
+				if(c!=null&&c.moveToFirst()){
+					do{
+						Log.d(TAG, "c1---------------------------------------");
+						dump(c);
+						Uri uri = Uri.withAppendedPath(data.getData(),
+								ContactsContract.Contacts.Photo.CONTENT_DIRECTORY);
+						Cursor c2 = managedQuery(uri, null, null, null, null);
+						for (; c2.moveToNext();) {
+							Log.d(TAG, "c2---------------------------------------");
+							dump(c2);
+						}
+					}while(c.moveToNext());
 				}
 			}
-			break;
-		}
+//			break;
+//		}
 
 	}
 
