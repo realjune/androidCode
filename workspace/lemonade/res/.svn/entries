@@ -1,88 +1,0 @@
-10
-
-dir
-276
-https://192.168.17.251/svn/lemonade/Src/lemonade/res
-https://192.168.17.251/svn/lemonade
-
-
-
-2011-07-29T09:39:38.843750Z
-273
-shaohu.zhu
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-26f8b83e-d09b-e744-97e7-2aaf20a5e750
-
-drawable-land-hdpi
-dir
-
-values-port
-dir
-
-drawable
-dir
-
-drawable-land-mdpi
-dir
-
-anim
-dir
-
-values-mdpi
-dir
-
-layout-land
-dir
-
-raw
-dir
-
-drawable-land
-dir
-
-values-zh-rCN
-dir
-
-values
-dir
-
-layout-port
-dir
-
-xml
-dir
-
-drawable-port
-dir
-
-drawable-hdpi
-dir
-
-drawable-ldpi
-dir
-
-drawable-mdpi
-dir
-
-values-land
-dir
-
-layout
-dir
-
-color
-dir
-
