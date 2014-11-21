@@ -17,9 +17,9 @@ public class CreditCardColumn extends DatabaseColumn {
 	public static final String CARD_CURRENCY = "card_carrency";/**余额*/
 	public static final String CARD_MONEY = "card_money";/**账单日*/
 	public static final String CARD_STATEMENT_DATE = "card_statement_date";/**付款日*/
-	public static final String CARD_PAYMENT_DUE_DATE = "card_payment_due_date";
-	public static final String REMARK = "remark";/**备注*/
-	public static final String CARD_CHARGE = "card_charge";/**服务费名称*/
+	public static final String CARD_PAYMENT_DUE_DATE = "card_payment_due_date";/**备注*/
+	public static final String REMARK = "remark";/**服务费名称*/
+	public static final String CARD_CHARGE = "card_charge";
 
 	public String getTableCreateor() {
 		return "CREATE TABLE "+TABLE_NAME+"( _id integer primary key autoincrement, "+
