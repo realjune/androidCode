@@ -37,6 +37,13 @@ public class FileUtils {
 	private String IMGS_DIR = DATA_DIR + "imgs/";
 	int flag;
 
+	/**sdcard存在？
+	 * @return
+	 */
+	private boolean sdCardIsExsit(){
+		return Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED);
+	}  
+
 	/**
 	 * 获取可写sdcard目录
 	 * 
@@ -393,5 +400,6 @@ public class FileUtils {
 		msg = EncodingUtils.getString(buffer, "UTF-8");
 		return msg;
 	}
-
+//	Uri uri = Uri.fromFile(new 
+//			File("file:///android_asset/helphelp.pdf"));  
 }
