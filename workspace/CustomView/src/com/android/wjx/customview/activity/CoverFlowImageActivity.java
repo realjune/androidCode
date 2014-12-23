@@ -3,6 +3,8 @@ package com.android.wjx.customview.activity;
 import java.util.ArrayList;
 import java.util.List;
 
+import wu.a.lib.view.CoverFlowImage;
+import wu.a.lib.view.CoverFlowImageViewAdapter;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
@@ -10,16 +12,12 @@ import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewGroup.LayoutParams;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.Gallery;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.android.wjx.customview.CoverFlowImage;
-import com.android.wjx.customview.CoverFlowImageViewAdapter;
-import com.android.wjx.customview.R;
+import ccom.custom.view.R;
 
 public class CoverFlowImageActivity extends Activity {
 

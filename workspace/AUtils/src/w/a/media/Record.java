@@ -10,21 +10,17 @@ import android.media.MediaRecorder;
  */
 public class Record{
 	boolean isRecording;
+	int BUF_SIZE=1024;
 	int   recBufSize;
 	AudioRecord  mAudioRecord;
-	int BUF_SIZE=1024;
-	
 	int sampleRateInHz;
 	short mChannelConfig;
 	short mAudioFormat;
 	/**
 	 * Android各种设备的采样频率不同，输入的声道数也不同，如果采用固定的采样频率和声道数，那么得到的AudioRecorder不一定能够正常初始化。
-
 为了正常使用，需要尝试各种不同的参数，得到在此设备上可以用的AudioRecorder实例。
 即使你得到了有效的AudioRecorder实例，在audioRecord.startRecording()的时候还会报ERROR_BAD_VALUE错误。
-
 这有可能是你使用了AudioManager而没有释放导致的。
-
 其他错误都可以在网络上找到答案。
 	 */
 	private void createAudioRecord() {  
@@ -91,7 +87,7 @@ public class Record{
 		private int x = 0;
 		public void onPeriodicNotification(AudioRecord recorder)  
 		{          	
-			audioRecorder.read(buffer, 0, buffer.length); // Fill buffer  
+			recorder.read(buffer, 0, buffer.length); // Fill buffer  
 			try  
 			{  
 				//randomAccessWriter.write(buffer); // Write buffer to file  
@@ -129,6 +125,47 @@ public class Record{
 				mDrawingView.invalidate();
 			}
 			++x;
-		}  
-	}
+		}
+		@Override
+		public void onMarkerReached(AudioRecord recorder) {
+			// TODO Auto-generated method stub
+			
+		}
+	};
+	class AudioRecordThread implements Runnable 
+    { 
+        public void run() 
+        { 
+        	while (isRecording) 
+        	{ 
+        		audioRecorder.read(buffer, 0, buffer.length); 
+        		cAmplitude = 0;
+	    		if (bSamples == 16)  
+	            {  
+	                for (int i=0; i<buffer.length/2; i++)  
+	                { 
+                        short curSample = ExtAudioRecorder.this.getShort(buffer[2*i], buffer[2*i+1]);  
+                        if (curSample > cAmplitude)  
+                        { 
+                            cAmplitude = curSample;  
+                        }  
+                    }  
+                }  
+                else     
+                { 
+                    for (int i=0; i<buffer.length; ++i)  
+                    {  
+                        if (buffer[i] > cAmplitude)  
+                        { 
+                            cAmplitude = buffer[i];  
+                        }  
+                    }  
+                }  
+
+                Message message = Message.obtain();
+                message.obj = (Object)(new Integer(19 - (int)((cAmplitude/65535.0f)*19)));
+                messageHandler.sendMessage(message);
+        	}  
+        } 
+    } 
 }

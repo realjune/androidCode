@@ -8,8 +8,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
-
-import com.android.wjx.customview.R;
+import ccom.custom.view.R;
 
 public class CustomDialogDemo extends Dialog {
 

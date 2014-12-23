@@ -7,11 +7,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Toast;
+import ccom.custom.view.R;
 
-import com.android.wjx.customview.R;
-import com.android.wjx.customview.dialog.CustomPopu;
 import com.android.wjx.customview.dialog.CustomDialog;
 import com.android.wjx.customview.dialog.CustomDialogDemo;
+import com.android.wjx.customview.dialog.CustomPopu;
 
 public class CustomDialogActivity extends Activity implements OnClickListener{
 	@Override

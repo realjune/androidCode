@@ -6,8 +6,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
-
-import com.android.wjx.customview.R;
+import ccom.custom.view.R;
 
 public class JsonActivity extends Activity implements OnClickListener{
 	Button btn1,btn2;

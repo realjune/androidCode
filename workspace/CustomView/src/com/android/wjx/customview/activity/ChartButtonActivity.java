@@ -1,14 +1,13 @@
 package com.android.wjx.customview.activity;
 
+import ccom.custom.view.R;
+import wu.a.lib.view.EditViewTextChanger;
+import wu.a.lib.view.ProportionBar;
+import wu.a.lib.view.ShadeDrawable;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.widget.EditText;
-
-import com.android.wjx.customview.EditViewTextChanger;
-import com.android.wjx.customview.ProportionBar;
-import com.android.wjx.customview.R;
-import com.android.wjx.customview.ShadeDrawable;
 
 public class ChartButtonActivity extends Activity {
 	

@@ -2,8 +2,7 @@ package com.android.wjx.customview.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
-
-import com.android.wjx.customview.R;
+import ccom.custom.view.R;
 
 public class CircleLinearActivity extends Activity {
 	

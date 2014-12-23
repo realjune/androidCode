@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.android.wjx.customview.ResizeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<wu.a.lib.view.ResizeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" 
@@ -16,29 +16,28 @@
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
 
-    <com.android.wjx.customview.ProportionBar
+    <wu.a.lib.view.ProportionBar
         android:id="@+id/pb"
         android:layout_width="match_parent"
         android:layout_height="30dip"
-        android:padding="4dip" >
-    </com.android.wjx.customview.ProportionBar>
+        android:padding="4dip" />
 
-    <com.android.wjx.customview.ProportionBar
+    <wu.a.lib.view.ProportionBar
         android:id="@+id/pb2"
         android:layout_width="match_parent"
         android:layout_height="30dip"
         android:layout_marginTop="10dip"
         android:padding="4dip" />
 
-    <com.android.wjx.customview.TrapezoidImageButton
+    <wu.a.lib.view.TrapezoidImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/trapezoid_btn_selector" />
 
-    <com.android.wjx.customview.WheelButton
+    <wu.a.lib.view.WheelButton
         android:id="@+id/cb"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal" />
 
-</com.android.wjx.customview.ResizeLayout>
+</wu.a.lib.view.ResizeLayout>

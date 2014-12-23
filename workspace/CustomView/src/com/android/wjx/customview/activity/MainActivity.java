@@ -12,8 +12,8 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import ccom.custom.view.R;
 
-import com.android.wjx.customview.R;
 import com.android.wjx.data.JsonActivity;
 import com.android.wx.math.Formate;
 

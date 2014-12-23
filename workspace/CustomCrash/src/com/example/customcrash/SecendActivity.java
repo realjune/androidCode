@@ -1,6 +1,5 @@
 package com.example.customcrash;
 
-import wu.a.app.ExitAppUtils;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,8 +14,6 @@ public class SecendActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.secend_layout);
 		
-		ExitAppUtils.getInstance().addActivity(this);
-		
 		Button mButton = (Button) findViewById(R.id.button1);
 
 		mButton.setOnClickListener(new OnClickListener() {
@@ -30,13 +27,5 @@ public class SecendActivity extends Activity {
 			}
 		});
 	}
-
-	@Override
-	protected void onDestroy() {
-		super.onDestroy();
-		ExitAppUtils.getInstance().delActivity(this);
-	}
-	
-	
 
 }

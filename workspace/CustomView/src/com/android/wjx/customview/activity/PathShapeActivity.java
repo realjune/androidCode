@@ -1,15 +1,10 @@
 package com.android.wjx.customview.activity;
 
-import com.android.wjx.customview.PathShapeView;
-
+import wu.a.lib.view.PathShapeView;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.LinearLayout.LayoutParams;
-import android.widget.Toast;
 
 public class PathShapeActivity extends Activity {
 	

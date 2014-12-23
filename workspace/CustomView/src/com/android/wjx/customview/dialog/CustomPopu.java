@@ -4,7 +4,6 @@ import android.content.Context;
 import android.graphics.drawable.ColorDrawable;
 import android.util.AttributeSet;
 import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -12,8 +11,7 @@ import android.view.View.OnTouchListener;
 import android.widget.LinearLayout.LayoutParams;
 import android.widget.PopupWindow;
 import android.widget.TextView;
-
-import com.android.wjx.customview.R;
+import ccom.custom.view.R;
 
 public class CustomPopu extends PopupWindow implements OnTouchListener {
 

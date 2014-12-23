@@ -5,12 +5,11 @@
     android:background="#fff"
     android:orientation="vertical" >
 
-    <com.android.wjx.customview.CoverFlow
-        xmlns:coverFlow="http://schemas.android.com/apk/res/com.android.wjx.customview"
+    <wu.a.lib.view.CoverFlow
+        xmlns:coverFlow="http://schemas.android.com/apk/res/w.a.androidutils"
         android:id="@+id/Gallery01"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="#F00" 
-        coverFlow:isTranslateModeZ="false"/>
+        android:background="#F00"/>
 
 </LinearLayout>

@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <com.android.wjx.customview.CustomEditText
+    <wu.a.lib.view.CustomEditText
         android:id="@+id/customEditText_test"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,7 +13,7 @@
         android:inputType="none"
         android:singleLine="true" />
     
-    <com.android.wjx.customview.CustomEditText
+    <wu.a.lib.view.CustomEditText
         android:id="@+id/customEditText_test2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
         android:inputType="none"
         android:singleLine="true" />
     
-    <com.android.wjx.customview.CustomEditText
+    <wu.a.lib.view.CustomEditText
         android:id="@+id/customEditText_test3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

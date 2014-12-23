@@ -1,7 +1,6 @@
 package com.android.wjx.customview.activity;
 
-import com.android.wjx.customview.ShadeDrawable;
-
+import wu.a.lib.view.ShadeDrawable;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.Button;

@@ -12,6 +12,28 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.android.wjx.customview.activity.MainActivity"
+            android:launchMode="standard" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.android.wjx.customview.activity.ChartButtonActivity"></activity>
+        <activity android:name="com.android.wjx.customview.activity.CircleLinearActivity"></activity>
+        <activity android:name="com.android.wjx.customview.activity.CoverFlowActivity"></activity>
+        <activity android:name="com.android.wjx.customview.activity.CoverFlowImageActivity"></activity>
+        <activity android:name="com.android.wjx.customview.activity.CustomDialogActivity"></activity>
+        <activity android:name="com.android.wjx.customview.activity.DatePickerDialogActivity"></activity>
+        <activity android:name="com.android.wjx.customview.activity.DrawableActivity"></activity>
+        <activity android:name="com.android.wjx.customview.activity.EditViewTestActivity"></activity>
+        <activity android:name="com.android.wjx.customview.activity.FaceTest"></activity>
+        <activity android:name="com.android.wjx.customview.activity.LineViewActivity"></activity>
+        <activity android:name="com.android.wjx.customview.activity.PathShapeActivity"></activity>
+        <activity android:name="com.android.wjx.customview.activity.SwitchButtonActivity"></activity>
+        
+        
     </application>
 
 </manifest>

@@ -1,9 +1,6 @@
 package com.android.wjx.customview.activity;
 
-
-
-import com.android.wjx.customview.FaceView;
-
+import wu.a.lib.view.FaceView;
 import android.app.Activity;
 import android.os.Bundle;
 

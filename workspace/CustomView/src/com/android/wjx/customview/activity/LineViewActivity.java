@@ -1,5 +1,10 @@
 package com.android.wjx.customview.activity;
 
+import wu.a.lib.view.CircleLinearView;
+import wu.a.lib.view.DividerLinearLayout;
+import wu.a.lib.view.WheelButton;
+import wu.a.lib.view.WheelButton.OnItemClickListener;
+import wu.a.lib.view.WheelButtonItem;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
@@ -15,13 +20,7 @@ import android.widget.LinearLayout.LayoutParams;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.android.wjx.customview.CircleLinearView;
-import com.android.wjx.customview.DividerLinearLayout;
-import com.android.wjx.customview.R;
-import com.android.wjx.customview.WheelButton;
-import com.android.wjx.customview.WheelButton.OnItemClickListener;
-import com.android.wjx.customview.WheelButtonItem;
+import ccom.custom.view.R;
 
 public class LineViewActivity extends Activity {
 

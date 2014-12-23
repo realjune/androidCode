@@ -1,5 +1,7 @@
 package com.android.wjx.customview.activity;
 
+import wu.a.lib.view.CustomEditText;
+import wu.a.lib.view.CustomEditText.OnKeyPreIme;
 import android.app.Activity;
 import android.os.Bundle;
 import android.text.InputFilter;
@@ -7,10 +9,7 @@ import android.text.Spanned;
 import android.view.KeyEvent;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
-
-import com.android.wjx.customview.CustomEditText;
-import com.android.wjx.customview.CustomEditText.OnKeyPreIme;
-import com.android.wjx.customview.R;
+import ccom.custom.view.R;
 
 public class EditViewTestActivity extends Activity implements OnKeyPreIme{
 
