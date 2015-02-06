@@ -26,6 +26,13 @@
         <provider
             android:name="wu.a.template.db.DBProvider"
             android:authorities="wu.a.template.providder" />
+        
+        <!-- aidl -->
+        <service android:name="wu.a.template.aidl.RemoteMediaPlayerService" android:process=":remote">
+            <intent-filter> 
+                <action android:name="wu.a.template.aidl.RemoteMediaPlayerService" /> 
+        </intent-filter> 
+        </service>
     </application>
 
 </manifest>

@@ -84,6 +84,13 @@
                 <category android:name="com.android.stuly.abc.examples" />
             </intent-filter>
         </activity>
+        <activity android:name=".net.AndroidShare" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.android.stuly.abc.examples" />
+            </intent-filter>
+        </activity>
     </application>
     <!-- 设置背景 -->
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
