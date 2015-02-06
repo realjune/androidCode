@@ -70,10 +70,11 @@ public class QRCodeTextActivityActivity extends Activity {
 						// Bitmap bm =
 						// BitmapFactory.decodeResource(getResources(),
 						// R.drawable.diagnose1);
-						ivImageView.setImageBitmap(createBitmap(
-								mBitmap,
-								zoomBitmap(BitmapFactory.decodeResource(
-										getResources(), R.drawable.icon), 60,60)));
+						ivImageView.setImageBitmap(mBitmap);
+//						ivImageView.setImageBitmap(createBitmap(
+//								mBitmap,
+//								zoomBitmap(BitmapFactory.decodeResource(
+//										getResources(), R.drawable.icon), 60,60)));
 					}
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -94,13 +95,15 @@ public class QRCodeTextActivityActivity extends Activity {
 		int height = matrix.getHeight();
 		// 二维矩阵转为一维像素数组,也就是一直横着排了
 		int[] pixels = new int[width * height];
-		for (int i = 0; i < pixels.length; i++) {
-			pixels[i] = 0xffffffff;
-		}
+//		for (int i = 0; i < pixels.length; i++) {
+//			pixels[i] = 0xffffffff;
+//		}
 		for (int y = 0; y < height; y++) {
 			for (int x = 0; x < width; x++) {
 				if (matrix.get(x, y)) {
 					pixels[y * width + x] = 0xff000000;
+				} else {
+					pixels[y * width + x] = 0xffffffff;
 				}
 			}
 		}
