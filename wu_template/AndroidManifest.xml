@@ -8,6 +8,14 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="19" />
 
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 耳机插入拔出状态 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -26,13 +34,34 @@
         <provider
             android:name="wu.a.template.db.DBProvider"
             android:authorities="wu.a.template.providder" />
-        
+
         <!-- aidl -->
-        <service android:name="wu.a.template.aidl.RemoteMediaPlayerService" android:process=":remote">
-            <intent-filter> 
-                <action android:name="wu.a.template.aidl.RemoteMediaPlayerService" /> 
-        </intent-filter> 
+        <service
+            android:name="wu.a.template.aidl.RemoteMediaPlayerService"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="wu.a.template.aidl.RemoteMediaPlayerService" />
+            </intent-filter>
         </service>
+
+        <!-- meida -->
+        <!--
+        Media button receiver 
+        该广播必须在AndroidManifest.xml文件中进行声明，否则就监听不到该MEDIA_BUTTON广播了
+        -->
+        <receiver android:name="wu.a.template.media.MediaButtonReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.MEDIA_BUTTON" >
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="wu.a.template.media.MediaAcitivity"
+            android:launchMode="singleInstance" />
+        
+        <!-- package -->
+        <activity android:name="wu.a.template.app.AppListActivity"/>
     </application>
 
 </manifest>
