@@ -8,7 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.GridView;
 
-public class AppListActivity extends Activity implements OnAppInfoSelectedLinstener {
+public class AppListActivity extends Activity implements
+		OnAppInfoSelectedLinstener {
 	LayoutInflater lf;
 	AppManager am;
 
@@ -22,7 +23,7 @@ public class AppListActivity extends Activity implements OnAppInfoSelectedLinste
 		am.setGridView(gv, gv);
 		am.setOnItemSelectedListener(this);
 	}
-	
+
 	@Override
 	protected void onStart() {
 		// TODO Auto-generated method stub
@@ -32,6 +33,7 @@ public class AppListActivity extends Activity implements OnAppInfoSelectedLinste
 
 	@Override
 	public void onSelected(AppInfo appInfo) {
-		PackageInfoProvider.startApp(this, appInfo.getPackageName(), appInfo.getClassName());
+		PackageInfoProvider.startApp(this, appInfo.getPackageName(),
+				appInfo.getClassName());
 	}
 }
