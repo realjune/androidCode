@@ -10,7 +10,6 @@ import wu.a.lib.utils.Logger;
 import android.app.ActivityManager;
 import android.app.ActivityManager.MemoryInfo;
 import android.content.Context;
-import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
@@ -175,18 +174,15 @@ public class ActivityManagerUtils {
 	 * </pre>
 	 */
 	public static List<RunningAppInfo> querySpecailPIDRunningAppInfo(
-			PackageManager pm, Intent intent, int pid) {
-
-		String[] pkgNameList = intent.getStringArrayExtra("EXTRA_PKGNAMELIST");
-		String processName = intent.getStringExtra("EXTRA_PROCESS_NAME");
+			PackageManager pm, String[] pkgNameList, String processName, int pid) {
 
 		// 保存所有正在运行的应用程序信息
 		List<RunningAppInfo> runningAppInfos = new ArrayList<RunningAppInfo>(); // 保存过滤查到的AppInfo
 
+		ApplicationInfo appInfo;
 		for (int i = 0; i < pkgNameList.length; i++) {
-			// 根据包名查询特定的ApplicationInfo对象
-			ApplicationInfo appInfo;
 			try {
+				// 根据包名查询特定的ApplicationInfo对象
 				appInfo = pm.getApplicationInfo(pkgNameList[i], 0);
 				runningAppInfos.add(getAppInfo(pm, appInfo, pid, processName));
 			} catch (NameNotFoundException e) {
@@ -198,7 +194,7 @@ public class ActivityManagerUtils {
 
 	/**
 	 * <pre>
-	 * 构造一个RunningAppInfo对象 ，并赋值
+	 * 用进程和app构造一个RunningAppInfo对象 ，并赋值
 	 * @param pm
 	 * @param app
 	 * @param pid

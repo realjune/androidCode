@@ -108,7 +108,7 @@ public class BrowseRunningAppActivity extends Activity {
 		
 		//update ui
 		tvInfo.setText("进程id为"+pid +" 运行的应用程序共有  :  "+pkgNameList.length);
-				return ActivityManagerUtils.querySpecailPIDRunningAppInfo(pm, intent, pid);
+				return ActivityManagerUtils.querySpecailPIDRunningAppInfo(pm, pkgNameList,processName, pid);
 //		pm = this.getPackageManager();
 //	
 //		// 保存所有正在运行的应用程序信息

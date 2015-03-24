@@ -67,19 +67,6 @@ public class MainActivity extends Activity {
         tvAvailMem.setText(availMemStr); 
         
     }
-//    //获得系统可用内存信息
-//    private String getSystemAvaialbeMemorySize(){
-//    	//获得MemoryInfo对象
-//        MemoryInfo memoryInfo = new MemoryInfo() ;
-//        //获得系统可用内存，保存在MemoryInfo对象上
-//        mActivityManager.getMemoryInfo(memoryInfo) ;
-//        long memSize = memoryInfo.availMem ;
-//        
-//        //字符类型转换
-//        String availMemStr = formateFileSize(memSize);
-//        
-//        return availMemStr ;
-//    }
   
     //调用系统函数，字符串转换 long -String KB/MB
     private String formateFileSize(long size){
