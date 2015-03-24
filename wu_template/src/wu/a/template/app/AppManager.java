@@ -31,17 +31,17 @@ public class AppManager {
 
 	public AppManager(Context context) {
 		this.context = context;
-		pip=new PackageInfoProvider(context);
+		pip = new PackageInfoProvider(context);
 	}
 
 	public void setGridView(View back, GridView gv) {
 		this.app_gv_back = back;
-//		back.setOnClickListener(new OnClickListener() {
-//			@Override
-//			public void onClick(View v) {
-//				hide();
-//			}
-//		});
+		// back.setOnClickListener(new OnClickListener() {
+		// @Override
+		// public void onClick(View v) {
+		// hide();
+		// }
+		// });
 		this.app_gv = gv;
 		adapter = new AppAdapter();
 		app_gv.setAdapter(adapter);
@@ -195,7 +195,7 @@ public class AppManager {
 					.findViewById(R.id.app_icon_iv);
 			TextView app_name = (TextView) convertView
 					.findViewById(R.id.app_label_iv);
-			Drawable drawable=pip.getAppIcon(appInfo.getPackageName());
+			Drawable drawable = pip.getAppIcon(appInfo.getPackageName());
 			if (drawable != null) {
 				app_icon.setImageDrawable(drawable);
 			}
@@ -211,7 +211,7 @@ public class AppManager {
 				if (mOnAppInfoSelectedLinstener != null) {
 					mOnAppInfoSelectedLinstener.onSelected(mAppInfo);
 				}
-//				hide();
+				// hide();
 			}
 		};
 

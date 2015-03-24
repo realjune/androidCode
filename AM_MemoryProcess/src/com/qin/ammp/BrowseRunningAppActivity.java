@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import wu.a.lib.app.ActivityManagerUtils;
-import wu.a.lib.app.PackageUtils;
+import wu.a.lib.app.PackageManagerUtils;
 import wu.a.lib.app.RunningAppInfo;
 import android.app.Activity;
 import android.content.Intent;
@@ -46,7 +46,7 @@ public class BrowseRunningAppActivity extends Activity {
 		else{
 			// 查询所有正在运行的应用程序信息： 包括他们所在的进程id和进程名
 			tvInfo.setText("所有正在运行的应用程序有-------");
-		    mlistAppInfo = ActivityManagerUtils.queryAllRunningAppInfo(PackageUtils.getPackageManager(this),ActivityManagerUtils.getActivityManager(this)); 
+		    mlistAppInfo = ActivityManagerUtils.queryAllRunningAppInfo(PackageManagerUtils.getPackageManager(this),ActivityManagerUtils.getActivityManager(this)); 
 		}
 		BrowseRunningAppAdapter browseAppAdapter = new BrowseRunningAppAdapter(this, mlistAppInfo);
 		listview.setAdapter(browseAppAdapter);

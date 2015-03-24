@@ -106,21 +106,21 @@ public class PackageInfoProvider {
 			return result;
 		}
 		PackageManager pm = context.getPackageManager();
-//		if (!TextUtils.isEmpty(className)) {
-//			Intent intent = new Intent();
-//			intent.setClassName(apkPackageName, className);
-//			List<ResolveInfo> resolveInfo = pm.queryIntentActivities(intent, /*
-//																			 * PackageManager
-//																			 * .
-//																			 * GET_ACTIVITIES
-//																			 */
-//					PackageManager.GET_ACTIVITIES);
-//			if (resolveInfo != null && resolveInfo.size() > 0) {
-//				context.startActivity(intent);
-//				result = true;
-//				return result;
-//			}
-//		}
+		// if (!TextUtils.isEmpty(className)) {
+		// Intent intent = new Intent();
+		// intent.setClassName(apkPackageName, className);
+		// List<ResolveInfo> resolveInfo = pm.queryIntentActivities(intent, /*
+		// * PackageManager
+		// * .
+		// * GET_ACTIVITIES
+		// */
+		// PackageManager.GET_ACTIVITIES);
+		// if (resolveInfo != null && resolveInfo.size() > 0) {
+		// context.startActivity(intent);
+		// result = true;
+		// return result;
+		// }
+		// }
 		// start by package
 		Intent mLaunchIntent = pm.getLaunchIntentForPackage(apkPackageName);
 		if (mLaunchIntent != null) {

@@ -18,7 +18,7 @@ import android.graphics.drawable.Drawable;
  * @author junxu.wang
  *
  */
-public class PackageUtils {
+public class PackageManagerUtils {
 
 	public static PackageManager getPackageManager(Context context) {
 		return context.getPackageManager();
