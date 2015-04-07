@@ -101,6 +101,7 @@ public class ActivityManagerUtils {
 	public static void killBackgroundProcesses(ActivityManager am,
 			String packageName) {
 		am.killBackgroundProcesses(packageName);
+//		am.restartPackage(packageName);
 	}
 
 	/**

@@ -7,6 +7,7 @@ import java.util.Map;
 
 import wu.a.template.app.AppListActivity;
 import wu.a.template.media.MediaAcitivity;
+import wu.a.template.media.MediaButtonSenderActivity;
 import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Intent;
@@ -60,6 +61,7 @@ public class MainActivity extends ListActivity {
 	    List<Map<String, Object>> data = new ArrayList<Map<String, Object>>();
 	    addItem(data, "MediaAcitivity", MediaAcitivity.class);
 	    addItem(data, "AppListActivity", AppListActivity.class);
+	    addItem(data, "MediaButtonSenderActivity", MediaButtonSenderActivity.class);
 
 	    return data;
 	  }

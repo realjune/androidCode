@@ -1,21 +1,19 @@
 package wu.a.template.app;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import wu.a.lib.app.PackageUtils;
+import wu.a.lib.app.PackageManagerUtils;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.text.TextUtils;
-import android.util.DisplayMetrics;
+import android.util.Log;
 
 public class PackageInfoProvider {
 	private static final String tag = "GetappinfoActivity";
@@ -32,16 +30,25 @@ public class PackageInfoProvider {
 		pm = context.getPackageManager();
 	}
 
-	public List<AppInfo> getAppInfo() {
+	public List<ResolveInfo> getAppInfo() {
+		final Intent mainIntent = new Intent(Intent.ACTION_MAIN, null);
+		mainIntent.addCategory(Intent.CATEGORY_LAUNCHER);
+		return pm.queryIntentActivities(mainIntent, 0);
+	}
+	
+	public List<ResolveInfo> getAudioAppInfo(){
 		final Intent mainIntent = new Intent(/* Intent.ACTION_MAIN */);
 		// mainIntent.addCategory(Intent.CATEGORY_LAUNCHER);
 		// mainIntent.addCategory(Intent.CATEGORY_APP_MUSIC);
 		mainIntent.setDataAndType(Uri.parse("file://sdcard"), "audio/*");
 		// mainIntent.setDataAndType(Uri.parse("http://www.w.www"), "audio/*");
 		// mainIntent.setType("audio/*");
-		mainIntent.addCategory(Intent.CATEGORY_DEFAULT);
-		List<ResolveInfo> apps = pm.queryIntentActivities(mainIntent, 0);
-
+//		mainIntent.addCategory(Intent.CATEGORY_DEFAULT);
+		return pm.queryIntentActivities(mainIntent, 0);
+	}
+	
+	
+	public List<AppInfo> getToAppInfo(List<ResolveInfo>apps){
 		appInfos = new ArrayList<AppInfo>();
 
 		for (ResolveInfo resolve : apps) {
@@ -61,6 +68,7 @@ public class PackageInfoProvider {
 						.loadLabel(pm);
 				appInfo.setAppName(appLable.toString());
 			}
+			Log.d("app",appInfo.getAppName()+"\t"+appInfo.getPackageName()+"/\t"+appInfo.getClassName());
 			appInfos.add(appInfo);
 		}
 		// for(ComponentName cn:SHOW_PACKAGENAMES){
@@ -80,8 +88,9 @@ public class PackageInfoProvider {
 		return appInfos;
 	}
 
+
 	public Drawable getAppIcon(String packageName) {
-		return PackageUtils.getIcon(pm, packageName);
+		return PackageManagerUtils.getIcon(pm, packageName);
 	}
 
 	/*

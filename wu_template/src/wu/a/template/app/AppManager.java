@@ -54,7 +54,8 @@ public class AppManager {
 	class Loader extends Thread {
 		@Override
 		public void run() {
-			adapter.setDatas(new PackageInfoProvider(context).getAppInfo());
+			PackageInfoProvider pp=new PackageInfoProvider(context);
+			adapter.setDatas(pp.getToAppInfo(pp.getAudioAppInfo()));
 			mHandler.sendEmptyMessage(0);
 		}
 	}
