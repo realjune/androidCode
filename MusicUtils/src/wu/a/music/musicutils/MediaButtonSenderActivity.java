@@ -1,6 +1,5 @@
 package wu.a.music.musicutils;
 
-import wu.a.lib.media.PlateformUtils;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.KeyEvent;

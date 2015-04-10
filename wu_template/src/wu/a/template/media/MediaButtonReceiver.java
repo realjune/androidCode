@@ -83,6 +83,9 @@ public class MediaButtonReceiver extends BroadcastReceiver {
 				case KeyEvent.KEYCODE_MEDIA_PREVIOUS:
 					sb.append("--KEYCODE_MEDIA_PREVIOUS");
 					break;
+				default:
+					sb.append("--default");
+					break;
 				}
 				break;
 			case KeyEvent.ACTION_MULTIPLE:
