@@ -24,7 +24,8 @@ public class SwipeListView extends ListView {
 	private boolean mIsShown;
 
 	public SwipeListView(Context context) {
-		this(context, null);
+		super(context);
+		mRightViewWidth=200;
 	}
 
 	public SwipeListView(Context context, AttributeSet attrs) {
@@ -98,6 +99,10 @@ public class SwipeListView extends ListView {
 	 */
 	private boolean judgeScrollDirection(float dx, float dy) {
 		boolean canJudge = true;
+		if(mCurrentItemView==null||mCurrentItemView.findViewById(R.id.item_right).getVisibility()!=View.VISIBLE){
+			//禁止侧滑
+			mIsHorizontal = false;
+		}else
 		if (Math.abs(dx) > 30 && Math.abs(dx) > 2 * Math.abs(dy)) {
 			mIsHorizontal = true;
 		} else if (Math.abs(dy) > 30 && Math.abs(dy) > 2 * Math.abs(dx)) {

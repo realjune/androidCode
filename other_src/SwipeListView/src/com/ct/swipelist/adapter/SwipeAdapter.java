@@ -17,6 +17,13 @@ import android.widget.TextView;
 import com.ct.swipelist.R;
 import com.ct.swipelist.entity.WXMessage;
 
+/**
+ * <pre>
+ * 修改翻屏后侧滑空指针
+ * 增加item_right！=visible禁止侧滑，参考Adapter{@link #getView(int, View, ViewGroup)}
+ * @author junxu.wang
+ *
+ */
 public class SwipeAdapter extends BaseAdapter {
 	/**
 	 * 上下文对象
@@ -37,7 +44,7 @@ public class SwipeAdapter extends BaseAdapter {
 
 	@Override
 	public int getCount() {
-		return 32768;
+		return data==null?0:data.size();
 	}
 
 	@Override
@@ -89,8 +96,13 @@ public class SwipeAdapter extends BaseAdapter {
 		holder.tv_msg.setText(msg.getMsg());
 		holder.tv_time.setText(msg.getTime());
 
+		if(position%2==0){
+			holder.item_right.setVisibility(View.GONE);
+		}else{
+			holder.item_right.setVisibility(View.VISIBLE);
+		}
 		holder.iv_icon.setImageResource(msg.getIcon_id());
-
+		holder.item_right.setTag(convertView);
 		holder.item_right.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
