@@ -67,6 +67,8 @@
         <activity android:name="wu.a.template.app.AppListActivity" />
         <!-- xml -->
         <activity android:name="wu.a.template.xml.XMLParserSerializerActivity" />
+		<!-- bmp -->
+        <activity android:name="wu.a.template.bmp.CircleImageActivity" />
     </application>
 
 </manifest>
