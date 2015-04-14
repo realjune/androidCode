@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import wu.a.template.app.AppListActivity;
+import wu.a.template.bmp.CircleImageActivity;
 import wu.a.template.media.MediaAcitivity;
 import wu.a.template.media.MediaButtonSenderActivity;
 import wu.a.template.xml.XMLParserSerializerActivity;
@@ -64,6 +65,7 @@ public class MainActivity extends ListActivity {
 	    addItem(data, "AppListActivity", AppListActivity.class);
 	    addItem(data, "MediaButtonSenderActivity", MediaButtonSenderActivity.class);
 	    addItem(data, "XMLParserSerializerActivity", XMLParserSerializerActivity.class);
+	    addItem(data, "CircleImageActivity", CircleImageActivity.class);
 
 	    return data;
 	  }
