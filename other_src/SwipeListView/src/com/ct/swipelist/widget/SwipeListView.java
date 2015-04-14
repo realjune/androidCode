@@ -25,7 +25,7 @@ public class SwipeListView extends ListView {
 
 	public SwipeListView(Context context) {
 		super(context);
-		mRightViewWidth=200;
+		mRightViewWidth = 200;
 	}
 
 	public SwipeListView(Context context, AttributeSet attrs) {
@@ -99,11 +99,12 @@ public class SwipeListView extends ListView {
 	 */
 	private boolean judgeScrollDirection(float dx, float dy) {
 		boolean canJudge = true;
-		if(mCurrentItemView==null||mCurrentItemView.findViewById(R.id.item_right).getVisibility()!=View.VISIBLE){
-			//禁止侧滑
+		if (mCurrentItemView == null
+				|| mCurrentItemView.findViewById(R.id.item_right)
+						.getVisibility() != View.VISIBLE) {
+			// 禁止侧滑
 			mIsHorizontal = false;
-		}else
-		if (Math.abs(dx) > 30 && Math.abs(dx) > 2 * Math.abs(dy)) {
+		} else if (Math.abs(dx) > 30 && Math.abs(dx) > 2 * Math.abs(dy)) {
 			mIsHorizontal = true;
 		} else if (Math.abs(dy) > 30 && Math.abs(dy) > 2 * Math.abs(dx)) {
 			mIsHorizontal = false;
@@ -194,7 +195,8 @@ public class SwipeListView extends ListView {
 	}
 
 	private void clearPressedState() {
-		mCurrentItemView.setPressed(false);
+		if (mCurrentItemView != null)
+			mCurrentItemView.setPressed(false);
 		setPressed(false);
 		refreshDrawableState();
 	}
@@ -211,7 +213,7 @@ public class SwipeListView extends ListView {
 	}
 
 	private void hiddenRight(View view) {
-		if (mCurrentItemView == null) {
+		if (mCurrentItemView == null || view == null) {
 			return;
 		}
 		Message msg = new MoveHandler().obtainMessage();//
