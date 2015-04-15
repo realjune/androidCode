@@ -68,7 +68,7 @@
         <!-- xml -->
         <activity android:name="wu.a.template.xml.XMLParserSerializerActivity" />
 		<!-- bmp -->
-        <activity android:name="wu.a.template.bmp.CircleImageActivity" />
+        <activity android:name="wu.a.template.bmp.BmpActivity" />
     </application>
 
 </manifest>
