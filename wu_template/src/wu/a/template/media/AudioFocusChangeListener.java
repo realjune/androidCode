@@ -55,25 +55,40 @@ public class AudioFocusChangeListener {
 
 					Log.d(TAG, "other audioFocus: " + focusChange);
 					switch (focusChange) {
+					case AudioManager.AUDIOFOCUS_GAIN_TRANSIENT_MAY_DUCK:
+						Log.d(TAG,
+								"OnAudioFocusChangeListener AUDIOFOCUS_GAIN_TRANSIENT_MAY_DUCK 降低音量");
+						break;
 					case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT:
-						// break;
+						Log.d(TAG,
+								"OnAudioFocusChangeListener AUDIOFOCUS_LOSS_TRANSIENT 长期，被其他播放器抢走等，不需要恢复");
+						// request=false;
+						// isNeedPlay = isPlaying();
+						if (isNeedPlay) {
+							// stop();
+						}
+						break;
 					case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK:
-						// break;
+						Log.d(TAG,
+								"OnAudioFocusChangeListener AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK 暂时失去，需要恢复");
+						// isNeedPlay=isPlaying();
+						if (isNeedPlay) {
+							// pause();
+						}
+						break;
 					case AudioManager.AUDIOFOCUS_LOSS:
 						// 失去焦点之后的操作
 						Log.d(TAG, "lose audioFocus");
-						// isNeedPlay = isPlaying();//暂存当前播放状态，待恢复
-						if (isNeedPlay) {
-							// playOrPause();//如果正在播放则停止
-						}
+						// request=false;//暂存当前播放状态，待恢复
+						isNeedPlay = false;
+						// stop();//如果正在播放则停止
 						break;
 					case AudioManager.AUDIOFOCUS_GAIN:
 						// 获得焦点之后的操作
 						Log.d(TAG, "get audioFocus");
 						// if (isNeedPlay && !isPlaying()) {//判断是否需要回复
-						// playOrPause();//恢复播放
+						// start();//恢复播放
 						// }
-						// isNeedPlay = isPlaying();//
 						break;
 					default:
 						Log.d(TAG, "unknown audioFocus");
@@ -84,7 +99,9 @@ public class AudioFocusChangeListener {
 		}
 	}
 
-	/**要请求音频焦点，你必须从AudioManager mAudioMgr调用requestAudioFocus()
+	/**
+	 * 要请求音频焦点，你必须从AudioManager mAudioMgr调用requestAudioFocus()
+	 * 
 	 * @param context
 	 */
 	private void requestAudioFocus(Context context) {
@@ -117,6 +134,53 @@ public class AudioFocusChangeListener {
 			mAudioMgr.abandonAudioFocus(mAudioFocusChangeListener);
 			mAudioMgr = null;
 		}
+	}
+
+	int currVolume;
+
+	// 打开扬声器
+	public void OpenSpeaker(Context mContext) {
+
+		try {
+			AudioManager audioManager = (AudioManager) mContext
+					.getSystemService(Context.AUDIO_SERVICE);
+			audioManager.setMode(AudioManager.ROUTE_SPEAKER);
+			currVolume = audioManager
+					.getStreamVolume(AudioManager.STREAM_VOICE_CALL);
+
+			if (!audioManager.isSpeakerphoneOn()) {
+				audioManager.setSpeakerphoneOn(true);
+
+				audioManager
+						.setStreamVolume(
+								AudioManager.STREAM_VOICE_CALL,
+								audioManager
+										.getStreamMaxVolume(AudioManager.STREAM_VOICE_CALL),
+								AudioManager.STREAM_VOICE_CALL);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	// 关闭扬声器
+	public void CloseSpeaker(Context mContext) {
+
+		try {
+			AudioManager audioManager = (AudioManager) mContext
+					.getSystemService(Context.AUDIO_SERVICE);
+			if (audioManager != null) {
+				if (audioManager.isSpeakerphoneOn()) {
+					audioManager.setSpeakerphoneOn(false);
+					audioManager.setStreamVolume(
+							AudioManager.STREAM_VOICE_CALL, currVolume,
+							AudioManager.STREAM_VOICE_CALL);
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		// Toast.makeText(context,"揚聲器已經關閉",Toast.LENGTH_SHORT).show();
 	}
 
 }
