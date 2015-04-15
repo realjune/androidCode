@@ -92,7 +92,7 @@ public class SwipeListView extends ListView {
 		return x < getWidth() - mRightViewWidth;
 	}
 
-	/**
+	/**判断横竖滑
 	 * @param dx
 	 * @param dy
 	 * @return judge if can judge scroll direction
@@ -213,7 +213,7 @@ public class SwipeListView extends ListView {
 	}
 
 	private void hiddenRight(View view) {
-		if (mCurrentItemView == null || view == null) {
+		if (/*mCurrentItemView == null || */view == null) {
 			return;
 		}
 		Message msg = new MoveHandler().obtainMessage();//
