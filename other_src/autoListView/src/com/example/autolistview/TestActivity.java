@@ -8,6 +8,9 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
 import com.example.autolistview.adapter.ListViewAdapter;
 import com.example.autolistview.widget.AutoListView;
@@ -26,6 +29,7 @@ public class TestActivity extends Activity implements OnRefreshListener,
 
 	private AutoListView lstv;
 	private ListViewAdapter adapter;
+	private Button head_btn,foot_btn;
 	private List<String> list = new ArrayList<String>();
 	private Handler handler = new Handler() {
 		public void handleMessage(Message msg) {
@@ -51,6 +55,25 @@ public class TestActivity extends Activity implements OnRefreshListener,
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.test);
 
+		head_btn=(Button) findViewById(R.id.head_btn);
+		foot_btn=(Button) findViewById(R.id.foot_btn);
+		head_btn.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				lstv.setRefreshEnable(!lstv.isRefreshEnable());
+			}
+		});
+		foot_btn.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				lstv.setLoadEnable(!lstv.isLoadEnable());
+			}
+		});
+		
 		lstv = (AutoListView) findViewById(R.id.lstv);
 		adapter = new ListViewAdapter(this, list);
 		lstv.setAdapter(adapter);
