@@ -13,7 +13,7 @@ import android.widget.ListView;
 import com.ct.swipelist.R;
 
 public class SwipeListView extends ListView {
-	private Boolean mIsHorizontal;
+	private Boolean mIsHorizontal;//null 初始化，true横滑
 	private View mPreItemView;
 	private View mCurrentItemView;
 	private float mFirstX;
@@ -69,7 +69,7 @@ public class SwipeListView extends ListView {
 			float dx = lastX - mFirstX;
 			float dy = lastY - mFirstY;
 
-			if (Math.abs(dx) >= 5 && Math.abs(dy) >= 5) {
+			if (Math.abs(dx) >= 5 && Math.abs(dy) >= 5) {//滑动，拦截
 				return true;
 			}
 			break;
@@ -92,7 +92,7 @@ public class SwipeListView extends ListView {
 		return x < getWidth() - mRightViewWidth;
 	}
 
-	/**
+	/**判断横竖滑
 	 * @param dx
 	 * @param dy
 	 * @return judge if can judge scroll direction
@@ -126,6 +126,7 @@ public class SwipeListView extends ListView {
 
 		switch (ev.getAction()) {
 		case MotionEvent.ACTION_DOWN:
+			super.onTouchEvent(ev);
 			break;
 
 		case MotionEvent.ACTION_MOVE:
@@ -213,7 +214,7 @@ public class SwipeListView extends ListView {
 	}
 
 	private void hiddenRight(View view) {
-		if (mCurrentItemView == null || view == null) {
+		if (/*mCurrentItemView == null || */view == null) {
 			return;
 		}
 		Message msg = new MoveHandler().obtainMessage();//

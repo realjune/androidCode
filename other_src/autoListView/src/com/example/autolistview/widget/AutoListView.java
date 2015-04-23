@@ -24,7 +24,13 @@ import android.widget.ListView;
  * @version 1.0
  * @desc 自定义Listview　下拉刷新,上拉加载更多
  */
-
+/**
+ * @author junxu.wang
+ * @create 2015-5-19
+ * @version 1.1
+ * @desc 添加refresh 和 load可用与禁用设置
+ *
+ */
 public class AutoListView extends ListView implements OnScrollListener {
 
 	// 区分当前操作是刷新还是加载
@@ -63,6 +69,7 @@ public class AutoListView extends ListView implements OnScrollListener {
 	private int scrollState;
 	private int headerContentInitialHeight;
 	private int headerContentHeight;
+	private boolean refreshEnabele;
 
 	// 只有在listview第一个item显示的时候（listview滑到了顶部）才进行下拉刷新， 否则此时的下拉只是滑动listview
 	private boolean isRecorded;
@@ -89,12 +96,22 @@ public class AutoListView extends ListView implements OnScrollListener {
 		initView(context);
 	}
 
-	// 下拉刷新监听
+	/**
+	 * <pre>
+	 * 下拉刷新监听
+	 * @param onRefreshListener
+	 * </pre>
+	 */
 	public void setOnRefreshListener(OnRefreshListener onRefreshListener) {
 		this.onRefreshListener = onRefreshListener;
 	}
 
-	// 加载更多监听
+	/**
+	 * <pre>
+	 * 加载更多监听
+	 * @param onLoadListener
+	 * </pre>
+	 */
 	public void setOnLoadListener(OnLoadListener onLoadListener) {
 		this.loadEnable = true;
 		this.onLoadListener = onLoadListener;
@@ -104,10 +121,32 @@ public class AutoListView extends ListView implements OnScrollListener {
 		return loadEnable;
 	}
 
-	// 这里的开启或者关闭加载更多，并不支持动态调整
+	/**
+	 * <pre>
+	 * 这里的开启或者关闭加载更多，并不支持动态调整
+	 * @param loadEnable
+	 * </pre>
+	 */
 	public void setLoadEnable(boolean loadEnable) {
 		this.loadEnable = loadEnable;
-		this.removeFooterView(footer);
+		if (loadEnable) {
+			this.addFooterView(footer);
+		} else {
+			this.removeFooterView(footer);
+		}
+	}
+
+	public void setRefreshEnable(boolean refreshEnable) {
+		this.refreshEnabele = refreshEnable;
+		if (refreshEnable) {
+			addHeaderView(header);
+		} else {
+			removeHeaderView(header);
+		}
+	}
+
+	public boolean isRefreshEnable() {
+		return refreshEnabele;
 	}
 
 	public int getPageSize() {
@@ -118,7 +157,12 @@ public class AutoListView extends ListView implements OnScrollListener {
 		this.pageSize = pageSize;
 	}
 
-	// 初始化组件
+	/**
+	 * <pre>
+	 * 初始化组件
+	 * @param context
+	 * </pre>
+	 */
 	private void initView(Context context) {
 
 		// 设置箭头特效
@@ -154,23 +198,39 @@ public class AutoListView extends ListView implements OnScrollListener {
 		measureView(header);
 		headerContentHeight = header.getMeasuredHeight();
 		topPadding(-headerContentHeight);
-		this.addHeaderView(header);
+		// this.addHeaderView(header);
 		this.addFooterView(footer);
 		this.setOnScrollListener(this);
 	}
 
+	/**
+	 * <pre>
+	 * 开始刷新
+	 * </pre>
+	 */
 	public void onRefresh() {
 		if (onRefreshListener != null) {
 			onRefreshListener.onRefresh();
 		}
 	}
 
+	/**
+	 * <pre>
+	 * 开始加载
+	 * </pre>
+	 */
 	public void onLoad() {
 		if (onLoadListener != null) {
 			onLoadListener.onLoad();
 		}
 	}
 
+	/**
+	 * <pre>
+	 * 下拉结束回调
+	 * @param updateTime
+	 * </pre>
+	 */
 	public void onRefreshComplete(String updateTime) {
 		lastUpdate.setText(this.getContext().getString(R.string.lastUpdateTime,
 				Utils.getCurrentTime()));
@@ -178,13 +238,22 @@ public class AutoListView extends ListView implements OnScrollListener {
 		refreshHeaderViewByState();
 	}
 
-	// 用于下拉刷新结束后的回调
+	/**
+	 * 用于下拉刷新结束后的回调
+	 * 
+	 * <pre>
+	 * </pre>
+	 */
 	public void onRefreshComplete() {
 		String currentTime = Utils.getCurrentTime();
 		onRefreshComplete(currentTime);
 	}
 
-	// 用于加载更多结束后的回调
+	/**
+	 * <pre>
+	 * 用于加载更多结束后的回调
+	 * </pre>
+	 */
 	public void onLoadComplete() {
 		isLoading = false;
 	}
@@ -201,9 +270,15 @@ public class AutoListView extends ListView implements OnScrollListener {
 		ifNeedLoad(view, scrollState);
 	}
 
-	// 根据listview滑动的状态判断是否需要加载更多
+	/**
+	 * <pre>
+	 * 根据listview滑动的状态判断是否需要加载更多
+	 * @param view
+	 * @param scrollState
+	 * </pre>
+	 */
 	private void ifNeedLoad(AbsListView view, int scrollState) {
-		if (!loadEnable) {
+		if (!isLoadEnable()) {
 			return;
 		}
 		try {
@@ -223,33 +298,40 @@ public class AutoListView extends ListView implements OnScrollListener {
 	 */
 	@Override
 	public boolean onTouchEvent(MotionEvent ev) {
-		switch (ev.getAction()) {
-		case MotionEvent.ACTION_DOWN:
-			if (firstVisibleItem == 0) {
-				isRecorded = true;
-				startY = (int) ev.getY();
+		if (isRefreshEnable()) {
+			switch (ev.getAction()) {
+			case MotionEvent.ACTION_DOWN:
+				if (firstVisibleItem == 0) {
+					isRecorded = true;
+					startY = (int) ev.getY();
+				}
+				break;
+			case MotionEvent.ACTION_CANCEL:
+			case MotionEvent.ACTION_UP:
+				if (state == PULL) {
+					state = NONE;
+					refreshHeaderViewByState();
+				} else if (state == RELEASE) {
+					state = REFRESHING;
+					refreshHeaderViewByState();
+					onRefresh();
+				}
+				isRecorded = false;
+				break;
+			case MotionEvent.ACTION_MOVE:
+				whenMove(ev);
+				break;
 			}
-			break;
-		case MotionEvent.ACTION_CANCEL:
-		case MotionEvent.ACTION_UP:
-			if (state == PULL) {
-				state = NONE;
-				refreshHeaderViewByState();
-			} else if (state == RELEASE) {
-				state = REFRESHING;
-				refreshHeaderViewByState();
-				onRefresh();
-			}
-			isRecorded = false;
-			break;
-		case MotionEvent.ACTION_MOVE:
-			whenMove(ev);
-			break;
 		}
 		return super.onTouchEvent(ev);
 	}
 
-	// 解读手势，刷新header状态
+	/**
+	 * <pre>
+	 * 解读手势，刷新header状态
+	 * @param ev
+	 * </pre>
+	 */
 	private void whenMove(MotionEvent ev) {
 		if (!isRecorded) {
 			return;
@@ -286,7 +368,12 @@ public class AutoListView extends ListView implements OnScrollListener {
 
 	}
 
-	// 调整header的大小。其实调整的只是距离顶部的高度。
+	/**
+	 * <pre>
+	 * 调整header的大小。其实调整的只是距离顶部的高度。
+	 * @param topPadding
+	 * </pre>
+	 */
 	private void topPadding(int topPadding) {
 		header.setPadding(header.getPaddingLeft(), topPadding,
 				header.getPaddingRight(), header.getPaddingBottom());
@@ -324,7 +411,11 @@ public class AutoListView extends ListView implements OnScrollListener {
 
 	}
 
-	// 根据当前状态，调整header
+	/**
+	 * <pre>
+	 * 根据当前状态，调整header
+	 * </pre>
+	 */
 	private void refreshHeaderViewByState() {
 		switch (state) {
 		case NONE:
@@ -334,7 +425,7 @@ public class AutoListView extends ListView implements OnScrollListener {
 			arrow.clearAnimation();
 			arrow.setImageResource(R.drawable.pull_to_refresh_arrow);
 			break;
-		case PULL:
+		case PULL:// 下拉刷新
 			arrow.setVisibility(View.VISIBLE);
 			tip.setVisibility(View.VISIBLE);
 			lastUpdate.setVisibility(View.VISIBLE);
@@ -343,17 +434,16 @@ public class AutoListView extends ListView implements OnScrollListener {
 			arrow.clearAnimation();
 			arrow.setAnimation(reverseAnimation);
 			break;
-		case RELEASE:
+		case RELEASE:// 松开可以刷新
 			arrow.setVisibility(View.VISIBLE);
 			tip.setVisibility(View.VISIBLE);
 			lastUpdate.setVisibility(View.VISIBLE);
 			refreshing.setVisibility(View.GONE);
-			tip.setText(R.string.pull_to_refresh);
 			tip.setText(R.string.release_to_refresh);
 			arrow.clearAnimation();
 			arrow.setAnimation(animation);
 			break;
-		case REFRESHING:
+		case REFRESHING:// 刷新ing
 			topPadding(headerContentInitialHeight);
 			refreshing.setVisibility(View.VISIBLE);
 			arrow.clearAnimation();
@@ -364,7 +454,12 @@ public class AutoListView extends ListView implements OnScrollListener {
 		}
 	}
 
-	// 用来计算header大小的。比较隐晦。因为header的初始高度就是0,貌似可以不用。
+	/**
+	 * <pre>
+	 * 用来计算header大小的。比较隐晦。因为header的初始高度就是0,貌似可以不用。
+	 * @param child
+	 * </pre>
+	 */
 	private void measureView(View child) {
 		ViewGroup.LayoutParams p = child.getLayoutParams();
 		if (p == null) {
@@ -384,15 +479,21 @@ public class AutoListView extends ListView implements OnScrollListener {
 		child.measure(childWidthSpec, childHeightSpec);
 	}
 
-	/*
+	/**
 	 * 定义下拉刷新接口
+	 * 
+	 * @author junxu.wang
+	 *
 	 */
 	public interface OnRefreshListener {
 		public void onRefresh();
 	}
 
-	/*
+	/**
 	 * 定义加载更多接口
+	 * 
+	 * @author junxu.wang
+	 *
 	 */
 	public interface OnLoadListener {
 		public void onLoad();
