@@ -62,6 +62,7 @@
             android:name="wu.a.template.media.MediaAcitivity"
             android:launchMode="singleInstance" />
         <activity android:name="wu.a.template.media.MediaButtonSenderActivity" />
+        <activity android:name="wu.a.template.media.AudioFocusChangeActivity" />
 
         <!-- package -->
         <activity android:name="wu.a.template.app.AppListActivity" />

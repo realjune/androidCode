@@ -7,6 +7,7 @@ import java.util.Map;
 
 import wu.a.template.app.AppListActivity;
 import wu.a.template.bmp.BmpActivity;
+import wu.a.template.media.AudioFocusChangeActivity;
 import wu.a.template.media.MediaAcitivity;
 import wu.a.template.media.MediaButtonSenderActivity;
 import wu.a.template.xml.XMLParserSerializerActivity;
@@ -64,6 +65,7 @@ public class MainActivity extends ListActivity {
 	    addItem(data, "MediaAcitivity", MediaAcitivity.class);
 	    addItem(data, "AppListActivity", AppListActivity.class);
 	    addItem(data, "MediaButtonSenderActivity", MediaButtonSenderActivity.class);
+	    addItem(data, "AudioFocusChangeActivity", AudioFocusChangeActivity.class);
 	    addItem(data, "XMLParserSerializerActivity", XMLParserSerializerActivity.class);
 	    addItem(data, "CircleImageActivity", BmpActivity.class);
 

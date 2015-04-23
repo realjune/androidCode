@@ -2,6 +2,7 @@ package wu.a.template.media;
 
 import android.content.Context;
 import android.media.AudioManager;
+import android.media.AudioManager.OnAudioFocusChangeListener;
 import android.os.Build;
 import android.util.Log;
 
@@ -37,19 +38,160 @@ import android.util.Log;
  * @author Administrator
  *
  */
-public class AudioFocusChangeListener {
+public class AudioManagerUtils {
 	private static final String TAG = "AudioFocusChangeListener";
 
 	// * 首先，注册一个焦点监听器OnAudioFocusChangeListener 。
-	private AudioManager.OnAudioFocusChangeListener mAudioFocusChangeListener = null;
+	private OnAudioFocusChangeListener mAudioFocusChangeListener = null;
 	private AudioManager mAudioMgr;
 	private boolean isNeedPlay;// 是否临时暂停
+	private Context context;
 
-	// Build.VERSION.SDK_INT表示当前SDK的版本，Build.VERSION_CODES.ECLAIR_MR1为SDK 7版本 ，
-	// 因为AudioManager.OnAudioFocusChangeListener在SDK8版本开始才有。
+	public AudioManagerUtils(Context context) {
+		this.context = context;
+	}
+
+	public AudioManager getAudioManager() {
+		if (mAudioMgr == null)
+			mAudioMgr = (AudioManager) context
+					.getSystemService(Context.AUDIO_SERVICE);
+		return mAudioMgr;
+	}
+
+	/**
+	 * <pre>
+	 * 返回当前音频模式，如 MODE_NORMAL（普通）, MODE_RINGTONE（铃声）, or MODE_IN_CALL（通话）
+	 * @see AudioManager#getMode()
+	 * @return
+	 * </pre>
+	 */
+	public String getModelName() {
+		switch (getAudioManager().getMode()) {
+		case AudioManager.MODE_NORMAL:
+			return "普通";
+		case AudioManager.MODE_RINGTONE:
+			return "铃声";
+		case AudioManager.MODE_IN_CALL:
+			return "通话";
+		case AudioManager.MODE_CURRENT:
+			return "现在";
+		case AudioManager.MODE_INVALID:
+			return "无效";
+		case AudioManager.MODE_IN_COMMUNICATION:
+			return "通信";
+		}
+		return "--";
+	}
+
+	/**
+	 * <pre>
+	 * 设置声音模式，可取值MODE_NORMAL（普通）, MODE_RINGTONE（铃声）, or MODE_IN_CALL（通话）
+	 * @see AudioManager#setMode(int)
+	 * @param mode
+	 * </pre>
+	 */
+	public void setMode(int mode) {
+		getAudioManager().setMode(mode);
+	}
+	
+	/**
+	 * <pre>
+	 * 如RINGER_MODE_NORMAL（普通）、RINGER_MODE_SILENT（静音）、RINGER_MODE_VIBRATE（震动）
+	 * @return 
+	 * </pre>
+	 */
+	public String getRingerModeName(){
+		switch(getAudioManager().getRingerMode()){
+		case AudioManager.RINGER_MODE_NORMAL:
+			return "普通";
+		case AudioManager.RINGER_MODE_SILENT:
+			return "静音";
+		case AudioManager.RINGER_MODE_VIBRATE:
+			return "震动";
+		}
+		return "--";
+	}
+	
+	/**
+	 * <pre>
+	 * 改变铃声模式 
+	 * @see AudioManager#setRingerMode(int)
+	 * @param ringerMode  如RINGER_MODE_NORMAL（普通）、RINGER_MODE_SILENT（静音）、RINGER_MODE_VIBRATE（震动）
+	 * </pre>
+	 */
+	public void setRingerMode(int ringerMode){
+		getAudioManager().setRingerMode(ringerMode);
+	}
+	
+	/**
+	 * <pre>
+	 * 取得当前手机的音量，最大值为7，最小值为0，当为0时，手机自动将模式调整为“震动模式”
+	 * @param streamType
+	 * @return
+	 * </pre>
+	 */
+	public int getStreamVolume(int streamType){
+		return getAudioManager().getStreamVolume(streamType);
+	}
+	
+	/**
+	 * <pre>
+	 * 获得当前手机最大铃声
+	 * @param streamType
+	 * @return
+	 * </pre>
+	 */
+	public int getStreamMaxVolume(int streamType){
+		return getAudioManager().getStreamMaxVolume(streamType);
+	}
+
+	/**
+	 * <pre>
+	 * 用来控制手机音量大小
+	 * @see AudioManager#adjustVolume(int, int)
+	 * @param direction 参数为AudioManager.ADJUST_LOWER 时，可将音量调小一个单位，传入AudioManager.ADJUST_RAISE时，则可以将音量调大一个单位
+	 * @param flags
+	 * </pre>
+	 */
+	public void adjustVolume(int direction, int flags) {
+		getAudioManager().adjustVolume(direction, flags);
+	}
+
+	/**
+	 * <pre>
+	 * （以步长）调节手机音量大小
+	 * @see AudioManager#adjustStreamVolume(int, int, int)
+	 * @param streamType 声音类型，可取为STREAM_VOICE_CALL（通话）、STREAM_SYSTEM（系统声音）、STREAM_RING（铃声）、STREAM_MUSIC（音乐）、STREAM_ALARM（闹铃声）
+	 * @param direction 调整音量的方向，可取ADJUST_LOWER（降低）、ADJUST_RAISE（升高）、ADJUST_SAME
+	 * @param flags 可选的标志位 ,调出系统音量控制AudioManager.FX_FOCUS_NAVIGATION_UP
+	 * </pre>
+	 */
+	public void adjustStreamVolume(int streamType, int direction, int flags) {
+		getAudioManager().adjustStreamVolume(streamType, direction, flags);
+	}
+
+	/**
+	 * <pre>
+	 * 直接设置音量大小
+	 * @see AudioManager#setStreamVolume(int, int, int)
+	 * @param streamType 声音类型，可取为STREAM_VOICE_CALL（通话）、STREAM_SYSTEM（系统声音）、STREAM_RING（铃声）、STREAM_MUSIC（音乐）、STREAM_ALARM（闹铃声）
+	 * @param direction 调整音量的方向，可取ADJUST_LOWER（降低）、ADJUST_RAISE（升高）、ADJUST_SAME
+	 * @param flags 可选的标志位 ,调出系统音量控制AudioManager.FX_FOCUS_NAVIGATION_UP
+	 * </pre>
+	 */
+	public void setStreamVolume(int streamType, int index, int flags) {
+		getAudioManager().setStreamVolume(streamType, index, flags);
+	}
+
+	/**
+	 * <pre>
+	 * Build.VERSION.SDK_INT表示当前SDK的版本，Build.VERSION_CODES.ECLAIR_MR1为SDK 7版本 ，
+	 * 因为AudioManager.OnAudioFocusChangeListener在SDK8版本开始才有。
+	 * </pre>
+	 */
 	private void createAudioFocusChangeListener() {
 		if (Build.VERSION.SDK_INT > Build.VERSION_CODES.ECLAIR_MR1) {
-			mAudioFocusChangeListener = new AudioManager.OnAudioFocusChangeListener() {
+			mAudioFocusChangeListener = new OnAudioFocusChangeListener() {
 				@Override
 				public void onAudioFocusChange(int focusChange) {
 
@@ -104,41 +246,48 @@ public class AudioFocusChangeListener {
 	 * 
 	 * @param context
 	 */
-	private void requestAudioFocus(Context context) {
-		if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.ECLAIR_MR1) {
-			return;
-		}
-		if (mAudioMgr == null)
-			mAudioMgr = (AudioManager) context
-					.getSystemService(Context.AUDIO_SERVICE);
-		if (mAudioMgr != null) {
-			Log.i(TAG, "Request audio focus");
-			int ret = mAudioMgr.requestAudioFocus(mAudioFocusChangeListener,
-					AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN);
-			if (ret != AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
-				Log.i(TAG, "request audio focus fail. " + ret);
+	public boolean requestAudioFocus(
+			OnAudioFocusChangeListener mAudioFocusChangeListener) {
+		if (Build.VERSION.SDK_INT > Build.VERSION_CODES.ECLAIR_MR1) {
+			if (getAudioManager() != null) {
+				Log.i(TAG, "Request audio focus");
+				int ret = mAudioMgr.requestAudioFocus(
+						mAudioFocusChangeListener, AudioManager.STREAM_MUSIC,
+						AudioManager.AUDIOFOCUS_GAIN);
+				if (ret != AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
+					Log.i(TAG, "request audio focus fail. " + ret);
+				}
+				return ret == AudioManager.AUDIOFOCUS_REQUEST_GRANTED;
 			}
 		}
-
+		return false;
 	}
 
 	/**
 	 * 放弃焦点
 	 */
-	private void abandonAudioFocus() {
-		if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.ECLAIR_MR1) {
-			return;
+	public boolean abandonAudioFocus(
+			OnAudioFocusChangeListener mAudioFocusChangeListener) {
+		if (Build.VERSION.SDK_INT > Build.VERSION_CODES.ECLAIR_MR1) {
+			if (mAudioMgr != null) {
+				Log.i(TAG, "Abandon audio focus");
+				int result = mAudioMgr
+						.abandonAudioFocus(mAudioFocusChangeListener);
+				mAudioMgr = null;
+				return result == AudioManager.AUDIOFOCUS_REQUEST_GRANTED;
+			}
 		}
-		if (mAudioMgr != null) {
-			Log.i(TAG, "Abandon audio focus");
-			mAudioMgr.abandonAudioFocus(mAudioFocusChangeListener);
-			mAudioMgr = null;
-		}
+		return true;
 	}
 
 	int currVolume;
 
-	// 打开扬声器
+	/**
+	 * <pre>
+	 * 打开扬声器
+	 * @param mContext
+	 * </pre>
+	 */
 	public void OpenSpeaker(Context mContext) {
 
 		try {
@@ -163,7 +312,12 @@ public class AudioFocusChangeListener {
 		}
 	}
 
-	// 关闭扬声器
+	/**
+	 * <pre>
+	 * 关闭扬声器
+	 * @param mContext
+	 * </pre>
+	 */
 	public void CloseSpeaker(Context mContext) {
 
 		try {
