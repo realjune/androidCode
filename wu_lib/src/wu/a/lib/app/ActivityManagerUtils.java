@@ -90,7 +90,7 @@ public class ActivityManagerUtils {
 	}
 
 	/**
-	 * <pre>
+	 * <pre>杀死别人进程的方法（不能杀死自己）
 	 * 杀死进程
 	 * 需要权限：android.permission.KILL_BACKGROUND_PROCESSES
 	 * <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"></uses-permission>
@@ -101,7 +101,29 @@ public class ActivityManagerUtils {
 	public static void killBackgroundProcesses(ActivityManager am,
 			String packageName) {
 		am.killBackgroundProcesses(packageName);
-//		am.restartPackage(packageName);
+		// am.restartPackage(packageName);
+	}
+
+	/**
+	 * <pre>
+	 * 1： 杀死自己进程的方法
+	 * android.os.Process.killProcess(Process.myPid());
+	 * </pre>
+	 */
+	public static void killProcess(int pid) {
+		android.os.Process.killProcess(pid);
+	}
+
+	/**
+	 * <pre>杀死别人进程的方法（不能杀死自己）
+	 * 需要加入权限< uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+	 *  @param am
+	 *  @param packageName
+	 * </pre>
+	 * @deprecated
+	 */
+	public static void restartPackage(ActivityManager am, String packageName) {
+		am.restartPackage(packageName);
 	}
 
 	/**
