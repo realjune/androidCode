@@ -9,12 +9,9 @@ import org.xmlpull.v1.XmlSerializer;
 import android.content.Context;
 import android.util.Log;
 import android.util.Xml;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AbsoluteLayout;
-import android.widget.Button;
-import android.widget.TextView;
+import android.widget.FrameLayout;
 
 public class AutoViewParser implements XmlParser<View>{
 	private Context context;
@@ -30,8 +27,8 @@ public class AutoViewParser implements XmlParser<View>{
 //		XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
 //		XmlPullParser parser = factory.newPullParser();
 		
-		XmlPullParser parser = Xml.newPullParser();	//ÓÉandroid.util.Xml´´½¨Ò»¸öXmlPullParserÊµÀý
-    	parser.setInput(is, "UTF-8");				//ÉèÖÃÊäÈëÁ÷ ²¢Ö¸Ã÷±àÂë·½Ê½
+		XmlPullParser parser = Xml.newPullParser();	//ï¿½ï¿½android.util.Xmlï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½XmlPullParserÊµï¿½ï¿½
+    	parser.setInput(is, "UTF-8");				//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ë·½Ê½
 		int eventType = parser.getEventType();
 
 //				parser=context.getResources().getLayout(R.layout.relativelayout);
@@ -41,7 +38,7 @@ public class AutoViewParser implements XmlParser<View>{
 			switch (eventType) {
 			case XmlPullParser.START_DOCUMENT:
 				Log.d("ddd","START_DOCUMENT");
-				parrent = new AbsoluteLayout(context);
+				parrent = new FrameLayout(context);
 				child=parrent;
 				obj=parrent;
 				break;
@@ -57,8 +54,10 @@ public class AutoViewParser implements XmlParser<View>{
 				break;
 			case XmlPullParser.END_TAG:
 				Log.d("ddd","END_TAG");
-				if(child!=null)
-				parrent.addView(child);
+				if(child!=null){
+					parrent.addView(child);
+					child=null;
+				}
 				break;
 			case XmlPullParser.TEXT:
 				Log.d("ddd","TEXT="+parser.getText());
@@ -69,13 +68,14 @@ public class AutoViewParser implements XmlParser<View>{
 		return obj;
 	}
     
-    public String serialize(View books) throws Exception {
+    public String serialize() throws Exception {
+//    	View objParser
 ////		XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
 ////		XmlSerializer serializer = factory.newSerializer();
 //		
-    	XmlSerializer serializer = Xml.newSerializer();	//ÓÉandroid.util.Xml´´½¨Ò»¸öXmlSerializerÊµÀý
+    	XmlSerializer serializer = Xml.newSerializer();	//ï¿½ï¿½android.util.Xmlï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½XmlSerializerÊµï¿½ï¿½
     	StringWriter writer = new StringWriter();
-//    	serializer.setOutput(writer);	//ÉèÖÃÊä³ö·½ÏòÎªwriter
+//    	serializer.setOutput(writer);	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªwriter
 //		serializer.startDocument("UTF-8", true);
 //		serializer.startTag("", "books");
 //		for (Book book : books) {

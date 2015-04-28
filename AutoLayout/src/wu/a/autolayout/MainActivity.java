@@ -66,8 +66,8 @@ public class MainActivity extends ListActivity {
 
   private List<? extends Map<String, ?>> getData() {
     List<Map<String, Object>> data = new ArrayList<Map<String, Object>>();
-    addItem(data, "LayoutRelative", LayoutRelative.class);
-    addItem(data, "LayoutAbsolute", LayoutAbsolute.class);
+    addItem(data, "LayoutRelative", ActivityLayoutRelative.class);
+    addItem(data, "LayoutAbsolute", ActivityLayoutAbsolute.class);
     addItem(data, "XMLParserSerializerActivity", XMLParserSerializerActivity.class);
 
     return data;

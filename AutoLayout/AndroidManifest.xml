@@ -22,8 +22,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LayoutAbsolute"/>
-        <activity android:name=".LayoutRelative"/>
+        <activity android:name=".ActivityLayoutAbsolute"/>
+        <activity android:name=".ActivityLayoutRelative"/>
         <activity android:name=".XMLParserSerializerActivity"/>
     </application>
 

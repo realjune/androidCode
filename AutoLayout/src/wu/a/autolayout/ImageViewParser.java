@@ -3,21 +3,22 @@ package wu.a.autolayout;
 import java.io.InputStream;
 
 import android.content.Context;
+import android.widget.ImageView;
 import android.widget.TextView;
 
-public class TextViewParser extends ViewParser<TextView> {
+public class ImageViewParser extends ViewParser<ImageView> {
 	
 
-	public TextViewParser(Context context) {
-		super(new TextView(context));
+	public ImageViewParser(Context context) {
+		super(new ImageView(context));
 	}
 
-	public TextViewParser(TextView view) {
+	public ImageViewParser(ImageView view) {
 		super(view);
 	}
 
 	@Override
-	public TextView parse(InputStream is) throws Exception {
+	public ImageView parse(InputStream is) throws Exception {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -29,8 +30,10 @@ public class TextViewParser extends ViewParser<TextView> {
 	}
 
 	void parse(String an,String av){
-		if(ATT_TEXT.equals(an)){
-			view.setText(av);
+		if(ATT_SRC.equals(an)){
+			if(av.startsWith(PREFIX_DRAWABLE)){
+//				view.setImageBitmap(bm);
+			}
 		}else 
 			super.parse(an,av);
 	}
