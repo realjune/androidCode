@@ -15,6 +15,6 @@ public class Test {
 		 System.out.println("a".compareTo("b"));
 		 
 		 String colorStr="ffffffff";
-		 System.out.println(colorStr+"= "+Integer.getInteger(colorStr));
+		 System.out.println(colorStr+"= "+((int)Long.parseLong(colorStr,16)));
 	}
 }

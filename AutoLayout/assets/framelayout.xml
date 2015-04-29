@@ -5,10 +5,19 @@
     tools:context="${relativePackage}.${activityClass}" >
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="210dp"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="288dp"
+        android:layout_marginTop="116dp" 
+        android:text="Button3" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="78dp"
         android:text="Button1" 
         android:background="@drawable/ic_launcher"/>
@@ -20,15 +29,17 @@
         android:layout_margin="10dp"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="207dp"
+        android:clickable="true"
         android:src="@drawable/ic_launcher" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:layout_marginLeft="88dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="116dp" 
+        android:clickable="false"
         android:text="Button2" />
 
     <TextView
@@ -39,6 +50,29 @@
         android:layout_marginLeft="6dp"
         android:layout_marginTop="62dp"
         android:text="@string/hello_world" 
-        android:background="#ffff00ff"/>
+        android:clickable="true"
+        android:background="#ffff0000"/>
+    
+
+    <wu.a.autolayout.ToggleLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="462dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#ff00ff"
+            android:text="@string/hello_world" />
+    </wu.a.autolayout.ToggleLayout>
+    
 
 </FrameLayout>

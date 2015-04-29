@@ -25,6 +25,7 @@
         <activity android:name=".ActivityLayoutAbsolute"/>
         <activity android:name=".ActivityLayoutRelative"/>
         <activity android:name=".XMLParserSerializerActivity"/>
+        <activity android:name=".ActivityFrameLayout"/>
     </application>
 
 </manifest>
