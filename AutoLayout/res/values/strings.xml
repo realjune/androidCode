@@ -3,5 +3,6 @@
 
     <string name="app_name">AutoLayout</string>
     <string name="hello_world">Hello world!</string>
+    <item type="id" name="play_btn" /> 
 
 </resources>

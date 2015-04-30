@@ -27,6 +27,7 @@ public abstract class ViewParser<T extends View> implements XmlParser<T> {
 	static final String PREFIX_NUM = "#";
 	public static final String PREFIX_DRAWABLE="@drawable/";
 
+	private static final String ATT_PADDING = "padding";
 	static final String ATT_CLICKABLE = "clickable";
 	static final String ATT_BACKGROUND = "background";
 	static final String ATT_LAYOUT_Y = "layout_y";
@@ -87,7 +88,9 @@ public abstract class ViewParser<T extends View> implements XmlParser<T> {
 	 */
 	void parse(String an, String av) {
 		if (ATT_ID.equals(an)) {
-			// view.setId(Integer.parseInt(av));
+			String[] strs = av.substring(1).split(REGULAR_EXPRESSION);
+			int id = view.getResources().getIdentifier(strs[1], strs[0],view.getContext().getPackageName());
+			 view.setId(id);
 		} else if (ATT_LAYOUT_WIDTH.equals(an)) {
 			view.getLayoutParams().width = getPx(av);
 		} else if (ATT_LAYOUT_HEIGHT.equals(an)) {
@@ -99,7 +102,20 @@ public abstract class ViewParser<T extends View> implements XmlParser<T> {
 			lp.leftMargin=getPx(av);
 		} else if (LAYOUT_MARGIN_TOP.equals(an)) {
 			lp.topMargin=getPx(av);
-		} else if (ATT_BACKGROUND.equals(an)) {
+		} else if (ATT_PADDING.equals(an)) {
+			int px=getPx(av);
+			view.setPadding(px, px, px, px);
+		} else if ("visibility".equals(an)) {
+			if("gone".equals(av)){
+				
+			}else if("invisible".equals(av)){
+				
+			}else{
+				
+			}
+			int px=getPx(av);
+			view.setPadding(px, px, px, px);
+		}else if (ATT_BACKGROUND.equals(an)) {
 			if (av != null && av.startsWith(PREFIX_NUM)) {
 				view.setBackgroundColor((int)Long.parseLong(av.substring(1), 16));
 //				StateListDrawable sld=new StateListDrawable();

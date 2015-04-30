@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.FrameLayout;
+import android.widget.Toast;
 
 public class AutoViewParser implements XmlParser<View>,OnClickListener,OnCheckedChangeListener{
 	private Context context;
@@ -53,13 +54,22 @@ public class AutoViewParser implements XmlParser<View>,OnClickListener,OnChecked
 			case XmlPullParser.START_TAG:
 				Log.d("ddd","START_TAG="+parser.getName());
 				igoreView=false;
-				if (parser.getName().equals("TextView")) {
+				String viewName=parser.getName();
+				if ("TextView".equals(viewName)) {
 					child = new TextViewParser(context).parse(parser);
-				} else if (parser.getName().equals("Button")) {
+				} else if ("Button".equals(viewName)) {
 					child = new ButtonParser(context).parse(parser);
-				} else if (parser.getName().equals("ImageView")) {
+				} else if ("ImageView".equals(viewName)) {
 					child = new ImageViewParser(context).parse(parser);
-				} else if (parser.getName().equals("wu.a.autolayout.ToggleLayout")) {
+				} else if ("ToggleButton".equals(viewName)) {
+					child = new ToggleButtonParser(context).parse(parser);
+				} else if ("CheckBox".equals(viewName)) {
+					child = new CheckBoxParser(context).parse(parser);
+				} else if ("ProgressBar".equals(viewName)) {
+					child = new ProgressBarParser(context).parse(parser);
+				}  else if ("HorizontalProgressBar".equals(viewName)) {
+					child = new HorizontalProgressBarParser(context).parse(parser);
+				} else if ("wu.a.autolayout.ToggleLayout".equals(viewName)) {
 					child = new ToggleLayoutParser(context).parse(parser);
 				} else{
 					igoreView=true;
@@ -137,6 +147,7 @@ public class AutoViewParser implements XmlParser<View>,OnClickListener,OnChecked
 	public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 		Log.d("ddd","onCheckedChanged in Auto "+buttonView.toString()+ isChecked);
 		// TODO Auto-generated method stub
+		Toast.makeText(context, "checked id="+buttonView.getId(), Toast.LENGTH_SHORT).show();
 		
 	}
 
@@ -144,6 +155,6 @@ public class AutoViewParser implements XmlParser<View>,OnClickListener,OnChecked
 	public void onClick(View v) {
 		Log.d("ddd","onClick in Auto "+v.toString());
 		// TODO Auto-generated method stub
-		
+		Toast.makeText(context, "onClick id="+v.getId(), Toast.LENGTH_SHORT).show();
 	}
 }
