@@ -7,6 +7,7 @@ import java.util.Map;
 
 import wu.a.template.app.AppListActivity;
 import wu.a.template.bmp.BmpActivity;
+import wu.a.template.bmp.TouchImageViewActivity;
 import wu.a.template.media.AudioFocusChangeActivity;
 import wu.a.template.media.MediaAcitivity;
 import wu.a.template.media.MediaButtonSenderActivity;
@@ -68,6 +69,7 @@ public class MainActivity extends ListActivity {
 	    addItem(data, "AudioFocusChangeActivity", AudioFocusChangeActivity.class);
 	    addItem(data, "XMLParserSerializerActivity", XMLParserSerializerActivity.class);
 	    addItem(data, "CircleImageActivity", BmpActivity.class);
+	    addItem(data, "TouchImageViewActivity", TouchImageViewActivity.class);
 
 	    return data;
 	  }
