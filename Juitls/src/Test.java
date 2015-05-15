@@ -13,5 +13,8 @@ public class Test {
 		 System.out.println("暗香".compareTo("春暖")+ " "+CharacterParser.getInstance().getSelling("暗香")+" "+CharacterParser.getInstance().getSelling("春暖"));
 		 
 		 System.out.println("a".compareTo("b"));
+		 
+		 String colorStr="ffffffff";
+		 System.out.println(colorStr+"= "+((int)Long.parseLong(colorStr,16)));
 	}
 }
