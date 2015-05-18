@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Wuliu</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="LOADING">LOADING...</string>
+    <string name="near_cars">附近有超过10两货车可提供服务</string>
+
+    
+    
+    
+    <color name="item_bg">#2fcccccc</color>
+    <color name="tab_bg">#72cccccc</color>
+    <color name="title_font2">#ff7e00</color>
+    <color name="title_font">#cccccc</color>
+    <color name="icon_font">#7c7c7c</color>
+    <color name="title_bg">#cc232323</color>
+    <color name="item_dis_bg">#3c3a2f</color>
+    <color name="menu_back">#88888888</color>
+    <color name="menu_selected">#88880000</color>
+    
+    
+    
+    <!-- 边距 -->
+    <dimen name="menu_item_divider">2dp</dimen>
+    <dimen name="menu_group_divider">20dp</dimen>
+    <dimen name="margin">6dp</dimen>
+    <dimen name="margin_big">18dp</dimen>
+    <!-- text size -->
+    <dimen name="text_size_small">10sp</dimen>
+    <dimen name="text_size_big">20sp</dimen>
+    <dimen name="text_size_30">30sp</dimen>
+    
+</resources>
