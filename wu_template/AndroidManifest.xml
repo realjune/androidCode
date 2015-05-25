@@ -72,6 +72,25 @@
         <activity android:name="wu.a.template.bmp.BmpActivity" />
         <activity android:name="wu.a.template.bmp.CropImgActivity" />
         <activity android:name="wu.a.template.bmp.TouchImageViewActivity" />
+        
+        <!-- view -->
+        <activity
+            android:name="wu.a.lib.view.MainActivity"
+            android:launchMode="standard" >
+        </activity>
+        <activity android:name="wu.a.lib.view.ChartButtonActivity"></activity>
+        <activity android:name="wu.a.lib.view.CircleLinearActivity"></activity>
+        <activity android:name="wu.a.lib.view.CoverFlowActivity"></activity>
+        <activity android:name="wu.a.lib.view.CoverFlowImageActivity"></activity>
+        <activity android:name="wu.a.lib.view.CustomDialogActivity"></activity>
+        <activity android:name="wu.a.lib.view.DatePickerDialogActivity"></activity>
+        <activity android:name="wu.a.lib.view.DrawableActivity"></activity>
+        <activity android:name="wu.a.lib.view.EditViewTestActivity"></activity>
+        <activity android:name="wu.a.lib.view.FaceTest"></activity>
+        <activity android:name="wu.a.lib.view.LineViewActivity"></activity>
+        <activity android:name="wu.a.lib.view.PathShapeActivity"></activity>
+        <activity android:name="wu.a.lib.view.SwitchButtonActivity"></activity>
+        <activity android:name="wu.a.lib.data.json.JsonActivity"></activity>
     </application>
 
 </manifest>

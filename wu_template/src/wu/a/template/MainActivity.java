@@ -72,6 +72,7 @@ public class MainActivity extends ListActivity {
 	    addItem(data, "CircleImageActivity", BmpActivity.class);
 	    addItem(data, "CropImgActivity", CropImgActivity.class);
 	    addItem(data, "TouchImageViewActivity", TouchImageViewActivity.class);
+	    addItem(data, "CustomView", wu.a.lib.view.MainActivity.class);
 
 	    return data;
 	  }
