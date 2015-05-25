@@ -8,14 +8,12 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.pm.IPackageStatsObserver;
 import android.content.pm.PackageStats;
-import android.database.DataSetObserver;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
