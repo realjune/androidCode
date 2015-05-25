@@ -8,6 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.regex.Pattern;
 
+import wu.a.wuliu.BaiduMapActivity;
 import wu.a.wuliu.MapActivity;
 import wu.a.wuliu.MapActivity.LocateIn;
 import android.app.Activity;
@@ -32,11 +33,12 @@ import android.widget.ListView;
 import android.widget.TextView;
 import baidumapsdk.demo.R;
 
+import com.baidu.location.BDLocation;
 import com.droid.MyLetterListView.OnTouchingLetterChangedListener;
 
 
 
-public class Activity01 extends Activity {
+public class Activity01 extends BaiduMapActivity {
 	public static void start(Activity context,int requestCode){
 		Intent intent = new Intent(context, Activity01.class);
 		context.startActivityForResult(intent,12);
@@ -85,6 +87,7 @@ public class Activity01 extends Activity {
 		initOverlay();
 		hotCityInit();
 		setAdapter(allCity_lists);
+		startBaiduMap();
 	}
 
 	/**
@@ -92,7 +95,7 @@ public class Activity01 extends Activity {
 	 */
 	public void hotCityInit() {
 		City city = new City("", "-");   
-		allCity_lists.add(city);
+//		allCity_lists.add(city);
 		city = new City("邯郸", "-");
 		allCity_lists.add(city);
 		city = new City("上海", "");
@@ -210,8 +213,8 @@ public class Activity01 extends Activity {
 			// TODO Auto-generated method stub
 			int type = 0;
 			if (position == 0) {
-				type = 2;
-			} else if (position == 1) {
+//				type = 2;
+//			} else if (position == 1) {
 				type = 1;
 			}
 			return type;
@@ -247,18 +250,20 @@ public class Activity01 extends Activity {
 				topViewHolder.alpha.setVisibility(View.VISIBLE);
 				topViewHolder.alpha.setText("定位城市");
 
-			} else if (viewType == 2) {
-				final ShViewHolder shViewHolder;
-				if (convertView == null) {
-					shViewHolder = new ShViewHolder();
-					convertView = inflater.inflate(R.layout.search_item, null);
-					shViewHolder.editText = (EditText) convertView
-							.findViewById(R.id.sh);
-					convertView.setTag(shViewHolder);
-				} else {
-					shViewHolder = (ShViewHolder) convertView.getTag();
-				}
-			} else {
+			} 
+//			else if (viewType == 2) {
+//				final ShViewHolder shViewHolder;
+//				if (convertView == null) {
+//					shViewHolder = new ShViewHolder();
+//					convertView = inflater.inflate(R.layout.search_item, null);
+//					shViewHolder.editText = (EditText) convertView
+//							.findViewById(R.id.sh);
+//					convertView.setTag(shViewHolder);
+//				} else {
+//					shViewHolder = (ShViewHolder) convertView.getTag();
+//				}
+//			}
+			else {
 				if (convertView == null) {
 					convertView = inflater.inflate(R.layout.list_item, null);
 					holder = new ViewHolder();
@@ -384,6 +389,22 @@ public class Activity01 extends Activity {
 		}
 	}
 	
-	
+
+	public void onReceiveLocation(BDLocation location) {
+		if (location == null)
+			return;
+		String new_cityName = location.getCity();
+		if(mapCity==null){
+			mapCity=new City(new_cityName,"-");
+		}else if(new_cityName!=null&&new_cityName.equals(mapCity.name)){
+			return;
+		}else {
+			mapCity.setName(new_cityName);
+		}
+		if (adapter != null) {
+			adapter.notifyDataSetChanged();
+		}
+		Log.d(TAG, "baidu city=" + new_cityName);
+	}
 
 }

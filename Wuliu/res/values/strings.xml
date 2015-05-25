@@ -5,6 +5,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="LOADING">LOADING...</string>
     <string name="near_cars">附近有超过10两货车可提供服务</string>
+    <string name="select_city">选择城市</string>
 
     
     

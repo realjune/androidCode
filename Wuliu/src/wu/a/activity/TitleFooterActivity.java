@@ -1,5 +1,7 @@
 package wu.a.activity;
 
+import wu.a.wuliu.BookActivity;
+import wu.a.wuliu.BookManagerActivity;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -206,7 +208,7 @@ public class TitleFooterActivity extends BaseActivity {
 		}else{
 			menu_book.setOnClickListener(new View.OnClickListener() {
 				public void onClick(View v) {
-					
+					BookActivity.start(TitleFooterActivity.this);
 				}});
 		}
 		if(MENU_BOOK_MANAGER==type){
@@ -216,7 +218,7 @@ public class TitleFooterActivity extends BaseActivity {
 		}else{
 			menu_book_manager.setOnClickListener(new View.OnClickListener() {
 				public void onClick(View v) {
-					
+					BookManagerActivity.start(TitleFooterActivity.this);
 				}});
 		}
 		if(MENU_ACTIVITY==type){

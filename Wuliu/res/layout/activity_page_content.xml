@@ -16,9 +16,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
+            android:clickable="true"
             android:layout_marginLeft="@dimen/margin"
-            android:onClick="onTitleLeftButtonClick"
-            android:src="@drawable/btn_back" />
+            android:onClick="onTitleLeftButtonClick" 
+            android:visibility="gone"/>
 
         <ImageView
             android:id="@+id/title_left"
@@ -26,7 +27,8 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:onClick="onTitleLeftButtonClick"
-            android:src="@drawable/btn_back" />
+            android:src="@drawable/btn_back"
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/title_text"
