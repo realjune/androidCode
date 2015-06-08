@@ -32,6 +32,7 @@ import com.zijunlin.Zxing.Demo.view.ViewfinderView;
 public class CaptureActivity extends Activity implements Callback
 {
 
+	public static final String SCAN_CODE="scan_code";
 	private CaptureActivityHandler handler;
 	private ViewfinderView viewfinderView;
 	private boolean hasSurface;
@@ -199,6 +200,9 @@ public class CaptureActivity extends Activity implements Callback
 			@Override
 			public void onClick(DialogInterface dialog, int which)
 			{
+				Intent i=new Intent();
+				i.putExtra(SCAN_CODE, obj.getText());
+				CaptureActivity.this.setResult(RESULT_OK, i);
 				finish();
 			}
 		});

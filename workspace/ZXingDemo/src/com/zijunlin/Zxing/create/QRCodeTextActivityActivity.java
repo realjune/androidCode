@@ -1,12 +1,12 @@
 package com.zijunlin.Zxing.create;
 
-
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 import android.graphics.BitmapFactory;
@@ -17,14 +17,14 @@ import android.graphics.PointF;
 import android.graphics.Rect;
 import android.os.Bundle;
 import android.os.Environment;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.View.MeasureSpec;
-import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.google.zxing.BarcodeFormat;
@@ -33,10 +33,16 @@ import com.google.zxing.MultiFormatWriter;
 import com.google.zxing.WriterException;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
+import com.zijunlin.Zxing.Demo.CaptureActivity;
 import com.zijunlin.Zxing.Demo.R;
 
 public class QRCodeTextActivityActivity extends Activity {
-	/** Called when the activity is first created. */
+	private static final int SCAN_CODE = 1;
+	// 扫描
+	TextView result_code_tv;
+	Button scan_code_btn;
+	// 编码
+	EditText decode_et;
 	Button btn1 = null;
 	Button btn2 = null;
 	ImageView ivImageView = null;
@@ -45,16 +51,28 @@ public class QRCodeTextActivityActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.qrcode_text);
+		result_code_tv = (TextView) findViewById(R.id.result_code_tv);
+		scan_code_btn = (Button) findViewById(R.id.scan_code_btn);
+		scan_code_btn.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				result_code_tv.setText("");
+				startActivityForResult(
+						new Intent(QRCodeTextActivityActivity.this,
+								CaptureActivity.class), SCAN_CODE);
+			}
+		});
+		decode_et = (EditText) findViewById(R.id.decode_et);
 		btn1 = (Button) findViewById(R.id.button1);// 条形码
 		btn2 = (Button) findViewById(R.id.button2);// 二维码
 		ivImageView = (ImageView) findViewById(R.id.imageView1);
-		final String strconteString = "112233445566";
 
 		btn1.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
+				String strconteString = decode_et.getText().toString().trim();
 				Bitmap mBitmap = null;
 				mBitmap = creatBarcode(QRCodeTextActivityActivity.this,
-						strconteString, 300, 300, true);
+						strconteString, barcodeFormat, 300, 300, null, true);
 				if (mBitmap != null) {
 					ivImageView.setImageBitmap(mBitmap);
 				}
@@ -63,55 +81,46 @@ public class QRCodeTextActivityActivity extends Activity {
 		btn2.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				Bitmap mBitmap = null;
-				try {
-					if (!strconteString.equals("")) {
-						mBitmap = Create2DCode(strconteString);
+				String strconteString = decode_et.getText().toString().trim();
+				if (!TextUtils.isEmpty(strconteString)) {
+					Map<EncodeHintType, Object> hints = new HashMap<EncodeHintType, Object>();
+					hints.put(EncodeHintType.ERROR_CORRECTION,
+							ErrorCorrectionLevel.L); //容错率
+					// hints.put(EncodeHintType.CHARACTER_SET, "GBK");
+					hints.put(EncodeHintType.CHARACTER_SET, "UTF-8");//编码
+					hints.put(EncodeHintType.MARGIN, 2);//边框 
+					// 生成二维矩阵,编码时指定大小,不要生成了图片以后再进行缩放,这样会模糊导致识别失败
+					mBitmap = creatBarcode(QRCodeTextActivityActivity.this,
+							strconteString, BarcodeFormat.QR_CODE, 500, 500,
+							hints, true);
 
-						// Bitmap bm =
-						// BitmapFactory.decodeResource(getResources(),
-						// R.drawable.diagnose1);
-						ivImageView.setImageBitmap(mBitmap);
-//						ivImageView.setImageBitmap(createBitmap(
-//								mBitmap,
-//								zoomBitmap(BitmapFactory.decodeResource(
-//										getResources(), R.drawable.icon), 60,60)));
-					}
-				} catch (Exception e) {
-					e.printStackTrace();
+					// 获取图标
+					Bitmap bm = BitmapFactory.decodeResource(getResources(),
+							R.drawable.icon);
+					// 缩放图标
+					bm = zoomBitmap(bm, 60, 60);
+					// 合并二维码与图标
+					mBitmap = createBitmap(mBitmap, bm);
+					ivImageView.setImageBitmap(mBitmap);
 				}
 			}
 		});
 	}
 
-	public Bitmap Create2DCode(String str) throws WriterException {
-		Map<EncodeHintType, Object> hints = new HashMap<EncodeHintType, Object>();
-		hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.L);
-//		hints.put(EncodeHintType.CHARACTER_SET, "GBK");
-		 hints.put(EncodeHintType.CHARACTER_SET, "UTF-8");
-		// 生成二维矩阵,编码时指定大小,不要生成了图片以后再进行缩放,这样会模糊导致识别失败
-		BitMatrix matrix = new MultiFormatWriter().encode(str,
-				BarcodeFormat.QR_CODE, 500, 500, hints);
-		int width = matrix.getWidth();
-		int height = matrix.getHeight();
-		// 二维矩阵转为一维像素数组,也就是一直横着排了
-		int[] pixels = new int[width * height];
-//		for (int i = 0; i < pixels.length; i++) {
-//			pixels[i] = 0xffffffff;
-//		}
-		for (int y = 0; y < height; y++) {
-			for (int x = 0; x < width; x++) {
-				if (matrix.get(x, y)) {
-					pixels[y * width + x] = 0xff000000;
-				} else {
-					pixels[y * width + x] = 0xffffffff;
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		if (requestCode == SCAN_CODE) {
+			if (resultCode == RESULT_OK) {
+				if (data != null) {
+					String code = data
+							.getStringExtra(CaptureActivity.SCAN_CODE);
+					if (code != null) {
+						result_code_tv.setText(code);
+					}
 				}
 			}
 		}
-		Bitmap bitmap = Bitmap.createBitmap(width, height,
-				Bitmap.Config.ARGB_8888);
-		// 通过像素数组生成bitmap,具体参考api
-		bitmap.setPixels(pixels, 0, width, 0, 0, width, height);
-		return bitmap;
+		super.onActivityResult(requestCode, resultCode, data);
 	}
 
 	public File GetCodePath(String name) {
@@ -128,10 +137,6 @@ public class QRCodeTextActivityActivity extends Activity {
 		return new File(EXTERN_PATH + name);
 	}
 
-	/**
-	 * 图片两端所保留的空白的宽度
-	 */
-	private int marginW = 20;
 	/**
 	 * 条形码的编码类型
 	 */
@@ -152,18 +157,16 @@ public class QRCodeTextActivityActivity extends Activity {
 	 * @return
 	 */
 	public Bitmap creatBarcode(Context context, String contents,
-			int desiredWidth, int desiredHeight, boolean displayCode) {
-		Bitmap ruseltBitmap = null;
+			BarcodeFormat format, int desiredWidth, int desiredHeight,
+			Map<EncodeHintType, ?> hints, boolean displayCode) {
+		Bitmap ruseltBitmap = encodeAsBitmap(contents, format, desiredWidth,
+				desiredHeight, hints);
 		if (displayCode) {
-			Bitmap barcodeBitmap = encodeAsBitmap(contents, barcodeFormat,
-					desiredWidth, desiredHeight);
-			Bitmap codeBitmap = creatCodeBitmap(contents, desiredWidth + 2
-					* marginW, desiredHeight, context);
-			ruseltBitmap = mixtureBitmap(barcodeBitmap, codeBitmap, new PointF(
-					0, desiredHeight));
-		} else {
-			ruseltBitmap = encodeAsBitmap(contents, barcodeFormat,
-					desiredWidth, desiredHeight);
+			Bitmap codeBitmap = string2Bitmap(contents, desiredWidth,
+					desiredHeight, context);
+			ruseltBitmap = mixtureBitmap(ruseltBitmap, codeBitmap, new PointF(
+					(ruseltBitmap.getWidth() - codeBitmap.getWidth()) >> 1,
+					desiredHeight));
 		}
 
 		return ruseltBitmap;
@@ -178,16 +181,11 @@ public class QRCodeTextActivityActivity extends Activity {
 	 * @param context
 	 * @return
 	 */
-	protected Bitmap creatCodeBitmap(String contents, int width, int height,
+	protected Bitmap string2Bitmap(String contents, int width, int height,
 			Context context) {
 		TextView tv = new TextView(context);
-		LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
-				LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT);
-		tv.setLayoutParams(layoutParams);
 		tv.setText(contents);
-		tv.setHeight(height);
-		tv.setGravity(Gravity.CENTER_HORIZONTAL);
-		tv.setWidth(width);
+		tv.setGravity(Gravity.CENTER);
 		tv.setDrawingCacheEnabled(true);
 		tv.setTextColor(Color.BLACK);
 		tv.measure(MeasureSpec.makeMeasureSpec(0, MeasureSpec.UNSPECIFIED),
@@ -212,7 +210,7 @@ public class QRCodeTextActivityActivity extends Activity {
 	 * @throws WriterException
 	 */
 	protected Bitmap encodeAsBitmap(String contents, BarcodeFormat format,
-			int desiredWidth, int desiredHeight) {
+			int desiredWidth, int desiredHeight, Map<EncodeHintType, ?> hints) {
 		final int WHITE = 0xFFFFFFFF;
 		final int BLACK = 0xFF000000;
 
@@ -220,12 +218,11 @@ public class QRCodeTextActivityActivity extends Activity {
 		BitMatrix result = null;
 		try {
 			result = writer.encode(contents, format, desiredWidth,
-					desiredHeight, null);
+					desiredHeight, hints);
 		} catch (WriterException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 		int width = result.getWidth();
 		int height = result.getHeight();
 		int[] pixels = new int[width * height];
@@ -244,10 +241,12 @@ public class QRCodeTextActivityActivity extends Activity {
 	}
 
 	/**
-	 * 将两个Bitmap合并成一个
+	 * 将两个Bitmap拼接成一个图片
 	 * 
 	 * @param first
+	 *            原图
 	 * @param second
+	 *            其他图片
 	 * @param fromPoint
 	 *            第二个Bitmap开始绘制的起始位置（相对于第一个Bitmap）
 	 * @return
@@ -256,11 +255,13 @@ public class QRCodeTextActivityActivity extends Activity {
 		if (first == null || second == null || fromPoint == null) {
 			return null;
 		}
-		Bitmap newBitmap = Bitmap.createBitmap(
-				first.getWidth() + second.getWidth() + marginW,
-				first.getHeight() + second.getHeight(), Config.ARGB_4444);
+		int desW = Math.max(first.getWidth(),
+				(int) fromPoint.x + second.getWidth());
+		int desH = Math.max(first.getHeight(),
+				(int) fromPoint.y + second.getHeight());
+		Bitmap newBitmap = Bitmap.createBitmap(desW, desH, Config.ARGB_4444);
 		Canvas cv = new Canvas(newBitmap);
-		cv.drawBitmap(first, marginW, 0, null);
+		cv.drawBitmap(first, 0, 0, null);
 		cv.drawBitmap(second, fromPoint.x, fromPoint.y, null);
 		cv.save(Canvas.ALL_SAVE_FLAG);
 		cv.restore();
@@ -268,9 +269,16 @@ public class QRCodeTextActivityActivity extends Activity {
 		return newBitmap;
 	}
 
-	/*** 仿微信二维码开始 ***/
-	// 图片剪切
-	public  Bitmap cutBitmap(Bitmap mBitmap, Rect r, Bitmap.Config config) {
+	/**
+	 * <pre>
+	 *  图片剪切
+	 * @param mBitmap 原图
+	 * @param r 裁切后的大小
+	 * @param config
+	 * @return
+	 * </pre>
+	 */
+	public Bitmap cutBitmap(Bitmap mBitmap, Rect r, Bitmap.Config config) {
 		int width = r.width();
 		int height = r.height();
 		Bitmap croppedImage = Bitmap.createBitmap(width, height, config);
@@ -281,10 +289,12 @@ public class QRCodeTextActivityActivity extends Activity {
 	}
 
 	/***
-	 * 合并图片
+	 * 以中心对齐方式，覆盖式合并图片
 	 * 
 	 * @param src
+	 *            底图
 	 * @param watermark
+	 *            合入的图标
 	 * @return
 	 */
 	private Bitmap createBitmap(Bitmap src, Bitmap watermark) {
@@ -305,7 +315,7 @@ public class QRCodeTextActivityActivity extends Activity {
 		cv.drawBitmap(src, 0, 0, null);// 在 0，0坐标开始画入src
 
 		// 在src的中间画watermark
-		cv.drawBitmap(watermark, w / 2 - ww / 2, h / 2 - wh / 2, null);// 设置ic_launcher的位置
+		cv.drawBitmap(watermark, (w - ww) / 2, (h - wh) / 2, null);// 设置ic_launcher的位置
 
 		// save all clip
 		cv.save(Canvas.ALL_SAVE_FLAG);// 保存
