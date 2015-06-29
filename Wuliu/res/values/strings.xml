@@ -6,9 +6,10 @@
     <string name="LOADING">LOADING...</string>
     <string name="near_cars">附近有超过10两货车可提供服务</string>
     <string name="select_city">选择城市</string>
+    <string name="submiting">正在提交。。。</string>
 
     
-    
+    <color name="debug_coldr">#99ff0000</color>
     
     <color name="item_bg">#2fcccccc</color>
     <color name="tab_bg">#72cccccc</color>

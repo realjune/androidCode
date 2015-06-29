@@ -13,7 +13,7 @@ import android.view.View.OnClickListener;
 import baidumapsdk.demo.R;
 
 public class BookActivity extends TitleFooterActivity implements OnClickListener {
-	private View near_cars_msg;
+	private BookMain bookMain;
 	
 	public static void start(Activity activity){
 		activity.startActivity(new Intent(activity,BookActivity.class));
@@ -22,12 +22,11 @@ public class BookActivity extends TitleFooterActivity implements OnClickListener
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentLayout(R.layout.book_main);
+		bookMain=new BookMain(this);
+		setContentLayout(bookMain.getView());
 		setMenuStatus(this,MENU_BOOK, false);
-		setTitleText("下单");
-		setTitleLeftButtonText(R.string.select_city);
-		near_cars_msg=findViewById(R.id.near_cars_msg);
-		near_cars_msg.setOnClickListener(this);
+//		setTitleText("下单");
+//		setTitleLeftButtonText(R.string.select_city);
 	}
 	
 	@Override
@@ -50,9 +49,6 @@ public class BookActivity extends TitleFooterActivity implements OnClickListener
 	@Override
 	public void onClick(View v) {
 		switch(v.getId()){
-		case R.id.near_cars_msg:
-			MapActivity.start(this);
-			break;
 		}
 		// TODO Auto-generated method stub
 		

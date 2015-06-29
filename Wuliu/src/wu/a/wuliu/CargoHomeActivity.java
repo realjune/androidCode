@@ -12,23 +12,28 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import baidumapsdk.demo.R;
 
-public class MainActivity extends TitleFooterActivity implements OnClickListener {
-	private View near_cars_msg;
+public class CargoHomeActivity extends TitleFooterActivity implements OnClickListener {
+	
+	public static void start(Activity activity){
+		activity.startActivity(new Intent(activity,CargoHomeActivity.class));
+	}
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentLayout(R.layout.book_main);
+		setContentLayout(R.layout.cargo_home);
 		setMenuStatus(this,MENU_BOOK, false);
-		setTitleText("下单");
-		near_cars_msg=findViewById(R.id.near_cars_msg);
-		near_cars_msg.setOnClickListener(this);
+//		setTitleText("下单");
+//		setTitleLeftButtonText(R.string.select_city);
+		setTitleLeftButton(View.VISIBLE);
+		setBottomMenu(View.GONE);
 	}
 	
 	@Override
 	public void onTitleLeftButtonClick(View v) {
 //		super.onTitleLeftButtonClick(v);
-		Activity01.start(this, 12);
+//		Activity01.start(this, 12);
+		super.onTitleLeftButtonClick(v);
 	}
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -45,9 +50,6 @@ public class MainActivity extends TitleFooterActivity implements OnClickListener
 	@Override
 	public void onClick(View v) {
 		switch(v.getId()){
-		case R.id.near_cars_msg:
-			MapActivity.start(this);
-			break;
 		}
 		// TODO Auto-generated method stub
 		

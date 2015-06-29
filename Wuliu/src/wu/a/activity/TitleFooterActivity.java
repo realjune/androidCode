@@ -46,6 +46,16 @@ public class TitleFooterActivity extends BaseActivity {
 
 	/**
 	 * <pre>
+	 * 设置标题栏右侧按钮图表显示
+	 * @param visibility
+	 * </pre>
+	 */
+	public void setBottomMenu(int visibility) {
+		findViewById(R.id.footer_include).setVisibility(visibility);
+	}
+
+	/**
+	 * <pre>
 	 * 设置标题栏左侧图表显示
 	 * @param visibility
 	 * </pre>
