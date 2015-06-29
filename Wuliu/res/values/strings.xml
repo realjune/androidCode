@@ -7,6 +7,8 @@
     <string name="near_cars">附近有超过10两货车可提供服务</string>
     <string name="select_city">选择城市</string>
     <string name="submiting">正在提交。。。</string>
+    <string name="service_times">服务：%1$d次</string>
+    <string name="driver_city">籍贯：%1$s</string>
 
     
     <color name="debug_coldr">#99ff0000</color>
@@ -20,7 +22,6 @@
     <color name="item_dis_bg">#3c3a2f</color>
     <color name="menu_back">#88888888</color>
     <color name="menu_selected">#88880000</color>
-    
     
     
     <!-- 边距 -->
