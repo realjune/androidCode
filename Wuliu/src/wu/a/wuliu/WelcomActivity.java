@@ -22,6 +22,7 @@ public class WelcomActivity extends Activity{
 			@Override
 			public void run() {
 				startActivity(new Intent(WelcomActivity.this,BookActivity.class));
+				finish();
 			}
 		}, 3000);
 		

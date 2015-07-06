@@ -3,35 +3,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <FrameLayout
-        android:id="@+id/content_view"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent" />
-    <!-- android:layout_above="@id/footer_include" -->
-    <!-- android:layout_below="@id/toppanel" /> -->
-
     <RelativeLayout
         android:id="@+id/toppanel"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_alignParentTop="true"
-        android:background="@color/debug_coldr"
-        android:orientation="horizontal" >
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/title_left_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
+            android:textColor="@color/title_font"
             android:layout_marginLeft="@dimen/margin"
+            android:textSize="@dimen/text_title_size"
             android:clickable="true"
             android:onClick="onTitleLeftButtonClick"
             android:visibility="gone" />
 
         <ImageView
             android:id="@+id/title_left"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:onClick="onTitleLeftButtonClick"
             android:visibility="gone" />
@@ -42,8 +36,16 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:textColor="@color/title_font2"
-            android:textSize="25dp"
-            android:textStyle="bold" />
+            android:textSize="@dimen/text_title_size"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/title_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
 
         <ImageButton
             android:id="@+id/title_right"
@@ -60,6 +62,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
+            android:textColor="@color/title_font"
+            android:clickable="true"
+            android:textSize="@dimen/text_title_size"
             android:layout_centerVertical="true"
             android:layout_marginRight="@dimen/margin"
             android:background="@android:color/transparent"
@@ -74,5 +79,12 @@
         android:layout_alignParentBottom="true"
         layout="@layout/footer_1" >
     </include>
+
+    <FrameLayout
+        android:id="@+id/content_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/footer_include"
+        android:layout_below="@id/toppanel" />
 
 </RelativeLayout>

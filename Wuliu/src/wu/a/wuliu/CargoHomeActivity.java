@@ -1,16 +1,14 @@
 package wu.a.wuliu;
 
-import com.droid.Activity01;
-import com.droid.City;
-
 import wu.a.activity.TitleFooterActivity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import baidumapsdk.demo.R;
+
+import com.droid.City;
 
 public class CargoHomeActivity extends TitleFooterActivity implements OnClickListener {
 	
@@ -22,11 +20,13 @@ public class CargoHomeActivity extends TitleFooterActivity implements OnClickLis
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentLayout(R.layout.cargo_home);
-		setMenuStatus(this,MENU_BOOK, false);
-//		setTitleText("下单");
-//		setTitleLeftButtonText(R.string.select_city);
-		setTitleLeftButton(View.VISIBLE);
+//		setMenuStatus(this,MENU_BOOK, false);
+		setTitleText(R.string.cargo_home,true);
+		setTitleLeftButtonImage(R.drawable.back);
 		setBottomMenu(View.GONE);
+		findViewById(R.id.xiaomianbao_item).setOnClickListener(this);
+		findViewById(R.id.zhongmianbao_item).setOnClickListener(this);
+		findViewById(R.id.xianghuo_item).setOnClickListener(this);
 	}
 	
 	@Override
@@ -50,6 +50,11 @@ public class CargoHomeActivity extends TitleFooterActivity implements OnClickLis
 	@Override
 	public void onClick(View v) {
 		switch(v.getId()){
+		case R.id.xiaomianbao_item:
+		case R.id.zhongmianbao_item:
+		case R.id.xianghuo_item:
+		DriverListActivity.start(this);
+		break;
 		}
 		// TODO Auto-generated method stub
 		

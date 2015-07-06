@@ -28,8 +28,9 @@ public class TitleFooterActivity extends BaseActivity {
 	private TextView title_right_text;
 	private TextView title_left_text;
 	private TextView title_text;
+	private ImageView title_img;
 	private FrameLayout content_view;
-	LayoutInflater lf;
+	protected LayoutInflater lf;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,7 @@ public class TitleFooterActivity extends BaseActivity {
 		title_right_text = (TextView) findViewById(R.id.title_right_text);
 		title_left_text = (TextView) findViewById(R.id.title_left_text);
 		title_text = (TextView) findViewById(R.id.title_text);
+		title_img = (ImageView) findViewById(R.id.title_img);
 		content_view = (FrameLayout) findViewById(R.id.content_view);
 	}
 
@@ -72,6 +74,7 @@ public class TitleFooterActivity extends BaseActivity {
 	 */
 	public void setTitleLeftButtonImage(int imgId) {
 		title_left.setImageResource(imgId);
+		title_left.setVisibility(View.VISIBLE);
 	}
 
 	/**
@@ -128,6 +131,24 @@ public class TitleFooterActivity extends BaseActivity {
 	 */
 	public void setTitleText(int titleRes) {
 		title_text.setText(titleRes);
+		title_text.setVisibility(View.VISIBLE);
+	}
+	
+	public void setTitleText(int titleRes,boolean bold) {
+		title_text.setText(titleRes);
+		title_text.getPaint().setFakeBoldText(bold);
+		title_text.setVisibility(View.VISIBLE);
+	}
+
+	/**
+	 * <pre>
+	 * 设置标栏题名称
+	 * @param imgRes
+	 * </pre>
+	 */
+	public void setTitleImage(int imgRes) {
+		title_img.setImageResource(imgRes);
+		title_img.setVisibility(View.VISIBLE);
 	}
 
 	/**
@@ -138,6 +159,7 @@ public class TitleFooterActivity extends BaseActivity {
 	 */
 	public void setTitleText(String text) {
 		title_text.setText(text);
+		title_text.setVisibility(View.VISIBLE);
 	}
 
 	/**
@@ -204,55 +226,55 @@ public class TitleFooterActivity extends BaseActivity {
 	public static final int MENU_BOOK_MANAGER=1;
 	public static final int MENU_ACTIVITY=2;
 	public static final int MENU_USER_INFO=3;
-	public void setMenuStatus(final Activity act, int type, final boolean needFinish){
-		TextView menu_book = (TextView)act.findViewById(R.id.menu_book);
-		TextView menu_book_manager = (TextView)act.findViewById(R.id.menu_book_manager);
-		TextView menu_activity = (TextView)act.findViewById(R.id.menu_activity);
-		TextView menu_user_info = (TextView)act.findViewById(R.id.menu_user_info);
-		
-		
-		if(MENU_BOOK==type){
-			menu_book.setBackgroundResource(R.color.menu_selected);
-			menu_book.setClickable(false);
-			menu_book.setTextColor(0xffffffff);
-		}else{
-			menu_book.setOnClickListener(new View.OnClickListener() {
-				public void onClick(View v) {
-					BookActivity.start(TitleFooterActivity.this);
-				}});
-		}
-		if(MENU_BOOK_MANAGER==type){
-			menu_book_manager.setBackgroundResource(R.color.menu_selected);
-			menu_book_manager.setClickable(false);
-			menu_book_manager.setTextColor(0xffffffff);
-		}else{
-			menu_book_manager.setOnClickListener(new View.OnClickListener() {
-				public void onClick(View v) {
-					BookManagerActivity.start(TitleFooterActivity.this);
-				}});
-		}
-		if(MENU_ACTIVITY==type){
-			menu_activity.setBackgroundResource(R.color.menu_selected);
-			menu_activity.setClickable(false);
-			menu_activity.setTextColor(0xffffffff);
-		}else{
-			menu_activity.setOnClickListener(new View.OnClickListener() {
-				public void onClick(View v) {
-					
-				}});
-		}
-		if(MENU_ACTIVITY==type){
-			menu_user_info.setBackgroundResource(R.color.menu_selected);
-			menu_user_info.setClickable(false);
-			menu_user_info.setTextColor(0xffffffff);
-		}else{
-			menu_user_info.setOnClickListener(new View.OnClickListener() {
-				public void onClick(View v) {
-					
-				}});
-		}
-		
-	}
+//	public void setMenuStatus(final Activity act, int type, final boolean needFinish){
+//		TextView menu_book = (TextView)act.findViewById(R.id.menu_book);
+//		TextView menu_book_manager = (TextView)act.findViewById(R.id.menu_book_manager);
+//		TextView menu_activity = (TextView)act.findViewById(R.id.menu_activity);
+//		TextView menu_user_info = (TextView)act.findViewById(R.id.menu_user_info);
+//		
+//		
+//		if(MENU_BOOK==type){
+//			menu_book.setBackgroundResource(R.color.menu_selected);
+//			menu_book.setClickable(false);
+//			menu_book.setTextColor(0xffffffff);
+//		}else{
+//			menu_book.setOnClickListener(new View.OnClickListener() {
+//				public void onClick(View v) {
+//					BookActivity.start(TitleFooterActivity.this);
+//				}});
+//		}
+//		if(MENU_BOOK_MANAGER==type){
+//			menu_book_manager.setBackgroundResource(R.color.menu_selected);
+//			menu_book_manager.setClickable(false);
+//			menu_book_manager.setTextColor(0xffffffff);
+//		}else{
+//			menu_book_manager.setOnClickListener(new View.OnClickListener() {
+//				public void onClick(View v) {
+//					BookManagerActivity.start(TitleFooterActivity.this);
+//				}});
+//		}
+//		if(MENU_ACTIVITY==type){
+//			menu_activity.setBackgroundResource(R.color.menu_selected);
+//			menu_activity.setClickable(false);
+//			menu_activity.setTextColor(0xffffffff);
+//		}else{
+//			menu_activity.setOnClickListener(new View.OnClickListener() {
+//				public void onClick(View v) {
+//					
+//				}});
+//		}
+//		if(MENU_ACTIVITY==type){
+//			menu_user_info.setBackgroundResource(R.color.menu_selected);
+//			menu_user_info.setClickable(false);
+//			menu_user_info.setTextColor(0xffffffff);
+//		}else{
+//			menu_user_info.setOnClickListener(new View.OnClickListener() {
+//				public void onClick(View v) {
+//					
+//				}});
+//		}
+//		
+//	}
 	
 	
 

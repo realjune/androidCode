@@ -1,11 +1,11 @@
 package wu.a.wuliu;
 
+import baidumapsdk.demo.R;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
-import baidumapsdk.demo.R;
 
 public class BookMain implements OnClickListener {
 	
@@ -14,8 +14,8 @@ public class BookMain implements OnClickListener {
 	public BookMain(Context context){
 		this.context=context;
 		view=LayoutInflater.from(context).inflate(R.layout.book_main, null);
-		view.findViewById(R.id.feedback_tv).setOnClickListener(this);
-		view.findViewById(R.id.cargo_goods).setBackgroundColor(0xff0000ff);//.setOnClickListener(this);
+//		view.findViewById(R.id.feedback_tv).setOnClickListener(this);
+		view.findViewById(R.id.cargo_goods).setOnClickListener(this);
 		view.findViewById(R.id.cargo_home).setOnClickListener(this);
 	}
 	
@@ -30,9 +30,9 @@ public class BookMain implements OnClickListener {
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
-		case R.id.feedback_tv:
-			context.startActivity(new Intent(context,FeedBackActivity.class));
-			break;
+//		case R.id.feedback_tv:
+//			context.startActivity(new Intent(context,FeedBackActivity.class));
+//			break;
 		case R.id.cargo_goods:
 			break;
 		case R.id.cargo_home:

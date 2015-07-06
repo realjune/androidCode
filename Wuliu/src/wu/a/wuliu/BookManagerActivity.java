@@ -33,7 +33,7 @@ public class BookManagerActivity extends TitleFooterActivity implements OnClickL
 		super.onCreate(savedInstanceState);
 		lif=LayoutInflater.from(this);
 		setContentLayout(R.layout.book_manager_main);
-		setMenuStatus(this,MENU_BOOK_MANAGER, false);
+//		setMenuStatus(this,MENU_BOOK_MANAGER, false);
 		setTitleText("订单");
 		bookList=(ListView) findViewById(R.id.book_list);
 		mBookListAdapter=new BookListAdapter();

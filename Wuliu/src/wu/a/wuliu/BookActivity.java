@@ -1,19 +1,22 @@
 package wu.a.wuliu;
 
-import com.droid.Activity01;
-import com.droid.City;
-
 import wu.a.activity.TitleFooterActivity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.RadioGroup;
+import android.widget.RadioGroup.OnCheckedChangeListener;
 import baidumapsdk.demo.R;
 
-public class BookActivity extends TitleFooterActivity implements OnClickListener {
+import com.droid.Activity01;
+import com.droid.City;
+
+public class BookActivity extends TitleFooterActivity implements OnClickListener, OnCheckedChangeListener {
 	private BookMain bookMain;
+	
+	private RadioGroup footer_menu;
 	
 	public static void start(Activity activity){
 		activity.startActivity(new Intent(activity,BookActivity.class));
@@ -22,9 +25,10 @@ public class BookActivity extends TitleFooterActivity implements OnClickListener
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		footer_menu=(RadioGroup) findViewById(R.id.footer_menu);
+		footer_menu.setOnCheckedChangeListener(this);
 		bookMain=new BookMain(this);
-		setContentLayout(bookMain.getView());
-		setMenuStatus(this,MENU_BOOK, false);
+		footer_menu.check(R.id.menu_book);
 //		setTitleText("下单");
 //		setTitleLeftButtonText(R.string.select_city);
 	}
@@ -33,6 +37,11 @@ public class BookActivity extends TitleFooterActivity implements OnClickListener
 	public void onTitleLeftButtonClick(View v) {
 //		super.onTitleLeftButtonClick(v);
 		Activity01.start(this, 12);
+	}
+	
+	@Override
+	public void onTitleRightButtonClick(View v) {
+		FeedBackActivity.start(this);
 	}
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -51,6 +60,31 @@ public class BookActivity extends TitleFooterActivity implements OnClickListener
 		switch(v.getId()){
 		}
 		// TODO Auto-generated method stub
+		
+	}
+	
+	private int status=-1;
+
+	@Override
+	public void onCheckedChanged(RadioGroup group, int checkedId) {
+		switch(checkedId){
+		case R.id.menu_book:
+			if(status!=0){
+			setTitleRightButtonText(R.string.feedback);
+			setContentLayout(bookMain.getView());
+//			setMenuStatus(this,MENU_BOOK, false);
+			setTitleImage(R.drawable.title_jlbhuoyun);
+			status=0;
+			}
+			break;
+		case R.id.menu_book_manager:
+			BookManagerActivity.start(this);
+			break;
+		case R.id.menu_activity:
+			break;
+		case R.id.menu_user_info:
+			break;
+		}
 		
 	}
 
