@@ -85,6 +85,7 @@ public class TitleFooterActivity extends BaseActivity {
 	 */
 	public void setTitleRightButton(int visibility) {
 		title_right.setVisibility(visibility);
+		title_right_text.setVisibility(visibility);
 	}
 
 	/**
@@ -132,12 +133,12 @@ public class TitleFooterActivity extends BaseActivity {
 	public void setTitleText(int titleRes) {
 		title_text.setText(titleRes);
 		title_text.setVisibility(View.VISIBLE);
+		title_img.setVisibility(View.GONE);
 	}
 	
 	public void setTitleText(int titleRes,boolean bold) {
-		title_text.setText(titleRes);
 		title_text.getPaint().setFakeBoldText(bold);
-		title_text.setVisibility(View.VISIBLE);
+		setTitleText(titleRes);
 	}
 
 	/**
@@ -149,6 +150,7 @@ public class TitleFooterActivity extends BaseActivity {
 	public void setTitleImage(int imgRes) {
 		title_img.setImageResource(imgRes);
 		title_img.setVisibility(View.VISIBLE);
+		title_text.setVisibility(View.GONE);
 	}
 
 	/**
@@ -169,6 +171,7 @@ public class TitleFooterActivity extends BaseActivity {
 	 *            内容布局
 	 */
 	public void setContentLayout(View view) {
+		content_view.removeAllViews();
 		content_view.addView(view);
 	}
 

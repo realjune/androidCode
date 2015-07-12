@@ -34,6 +34,7 @@ public class BookMain implements OnClickListener {
 //			context.startActivity(new Intent(context,FeedBackActivity.class));
 //			break;
 		case R.id.cargo_goods:
+			context.startActivity(new Intent(context,CargoGoodsActivity.class));
 			break;
 		case R.id.cargo_home:
 			context.startActivity(new Intent(context,CargoHomeActivity.class));

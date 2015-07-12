@@ -12,6 +12,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -24,7 +26,7 @@ import com.droid.City;
 public class DriverListActivity extends TitleFooterActivity implements OnClickListener {
 	private ListView driverList;
 	private Button submit;
-	private List drivers;
+	private List<Driver> drivers;
 	private DriverAdapter adapter;
 	
 	public static void start(Activity activity){
@@ -40,6 +42,15 @@ public class DriverListActivity extends TitleFooterActivity implements OnClickLi
 		setTitleLeftButtonImage(R.drawable.back);
 		setBottomMenu(View.GONE);
 		driverList=(ListView) findViewById(R.id.driver_ls);
+		driverList.setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+				DriverDetailActivity.start(DriverListActivity.this, drivers.get(position));
+			}
+			
+		});
 
 		adapter=new DriverAdapter(DriverListActivity.this);
 		driverList.setAdapter(adapter);

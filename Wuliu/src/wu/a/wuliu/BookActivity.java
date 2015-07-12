@@ -2,6 +2,7 @@ package wu.a.wuliu;
 
 import wu.a.activity.TitleFooterActivity;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -15,6 +16,8 @@ import com.droid.City;
 
 public class BookActivity extends TitleFooterActivity implements OnClickListener, OnCheckedChangeListener {
 	private BookMain bookMain;
+	private BookManager bookManager;
+	private SaleManager saleManager;
 	
 	private RadioGroup footer_menu;
 	
@@ -28,6 +31,8 @@ public class BookActivity extends TitleFooterActivity implements OnClickListener
 		footer_menu=(RadioGroup) findViewById(R.id.footer_menu);
 		footer_menu.setOnCheckedChangeListener(this);
 		bookMain=new BookMain(this);
+		bookManager=new BookManager(this);
+		saleManager=new SaleManager(this);
 		footer_menu.check(R.id.menu_book);
 //		setTitleText("下单");
 //		setTitleLeftButtonText(R.string.select_city);
@@ -78,9 +83,20 @@ public class BookActivity extends TitleFooterActivity implements OnClickListener
 			}
 			break;
 		case R.id.menu_book_manager:
-			BookManagerActivity.start(this);
+			if(status!=1){
+				setTitleRightButton(View.GONE);
+				setContentLayout(bookManager.getView());
+				setTitleText(R.string.history_book_list);
+				status=1;
+			}
 			break;
 		case R.id.menu_activity:
+			if(status!=2){
+			setTitleRightButton(View.GONE);
+			setContentLayout(saleManager.getView());
+			setTitleText(R.string.history_book_list);
+			status=2;
+		}
 			break;
 		case R.id.menu_user_info:
 			break;

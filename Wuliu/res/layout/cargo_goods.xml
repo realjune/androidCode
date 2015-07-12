@@ -2,49 +2,35 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/main_page" >
+    android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/feedback_tv"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginRight="50dp"
-        android:background="#99ff0000" />
-
-    <FrameLayout
-        android:id="@+id/near_cars_msg"
-        android:layout_width="match_parent"
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/margin"
-        android:background="#ffaaaa00" >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin"
-            android:text="@string/near_cars" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right|center_vertical"
-            android:text=">" />
-    </FrameLayout>
+        android:src="@drawable/banner2" />
 
     <LinearLayout
+        android:id="@+id/xiaomianbao_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin"
-        android:background="@drawable/item_selector"
-        android:clickable="true"
-        android:orientation="horizontal" >
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:background="@drawable/corners_bk_item"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_big"
+        android:paddingLeft="@dimen/margin_big"
+        android:paddingTop="@dimen/margin_big" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/xiaomianbao" />
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/margin_big"
             android:orientation="vertical" >
 
             <LinearLayout
@@ -54,52 +40,62 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:layout_marginTop="@dimen/margin"
                     android:layout_weight="1"
-                    android:text="小型面包"
-                    android:textColor="#ff000000"
-                    android:textSize="@dimen/text_size_big" />
+                    android:text="@string/xiaomianbao"
+                    android:textColor="@color/title_black"
+                    android:textSize="@dimen/text_size_big"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="33元(5公里)" />
+                    android:layout_marginBottom="@dimen/margin"
+                    android:layout_marginTop="@dimen/margin"
+                    android:text="33"
+                    android:textColor="@color/title_font"
+                    android:textSize="@dimen/text_size_big"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:layout_marginTop="@dimen/margin"
+                    android:text="@string/money_start_kl" />
             </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="载重1吨" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="长*宽*高：1.7*1.1*1m" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="超公里费：3.0元每公里" />
+                android:layout_marginTop="@dimen/margin"
+                android:text="@string/xiaomianbao_des" />
         </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:text=">" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/zhongmianbao_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin"
-        android:background="@drawable/item_selector"
-        android:clickable="true"
-        android:orientation="horizontal" >
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:background="@drawable/corners_bk_item"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin"
+        android:paddingBottom="@dimen/margin_big"
+        android:paddingLeft="@dimen/margin_big"
+        android:paddingTop="@dimen/margin_big" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/damianbao" />
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/margin_big"
             android:orientation="vertical" >
 
             <LinearLayout
@@ -109,52 +105,62 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:layout_marginTop="@dimen/margin"
                     android:layout_weight="1"
-                    android:text="金杯"
-                    android:textColor="#ff000000"
-                    android:textSize="@dimen/text_size_big" />
+                    android:text="@string/zhongmianbao"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_size_big"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="58元(5公里)" />
+                    android:layout_marginBottom="@dimen/margin"
+                    android:layout_marginTop="@dimen/margin"
+                    android:text="58"
+                    android:textColor="@color/title_font"
+                    android:textSize="@dimen/text_size_big"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:layout_marginTop="@dimen/margin"
+                    android:text="@string/money_start_kl" />
             </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="载重1.5吨" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="长*宽*高：2.7*1.4*2m" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="超公里费：4.0元每公里" />
+                android:layout_marginTop="@dimen/margin"
+                android:text="@string/zhongmianbao_des" />
         </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:text=">" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/xianghuo_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin"
-        android:background="@drawable/item_selector"
-        android:clickable="true"
-        android:orientation="horizontal" >
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:background="@drawable/corners_bk_item"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_big"
+        android:paddingLeft="@dimen/margin_big"
+        android:paddingTop="@dimen/margin_big" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/xianghuo" />
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/margin_big"
             android:orientation="vertical" >
 
             <LinearLayout
@@ -164,38 +170,38 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:layout_marginTop="@dimen/margin"
                     android:layout_weight="1"
-                    android:text="厢货"
-                    android:textColor="#ff000000"
-                    android:textSize="@dimen/text_size_big" />
+                    android:text="@string/xianghuo"
+                    android:textColor="@color/title_black"
+                    android:textSize="@dimen/text_size_big"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="100元(5公里)" />
+                    android:layout_marginBottom="@dimen/margin"
+                    android:layout_marginTop="@dimen/margin"
+                    android:text="100"
+                    android:textColor="@color/title_font"
+                    android:textSize="@dimen/text_size_big"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:layout_marginTop="@dimen/margin"
+                    android:text="@string/money_start_kl" />
             </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="载重1.8吨" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="长*宽*高：4.2*2*1.8m" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="超公里费：5.0元每公里" />
+                android:layout_marginTop="@dimen/margin"
+                android:text="@string/xianghuo_des" />
         </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:text=">" />
     </LinearLayout>
 
 </LinearLayout>

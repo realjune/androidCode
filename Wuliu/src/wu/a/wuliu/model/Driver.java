@@ -1,5 +1,7 @@
 package wu.a.wuliu.model;
 
+import java.io.Serializable;
+
 /**
  * <pre>
  * 司机
@@ -8,12 +10,23 @@ package wu.a.wuliu.model;
  * </pre>
  *
  */
-public class Driver {
+public class Driver implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String name;
 	private String comment;
 	private String carNo;
 	private String city;
 	private int times;
+	private String lisence;
+	public String getLisence() {
+		return lisence;
+	}
+	public void setLisence(String lisence) {
+		this.lisence = lisence;
+	}
 	public String getName() {
 		return name;
 	}

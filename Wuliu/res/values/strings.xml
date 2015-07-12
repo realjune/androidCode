@@ -19,6 +19,7 @@
     <string name="feedback_des">家来帮致力于给您提供优质的上门家庭服务，欢迎您提供宝贵的意见和建议~</string>
     <string name="submit_feedback">提交反馈</string>
     <string name="money_start">元起</string>
+    <string name="money_start_kl">元(5公里)</string>
     <string name="xiaomianbao">小型面包</string>
     <string name="xiaomianbao_des">适合少量软包裹/编织袋/行李箱为主的个人搬家</string>
     <string name="zhongmianbao">中型面包</string>
@@ -27,6 +28,9 @@
     <string name="xianghuo_des">适合床柜、冰箱等大家电、家具为主的家庭、公司搬家</string>
     <string name="select_driver">选司机</string>
     <string name="kuaisuyuyue">快速预约</string>
+    <string name="user_comment">用户评价</string>
+    <string name="_comment_count">（%1d人评价）</string>
+    <string name="history_book_list">历史订单</string>
 
     
     <color name="debug_coldr">#99ff0000</color>
@@ -45,6 +49,9 @@
     <color name="menu_back">#88888888</color>
     <color name="menu_selected">#88880000</color>
     <color name="menu_text_color_focus">#ffff0000</color>
+    <color name="ratingbar_p1">#ff969696</color>
+    <color name="ratingbar_p2">#ffF06065</color>
+    <color name="transcolor">#00000000</color>
     
     
     <!-- 边距 -->
