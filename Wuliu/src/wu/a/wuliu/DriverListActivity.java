@@ -94,6 +94,7 @@ public class DriverListActivity extends TitleFooterActivity implements OnClickLi
 			driver.setComment("暂无评价");
 			driver.setTimes(i*3);
 			driver.setName("赵飞");
+			driver.setPhone("13121581070");
 			drivers.add(driver);
 		}
 		driverList.post(new Runnable() {

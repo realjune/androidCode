@@ -21,6 +21,7 @@ public class Driver implements Serializable {
 	private String city;
 	private int times;
 	private String lisence;
+	private String phone;
 	public String getLisence() {
 		return lisence;
 	}
@@ -57,6 +58,11 @@ public class Driver implements Serializable {
 	public void setTimes(int times) {
 		this.times = times;
 	}
-	
+	public void setPhone(String phone){
+		this.phone=phone;
+	}
+	public String getPhone(){
+		return phone;
+	}
 
 }

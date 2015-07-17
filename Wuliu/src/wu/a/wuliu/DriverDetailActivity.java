@@ -68,6 +68,7 @@ public class DriverDetailActivity extends TitleFooterActivity implements OnClick
 		comment_lv=(ListView) findViewById(R.id.comment_ls);
 		adapter=new DriverComentAdapter(DriverDetailActivity.this);
 		comment_lv.setAdapter(adapter);
+		findViewById(R.id.submit).setOnClickListener(this);
 	}
 	
 	@Override
@@ -91,6 +92,9 @@ public class DriverDetailActivity extends TitleFooterActivity implements OnClick
 	@Override
 	public void onClick(View v) {
 		switch(v.getId()){
+		case R.id.submit:
+			BookToActivity.start(this, driver);
+			break;
 		}
 		// TODO Auto-generated method stub
 		
@@ -101,7 +105,7 @@ public class DriverDetailActivity extends TitleFooterActivity implements OnClick
 		super.onLoader();
 		if(userComentList==null){
 			userComentList=new ArrayList<UserComent>();
-		for(int i=0;i<10;i++){
+		for(int i=0;i<8;i++){
 			UserComent userComent=new UserComent();
 			userComent.setTime(System.currentTimeMillis()-1000*60*60*24);
 			userComent.setCommentContent("特别赞");

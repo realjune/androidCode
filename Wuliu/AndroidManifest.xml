@@ -41,6 +41,7 @@
         <activity android:name="wu.a.wuliu.CargoGoodsActivity"/>
         <activity android:name="wu.a.wuliu.DriverListActivity"/>
         <activity android:name="wu.a.wuliu.DriverDetailActivity"/>
+        <activity android:name="wu.a.wuliu.BookToActivity"/>
         <activity
             android:name="wu.a.wuliu.MapActivity"
             android:launchMode="singleTask" >

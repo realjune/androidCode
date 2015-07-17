@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/banner4">
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bangdingshouji" 
+            android:background="@null"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+    
+
+        <TextView
+            android:id="@+id/share_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/menu_group_divider"
+            android:drawableRight="@drawable/xiangxia"
+            android:drawableLeft="@drawable/fenxiang"
+            android:gravity="center_vertical"
+            android:text="@string/share"
+            android:padding="@dimen/margin" />
+
+        <TextView
+            android:id="@+id/daijinquan_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/menu_item_divider"
+            android:drawableRight="@drawable/xiangxia"
+            android:drawableLeft="@drawable/daijinquan"
+            android:gravity="center_vertical"
+            android:text="代金券"
+            android:padding="@dimen/margin" />
+
+        <TextView
+            android:id="@+id/help_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/menu_group_divider"
+            android:drawableRight="@drawable/xiangxia"
+            android:drawableLeft="@drawable/bangzhu"
+            android:gravity="center_vertical"
+            android:text="使用帮助"
+            android:padding="@dimen/margin" />
+
+        <TextView
+            android:id="@+id/about_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/menu_item_divider"
+            android:drawableRight="@drawable/xiangxia"
+            android:drawableLeft="@drawable/guanyuwomen"
+            android:gravity="center_vertical"
+            android:text="关于我们"
+            android:padding="@dimen/margin" />
+
+        <TextView
+            android:id="@+id/feedback_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/menu_item_divider"
+            android:drawableRight="@drawable/xiangxia"
+            android:drawableLeft="@drawable/fankui"
+            android:gravity="center_vertical"
+            android:text="意见反馈"
+            android:padding="@dimen/margin" />
+
+        <TextView
+            android:id="@+id/call_service_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/menu_item_divider"
+            android:drawableLeft="@drawable/kefu"
+            android:drawableRight="@drawable/xiangxia"
+            android:gravity="center_vertical"
+            android:text="联系客服"
+            android:hint="400-0000-0000"
+            android:padding="@dimen/margin" />
+
+</LinearLayout>
