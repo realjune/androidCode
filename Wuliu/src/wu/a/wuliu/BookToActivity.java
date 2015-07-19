@@ -19,6 +19,7 @@ import android.widget.TextView;
 import baidumapsdk.demo.R;
 
 import com.droid.City;
+import com.droid.PoiSearchDemo;
 
 public class BookToActivity extends TitleFooterActivity implements
 		OnClickListener {
@@ -121,8 +122,10 @@ public class BookToActivity extends TitleFooterActivity implements
 			view.addView(timeSelectManager.getView());
 			break;
 		case R.id.book_from:
+			startActivity(new Intent(this,PoiSearchDemo.class));
 			break;
 		case R.id.book_dest:
+			startActivity(new Intent(this,PoiSearchDemo.class));
 			break;
 		case R.id.driver_phone:
 			Intent intent = new Intent();

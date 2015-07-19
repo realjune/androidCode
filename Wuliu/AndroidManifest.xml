@@ -42,6 +42,8 @@
         <activity android:name="wu.a.wuliu.DriverListActivity"/>
         <activity android:name="wu.a.wuliu.DriverDetailActivity"/>
         <activity android:name="wu.a.wuliu.BookToActivity"/>
+        <activity android:name="com.droid.PoiSearchDemo"/>
+        <activity android:name="wu.a.wuliu.AboutActivity"/>
         <activity
             android:name="wu.a.wuliu.MapActivity"
             android:launchMode="singleTask" >

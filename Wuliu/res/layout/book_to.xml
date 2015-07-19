@@ -8,18 +8,11 @@
         android:layout_height="match_parent"
         android:orientation="vertical" >
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="@dimen/margin_big"
-            android:background="@color/item_dis_bg" >
-        </FrameLayout>
-
         <EditText
             android:id="@+id/book_time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@null"
+            android:background="@color/item_bg"
             android:drawableLeft="@drawable/banjiashijian"
             android:drawableRight="@drawable/xiangxia"
             android:editable="false"
@@ -27,68 +20,40 @@
             android:hint="@string/pls_select_boot_to_time_hint"
             android:padding="@dimen/margin" />
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/item_dis_bg" >
-        </FrameLayout>
-
         <EditText
             android:id="@+id/book_from"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@null"
+            android:layout_marginTop="1dp"
+            android:background="@color/item_bg"
             android:drawableLeft="@drawable/qidian"
             android:drawableRight="@drawable/xiangxia"
             android:editable="false"
             android:hint="@string/pls_select_boot_to_from_hint"
             android:padding="@dimen/margin" />
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/item_dis_bg" >
-        </FrameLayout>
-
         <EditText
             android:id="@+id/book_dest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@null"
+            android:layout_marginTop="1dp"
+            android:background="@color/item_bg"
             android:drawableLeft="@drawable/zhongdian"
             android:drawableRight="@drawable/xiangxia"
             android:editable="false"
             android:hint="@string/pls_select_boot_to_dest_hint"
             android:padding="@dimen/margin" />
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/item_dis_bg" >
-        </FrameLayout>
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="@dimen/margin_big"
-            android:background="@color/item_dis_bg" >
-        </FrameLayout>
-
         <TextView
             android:id="@+id/driver_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/menu_group_divider"
+            android:background="@color/item_bg"
             android:drawableLeft="@drawable/dianhua"
             android:gravity="center_vertical"
             android:hint="@string/pls_select_boot_to_time_hint"
             android:padding="@dimen/margin" />
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/item_dis_bg" >
-        </FrameLayout>
     </LinearLayout>
 
 </FrameLayout>

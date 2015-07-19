@@ -86,6 +86,7 @@ public class BookActivity extends TitleFooterActivity implements
 		switch (checkedId) {
 		case R.id.menu_book:
 			if (status != 0) {
+				setToppanel(View.VISIBLE);
 				setTitleRightButtonText(R.string.feedback);
 				setContentLayout(bookMain.getView());
 				// setMenuStatus(this,MENU_BOOK, false);
@@ -95,6 +96,7 @@ public class BookActivity extends TitleFooterActivity implements
 			break;
 		case R.id.menu_book_manager:
 			if (status != 1) {
+				setToppanel(View.VISIBLE);
 				setTitleRightButton(View.GONE);
 				setContentLayout(bookManager.getView());
 				setTitleText(R.string.history_book_list);
@@ -103,6 +105,7 @@ public class BookActivity extends TitleFooterActivity implements
 			break;
 		case R.id.menu_activity:
 			if (status != 2) {
+				setToppanel(View.VISIBLE);
 				setTitleRightButton(View.GONE);
 				setContentLayout(saleManager.getView());
 				setTitleText(R.string.history_book_list);
@@ -111,9 +114,10 @@ public class BookActivity extends TitleFooterActivity implements
 			break;
 		case R.id.menu_user_info:
 			if (status != 3) {
-				setTitleRightButton(View.GONE);
+				setToppanel(View.GONE);
+//				setTitleRightButton(View.GONE);
 				setContentLayout(infoManager.getView());
-				setTitleText(R.string.history_book_list);
+//				setTitleText(R.string.history_book_list);
 				status = 3;
 			}
 			break;

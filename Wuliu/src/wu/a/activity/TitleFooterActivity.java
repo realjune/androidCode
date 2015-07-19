@@ -23,6 +23,7 @@ import baidumapsdk.demo.R;
  *
  */
 public class TitleFooterActivity extends BaseActivity {
+	private View toppanel;
 	private ImageView title_left;
 	private ImageView title_right;
 	private TextView title_right_text;
@@ -37,6 +38,7 @@ public class TitleFooterActivity extends BaseActivity {
 		super.onCreate(savedInstanceState);
 		lf = LayoutInflater.from(this);
 		setContentView(R.layout.activity_page_content);
+		toppanel=findViewById(R.id.toppanel);
 		title_left = (ImageView) findViewById(R.id.title_left);
 		title_right = (ImageView) findViewById(R.id.title_right);
 		title_right_text = (TextView) findViewById(R.id.title_right_text);
@@ -44,6 +46,10 @@ public class TitleFooterActivity extends BaseActivity {
 		title_text = (TextView) findViewById(R.id.title_text);
 		title_img = (ImageView) findViewById(R.id.title_img);
 		content_view = (FrameLayout) findViewById(R.id.content_view);
+	}
+	
+	public void setToppanel(int visibility){
+		toppanel.setVisibility(visibility);
 	}
 
 	/**
