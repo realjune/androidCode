@@ -94,12 +94,12 @@ public class BookToActivity extends TitleFooterActivity implements
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		if (resultCode == RESULT_OK) {
-			if (requestCode == 12) {
-				City city = (City) data.getSerializableExtra("city");
-				setTitleLeftButtonText(city.name);
+			if (requestCode == 1001) {
+				book_from.setText(data.getStringExtra("address"));
+			}else if(requestCode==1002){
+				book_dest.setText(data.getStringExtra("address"));
 			}
 		}
-		// TODO Auto-generated method stub
 		super.onActivityResult(requestCode, resultCode, data);
 	}
 
@@ -122,10 +122,10 @@ public class BookToActivity extends TitleFooterActivity implements
 			view.addView(timeSelectManager.getView());
 			break;
 		case R.id.book_from:
-			startActivity(new Intent(this,PoiSearchDemo.class));
+			startActivityForResult(new Intent(this,PoiSearchDemo.class),1001);
 			break;
 		case R.id.book_dest:
-			startActivity(new Intent(this,PoiSearchDemo.class));
+			startActivityForResult(new Intent(this,PoiSearchDemo.class),1002);
 			break;
 		case R.id.driver_phone:
 			Intent intent = new Intent();
