@@ -2,6 +2,7 @@
 package net.ds.effect.utils;
 
 import net.ds.effect.BuildConfig;
+import android.annotation.SuppressLint;
 import android.graphics.Paint;
 import android.os.Build;
 import android.os.Handler;
@@ -159,6 +160,7 @@ public class ViewUtils {
         }
     }
 
+    @SuppressLint("NewApi")
     public static void postOnAnimation(View view, Runnable r) {
         if (Build.VERSION.SDK_INT < 16) {
             view.post(r);
@@ -167,7 +169,8 @@ public class ViewUtils {
         }
     }
 
-    public static void postOnAnimationDelayed(View view, Runnable r, long delay) {
+    @SuppressLint("NewApi")
+	public static void postOnAnimationDelayed(View view, Runnable r, long delay) {
         if (Build.VERSION.SDK_INT < 16) {
             view.postDelayed(r, delay);
         } else {

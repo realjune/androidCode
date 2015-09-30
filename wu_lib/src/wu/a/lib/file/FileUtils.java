@@ -544,4 +544,13 @@ public class FileUtils {
         }
         return fileSizeString;
     }
+    
+    /**格式化字节码为字符串
+     * @param context
+     * @param size
+     * @return
+     */
+    public static String formatShortFileSize(Context context,long size){
+    	 return Formatter.formatShortFileSize(context, size);
+    }
 }

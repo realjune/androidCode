@@ -1,10 +1,11 @@
 package wu.a.lib.device;
 
-import wu.a.template.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.widget.TextView;
+import wu.a.lib.file.FileUtils;
+import wu.a.template.R;
 
 public class DisplayActivity extends Activity {
 	private TextView display_info;
@@ -12,7 +13,7 @@ public class DisplayActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.display_info);
 		display_info=(TextView) findViewById(R.id.display_info);
-		display_info.setText(getDisplay());
+		display_info.setText(getDisplay()+"\n"+new FileUtils().getFileInfo(this));
 	}
 	
 	private String getDisplay(){
